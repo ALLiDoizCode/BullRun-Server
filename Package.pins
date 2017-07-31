@@ -2,12 +2,6 @@
   "autoPin": true,
   "pins": [
     {
-      "package": "Alamofire",
-      "reason": null,
-      "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
-      "version": "4.5.0"
-    },
-    {
       "package": "BCrypt",
       "reason": null,
       "repositoryURL": "https://github.com/vapor/bcrypt.git",
@@ -114,6 +108,12 @@
       "reason": null,
       "repositoryURL": "https://github.com/vapor/tls.git",
       "version": "2.0.4"
+    },
+    {
+      "package": "Unbox",
+      "reason": null,
+      "repositoryURL": "https://github.com/johnsundell/unbox.git",
+      "version": "2.5.0"
     },
     {
       "package": "Vapor",
