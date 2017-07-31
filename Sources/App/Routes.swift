@@ -2,10 +2,59 @@ import Vapor
 
 extension Droplet {
     func setupRoutes() throws {
+        
+        post("balance") { req in
+            
+            guard let address = req.data["address"]?.string else {
+                
+                return Abort.badRequest.reason
+            }
+            let json = Ripple(drop:self).balance(address: address)
+            
+            return json
+            
+        }
+        
+        post("send") { req in
+            
+            guard let address1 = req.data["address1"]?.string else {
+                
+                return Abort.badRequest.reason
+            }
+            
+            guard let address2 = req.data["address2"]?.string else {
+                
+                return Abort.badRequest.reason
+            }
+            
+            guard let secret = req.data["secret"]?.string else {
+                
+                return Abort.badRequest.reason
+            }
+            
+            guard let amount = req.data["amount"]?.string else {
+                
+                return Abort.badRequest.reason
+            }
+            
+            let json = Ripple(drop:self).send(address1: address1, address2: address2, secret: secret, amount: amount)
+            
+            return json
+            
+        }
+        
+        get("newAddress") { req in
+            
+            let json = Ripple(drop: self).generateWallet()
+            
+            return json
+        }
+        
         get("hello") { req in
             var json = JSON()
             try json.set("hello", "world")
-            Ripple(drop:self).send(address1: "rNhd9kzNBS4foYxm6NLHBj5Ve3XPVeBo2k", address2: "rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg", secret: "snYzgmDkteVeeGRNmaUeTowS1712K", amount: "0.01")
+            
+            
             return json
         }
 
