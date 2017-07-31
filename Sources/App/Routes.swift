@@ -1,7 +1,7 @@
 import Vapor
-
 extension Droplet {
     func setupRoutes() throws {
+        
         
         post("balance") { req in
             
@@ -45,9 +45,13 @@ extension Droplet {
         
         get("newAddress") { req in
             
-            let json = Ripple(drop: self).generateWallet()
+            //let json = Ripple(drop: self).generateWallet()
+            let coins = Ripple(drop: self).top10()
+            MongoClient().saveHourRound(coins: coins)
+            let doc = MongoClient().lastHourRound().makeExtendedJSON().serializedString()
+            print(coins[0].percent_change_24h)
             
-            return json
+            return "\(coins[4].percent_change_24h)"
         }
         
         get("hello") { req in

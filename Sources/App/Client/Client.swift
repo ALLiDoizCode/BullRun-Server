@@ -11,6 +11,7 @@ import Foundation
 import Vapor
 import HTTP
 import Unbox
+import MongoKitten
 class Ripple {
     
     var drop:Droplet!
@@ -141,7 +142,6 @@ class Ripple {
                 coin.rank = json.object?["rank"]?.int
                 coin.symbol = json.object?["symbol"]?.string
                 coin.total_supply = json.object?["total_supply"]?.string
-                
                 coins.append(coin)
             }
             
@@ -159,7 +159,7 @@ class Ripple {
         var json:JSON!
         
         do {
-            let request = try Request(method: .get, uri: "https://ripple-server.herokuapp.com/newAddress")
+            let request = try Request(method: .get, uri:"https://ripple-server.herokuapp.com/newAddress")
             //request.headers["Authorization"] = "Bearer \(SECERT)"
             let response = try drop.client.respond(to: request)
             json = response.json
