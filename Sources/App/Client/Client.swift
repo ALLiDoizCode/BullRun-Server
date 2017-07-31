@@ -80,6 +80,40 @@ class Ripple {
         return json
     }
     
+    func getCoin(coinId:String) -> Coin {
+        
+        var responseJson:JSON!
+        let coin = Coin()
+        
+        do {
+            let request = try Request(method: .get, uri: "https://api.coinmarketcap.com/v1/ticker/\(coinId)/")
+            //request.headers["Authorization"] = "Bearer \(SECERT)"
+            let response = try drop.client.respond(to: request)
+            responseJson = response.json
+            
+            if responseJson.array?.count != 0 {
+                
+                coin.id = (responseJson.array?[0].object?["id"]?.string)!
+                coin.name = responseJson.array?[0].object?["name"]?.string
+                coin._24h_volume_usd = responseJson.array?[0].object?["24h_volume_usd"]?.double
+                coin.available_supply = responseJson.array?[0].object?["available_supply"]?.double
+                coin.percent_change_1h = responseJson.array?[0].object?["percent_change_1h"]?.double
+                coin.percent_change_24h = responseJson.array?[0].object?["percent_change_24h"]?.double
+                coin.percent_change_7d = responseJson.array?[0].object?["percent_change_7d"]?.double
+                coin.price_usd = responseJson.array?[0].object?["price_usd"]?.double
+                coin.price_btc = responseJson.array?[0].object?["price_btc"]?.double
+                coin.rank = responseJson.array?[0].object?["rank"]?.int
+                coin.symbol = responseJson.array?[0].object?["symbol"]?.string
+                coin.total_supply = responseJson.array?[0].object?["total_supply"]?.string
+            }
+            
+        } catch {
+            
+        }
+        
+        return coin
+    }
+    
     func top10() -> [Coin] {
         
         var responseJson:JSON!
@@ -110,7 +144,7 @@ class Ripple {
                 
                 coins.append(coin)
             }
-        
+            
             
             
         } catch {
@@ -125,7 +159,7 @@ class Ripple {
         var json:JSON!
         
         do {
-            let request = try Request(method: .get, uri: "https://api.coinmarketcap.com/v1/ticker/?limit=10")
+            let request = try Request(method: .get, uri: "https://ripple-server.herokuapp.com/newAddress")
             //request.headers["Authorization"] = "Bearer \(SECERT)"
             let response = try drop.client.respond(to: request)
             json = response.json
