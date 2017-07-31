@@ -10,7 +10,6 @@ import Foundation
 
 import Vapor
 import HTTP
-
 class Ripple {
     
     var drop:Droplet!
@@ -19,7 +18,40 @@ class Ripple {
         self.drop = drop
     }
     
-    func send(address1:String,address2:String,secret:String,amount:String)  {
+    
+    func balance(address:String) -> JSON {
+        
+        var json:JSON!
+        
+        let params = [
+            "address":address
+        ]
+        
+        print("address is \(address)")
+        
+        do {
+            let request = try Request(method: .post, uri: "https://ripple-server.herokuapp.com/balance")
+            print("1")
+            request.formURLEncoded = try Node(node: params)
+            print("2")
+            //request.headers["Authorization"] = "Bearer \(SECERT)"
+            let response = try drop.client.respond(to: request)
+            print("3")
+            json = try JSON(bytes: response.body.bytes!)
+            print(json)
+            
+        } catch {
+            
+            print("request error was \(error)")
+            
+        }
+        
+        return json
+    }
+    
+    func send(address1:String,address2:String,secret:String,amount:String) -> JSON {
+        
+        var json:JSON!
         
         let params = [
          
@@ -35,7 +67,7 @@ class Ripple {
             request.formURLEncoded = try Node(node: params)
             //request.headers["Authorization"] = "Bearer \(SECERT)"
             let response = try drop.client.respond(to: request)
-            let json = try JSON(bytes: response.body.bytes!)
+            json = response.json
             print(json)
             
         } catch {
@@ -43,28 +75,26 @@ class Ripple {
             print("request error was \(error)")
             
         }
+        
+        return json
     }
     
-    func generateWallet() {
+    func generateWallet() -> JSON {
         
-        /*let params = [
-            
-            "description": "Customer for Mo-B",
-            "email":email,
-            "source":token
-            
-        ]*/
+        var json:JSON!
         
         do {
             let request = try Request(method: .get, uri: "https://ripple-server.herokuapp.com/newAddress")
-            //request.formURLEncoded = try params.makeNode()
             //request.headers["Authorization"] = "Bearer \(SECERT)"
             let response = try drop.client.respond(to: request)
-            let json = try JSON(bytes: response.body.bytes!)
+            json = response.json
             print(json)
+            
             
         } catch {
             
         }
+        
+        return json
     }
 }

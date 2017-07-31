@@ -24,6 +24,19 @@ class RouteTests: TestCase {
             .assertStatus(is: .ok)
             .assertBody(contains: "0.0.0.0")
     }
+    
+    func testExample() {
+        
+        //let expect = expectation(description: "should get json")
+        
+        Ripple(drop: drop).balance(address:"rNhd9kzNBS4foYxm6NLHBj5Ve3XPVeBo2k")
+        
+        //expect.fulfill()
+        //waitForExpectations(timeout: 10, handler: nil)
+        //
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
 }
 
 // MARK: Manifest
