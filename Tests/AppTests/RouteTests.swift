@@ -2,6 +2,7 @@ import XCTest
 import Foundation
 import Testing
 import HTTP
+import Crypto
 @testable import Vapor
 @testable import App
 
@@ -27,9 +28,11 @@ class RouteTests: TestCase {
     
     func testExample() {
         
+        
+        
         //let expect = expectation(description: "should get json")
         
-        Ripple(drop: drop).balance(address:"rNhd9kzNBS4foYxm6NLHBj5Ve3XPVeBo2k")
+        //Ripple(drop: drop).balance(address:"rNhd9kzNBS4foYxm6NLHBj5Ve3XPVeBo2k")
         
         //expect.fulfill()
         //waitForExpectations(timeout: 10, handler: nil)
