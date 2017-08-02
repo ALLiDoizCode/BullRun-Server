@@ -9,9 +9,7 @@ let package = Package(
     dependencies: [
         .Package(url: "https://github.com/vapor/vapor.git", majorVersion: 2),
         .Package(url: "https://github.com/vapor/fluent-provider.git", majorVersion: 1),
-        .Package(url: "https://github.com/johnsundell/unbox.git", majorVersion: 2),
-        .Package(url: "https://github.com/OpenKitten/MongoKitten.git", majorVersion: 4),
-        .Package(url: "https://github.com/BrettRToomey/Jobs.git", majorVersion: 1)
+        .Package(url: "https://github.com/OpenKitten/MongoKitten.git", majorVersion: 4)
     ],
     exclude: [
         "Config",

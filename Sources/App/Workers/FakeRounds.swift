@@ -9,7 +9,7 @@
 import Foundation
 import Vapor
 
-func bet(coins:[Coin],drop:Droplet) {
+/*func bet(coins:[Coin],drop:Droplet) {
     
     let randomNum1:Int = Int(arc4random_uniform(UInt32(coins.count)))
     let randomNum2:Int = Int(arc4random_uniform(UInt32(coins.count)))
@@ -39,4 +39,4 @@ func bet(coins:[Coin],drop:Droplet) {
     
     MongoClient().saveHourBet(wallet: bet1)
     MongoClient().saveHourBet(wallet: bet2)
-}
+}*/

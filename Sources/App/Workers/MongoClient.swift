@@ -8,6 +8,7 @@
 
 import Foundation
 import MongoKitten
+import CryptoSwift
 
 extension ObjectId {
     public init?(from string: String) throws {
@@ -16,8 +17,6 @@ extension ObjectId {
 }
 
 class MongoClient {
-    
-    //var db:Database!
     
     var hourColleciton:MongoCollection!
     var dayCollection:MongoCollection!
@@ -45,9 +44,28 @@ class MongoClient {
             dayAddressCollection = database["DayAddress"]
             weekAddressCollection = database["WeekAdsress"]
             print("Successfully connected!")
+            
         } else {
             print("Connection failed")
         }
+    }
+    
+    
+    func encrypt(text:String) -> String {
+    
+        let plain = text.bytes
+        let encrypted = try! plain.encrypt(cipher:Rabbit(key: HASH_KEY))
+        
+        return encrypted.toHexString()
+    }
+    
+    func decrypt(text:String) -> String{
+        
+        let bytes = Array<UInt8>(hex: text)
+        
+        let decrypted = try! bytes.decrypt(cipher: Rabbit(key: HASH_KEY))
+        
+        return decrypted.makeString()
     }
     
     func deleteHourBets() {
@@ -101,14 +119,14 @@ class MongoClient {
         try! weekBetCollection.insert(document)
     }
     
-    func saveHourRound(coins:[Coin],address:String,secert:String){
+    func saveHourRound(coins:[Coin]){
         
         guard coins.count != 0  else {
             
             return
         }
         
-        try! hourAddressColleciton.remove()
+        //try! hourAddressColleciton.remove()
         
         try! hourColleciton.remove()
         
@@ -122,24 +140,24 @@ class MongoClient {
             try! hourColleciton.insert(document)
         }
         
-        let document:Document = [
+        /*let document:Document = [
             
             "address":address,
             "secret":secert
         ]
         
-        try! hourAddressColleciton.insert(document)
+        try! hourAddressColleciton.insert(document)*/
         
     }
     
-    func saveDayRound(coins:[Coin],address:String,secert:String){
+    func saveDayRound(coins:[Coin]){
         
         guard coins.count != 0  else {
             
             return
         }
         
-        try! dayAddressCollection.remove()
+        //try! dayAddressCollection.remove()
         try! dayCollection.remove()
         
         for coin in coins {
@@ -152,23 +170,23 @@ class MongoClient {
             try! dayCollection.insert(document)
         }
         
-        let document:Document = [
+        /*let document:Document = [
             
             "address":address,
             "secret":secert
-        ]
+        ]*/
         
-        try! dayAddressCollection.insert(document)
+        //try! dayAddressCollection.insert(document)
     }
     
-    func saveWeekRound(coins:[Coin],address:String,secert:String){
+    func saveWeekRound(coins:[Coin]){
         
         guard coins.count != 0  else {
             
             return
         }
         
-        try! weekAddressCollection.remove()
+        //try! weekAddressCollection.remove()
         try! weekCollection.remove()
         
         for coin in coins {
@@ -181,13 +199,13 @@ class MongoClient {
             try! weekCollection.insert(document)
         }
         
-        let document:Document = [
+        /*let document:Document = [
             
             "address":address,
             "secret":secert
         ]
         
-        try! weekAddressCollection.insert(document)
+        try! weekAddressCollection.insert(document)*/
     }
     
     func lastHourRound() -> ([Document],[Document],Document){

@@ -2,6 +2,7 @@ import XCTest
 import Foundation
 import Testing
 import HTTP
+import Crypto
 @testable import Vapor
 @testable import App
 
@@ -26,6 +27,8 @@ class RouteTests: TestCase {
     }
     
     func testExample() {
+        
+        
         
         //let expect = expectation(description: "should get json")
         

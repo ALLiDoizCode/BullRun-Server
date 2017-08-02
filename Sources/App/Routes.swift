@@ -50,10 +50,34 @@ extension Droplet {
             return json
         }
         
+        get("hourRound") { req in 
+            
+            Schedule(drop: self).hourRound()
+            
+            return "Running Hour Round"
+            
+        }
+        
+        get("dailyRound") { req in
+            
+            Schedule(drop: self).dayRound()
+            
+            return "Running Day Round"
+            
+        }
+        
+        get("weekRound") { req in
+            
+            Schedule(drop: self).weekRound()
+            
+            return "Running week Round"
+            
+        }
+        
         get("hello") { req in
             var json = JSON()
             try json.set("hello", "world")
-            Schedule(drop: self).seconds()
+            MongoClient()
             return json
         }
 
