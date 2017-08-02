@@ -96,6 +96,13 @@ class MongoClient {
         try! payOutCollection.insert(document)
     }
     
+    func payouts() -> JSON {
+        
+        let results = try! payOutCollection.find().array.makeExtendedJSON()
+        
+        return results as! JSON
+    }
+    
     func saveHourBet(wallet:Wallet) {
         
         let document:Document = [
@@ -147,7 +154,11 @@ class MongoClient {
             
             let document:Document = [
                 
-                "coin":coin.id
+                "coin":coin.id,
+                "name":coin.name,
+                "percent":coin.percent_change_1h,
+                "usd":coin.price_usd,
+                "BTC":coin.price_btc
             ]
             
             try! hourColleciton.insert(document)
@@ -177,7 +188,11 @@ class MongoClient {
             
             let document:Document = [
                 
-                "coin":coin.id
+                "coin":coin.id,
+                "name":coin.name,
+                "percent":coin.percent_change_1h,
+                "usd":coin.price_usd,
+                "BTC":coin.price_btc
             ]
             
             try! dayCollection.insert(document)
@@ -206,7 +221,11 @@ class MongoClient {
             
             let document:Document = [
                 
-                "coin":coin.id
+                "coin":coin.id,
+                "name":coin.name,
+                "percent":coin.percent_change_1h,
+                "usd":coin.price_usd,
+                "BTC":coin.price_btc
             ]
             
             try! weekCollection.insert(document)
