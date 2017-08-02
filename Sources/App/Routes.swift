@@ -74,7 +74,14 @@ extension Droplet {
             
             let json = Ripple(drop: self).send(address1: wallet.address, address2: roundAddress, secret: secret, amount: String(amount))
             
-            MongoClient().saveHourBet(wallet: wallet)
+            let success = json["resultCode"]?.string
+            
+            if success == "tesSUCCESS" {
+                
+                print("currency sent")
+                
+                MongoClient().saveHourBet(wallet: wallet)
+            }
             
             return json
         }
@@ -110,7 +117,14 @@ extension Droplet {
             
             let json = Ripple(drop: self).send(address1: wallet.address, address2: roundAddress, secret: secret, amount: String(amount))
             
-            MongoClient().saveDayBet(wallet: wallet)
+            let success = json["resultCode"]?.string
+            
+            if success == "tesSUCCESS" {
+                
+                print("currency sent")
+                
+                MongoClient().saveDayBet(wallet: wallet)
+            }
             
             return json
         }
@@ -146,7 +160,14 @@ extension Droplet {
             
             let json = Ripple(drop: self).send(address1: wallet.address, address2: roundAddress, secret: secret, amount: String(amount))
             
-            MongoClient().saveWeekBet(wallet: wallet)
+            let success = json["resultCode"]?.string
+            
+            if success == "tesSUCCESS" {
+                
+                print("currency sent")
+                
+                MongoClient().saveWeekBet(wallet: wallet)
+            }
             
             return json
         }
