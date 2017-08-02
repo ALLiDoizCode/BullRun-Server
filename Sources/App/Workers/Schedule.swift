@@ -21,7 +21,7 @@ class Schedule {
     
     func seconds() {
         
-        Jobs.add(interval: .seconds(2)) {
+        Jobs.add(interval: .seconds(5)) {
             
             var oldCoins:[Coin] = []
             var winningBets:Double = 0
@@ -32,7 +32,9 @@ class Schedule {
             ///payouts
             let round = MongoClient().lastHourRound()
             
-            if round.1.count != 0 {
+            print("roun is \(round) count is \(round.0.count)")
+            
+            if round.0.count != 0 {
                 
                 for coin in round.0 {
                     
@@ -75,20 +77,32 @@ class Schedule {
                     
                     let payout = Math().payout(winningBets: winningBets, currentBet: player.1, pool: pool, stake: stake)
                     
+                    print("paided out \(payout) to address \(player.0)")
+                    
+                    if player.0 == address2 {
+                        
+                        Ripple(drop: self.drop).send(address1: address1, address2: address2, secret: secert1, amount: String(payout))
+                    }
+                    
                     payouts += payout
                 }
                 
                 let check = Math().payoutAmountCheck(payouts: payouts, pool: pool)
                 
-                print("paid out correct amount: \(check)")
+                print("paid out correct amount: \(check), payouts:\(payouts),pool:\(pool)")
                 
                 MongoClient().deleteHourBets()
+                
+                
             }
             
             let top10 = Ripple(drop: self.drop).top10()
             
             MongoClient().saveHourRound(coins:top10)
+            
+            bet(coins: top10,drop:self.drop)
         }
+        
     }
     
     func hourRound() {
@@ -145,7 +159,6 @@ class Schedule {
                 
                 for player in winingPlayers {
                     
-                    
                     let payout = Math().payout(winningBets: winningBets, currentBet: player.1, pool: pool, stake: stake)
                     
                     payouts += payout
@@ -153,7 +166,7 @@ class Schedule {
                 
                 let check = Math().payoutAmountCheck(payouts: payouts, pool: pool)
                 
-                print("paid out correct amount: \(check)")
+                print("paid out correct amount: \(check), payouts:\(payouts),pool:\(pool)")
                 
                 MongoClient().deleteHourBets()
             }

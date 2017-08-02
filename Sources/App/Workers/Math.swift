@@ -11,7 +11,7 @@ class Math {
     
     func payoutAmountCheck(payouts:Double,pool:Double) -> Bool {
         
-        if payouts == pool {
+        if payouts == pool || payouts == 0 {
             return true
         }else {
             return false
