@@ -10,7 +10,6 @@ import Foundation
 
 import Vapor
 import HTTP
-import Unbox
 import MongoKitten
 class Ripple {
     

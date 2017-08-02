@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Unbox
 class Coin {
     
     var id:String = ""

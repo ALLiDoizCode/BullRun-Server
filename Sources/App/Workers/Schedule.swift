@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 import Vapor
 class Schedule {
     
