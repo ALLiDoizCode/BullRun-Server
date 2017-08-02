@@ -81,7 +81,7 @@ class Schedule {
                 payouts += payout
                 
                 print("paided out \(payout) to address \(player.0)")
-                
+                MongoClient().savePayout(address: player.0, amount: payout)
                 Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
             }
             
@@ -161,7 +161,7 @@ class Schedule {
                 payouts += payout
                 
                 print("paided out \(payout) to address \(player.0)")
-                
+                MongoClient().savePayout(address: player.0, amount: payout)
                 Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
             }
             
@@ -240,7 +240,7 @@ class Schedule {
                 payouts += payout
                 
                 print("paided out \(payout) to address \(player.0)")
-                
+                MongoClient().savePayout(address: player.0, amount: payout)
                 Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
             }
             

@@ -27,6 +27,7 @@ class MongoClient {
     var hourAddressColleciton:MongoCollection!
     var dayAddressCollection:MongoCollection!
     var weekAddressCollection:MongoCollection!
+    var payOutCollection:MongoCollection!
     
     
     init() {
@@ -43,6 +44,7 @@ class MongoClient {
             hourAddressColleciton = database["HourAddress"]
             dayAddressCollection = database["DayAddress"]
             weekAddressCollection = database["WeekAdsress"]
+            payOutCollection = database["Payout"]
             print("Successfully connected!")
             
         } else {
@@ -81,6 +83,17 @@ class MongoClient {
     func deleteWeekBets() {
         
         try! weekBetCollection.remove()
+    }
+    
+    func savePayout(address:String,amount:Double) {
+        
+        let document:Document = [
+            
+            "address":address,
+            "amount":amount
+        ]
+        
+        try! payOutCollection.insert(document)
     }
     
     func saveHourBet(wallet:Wallet) {
