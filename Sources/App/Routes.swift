@@ -45,20 +45,15 @@ extension Droplet {
         
         get("newAddress") { req in
             
-            //let json = Ripple(drop: self).generateWallet()
-            let coins = Ripple(drop: self).top10()
-            MongoClient().saveHourRound(coins: coins)
-            let doc = MongoClient().lastHourRound().makeExtendedJSON().serializedString()
-            print(coins[0].percent_change_24h)
-            
-            return "\(coins[4].percent_change_24h)"
+            let json = Ripple(drop: self).generateWallet()
+        
+            return json
         }
         
         get("hello") { req in
             var json = JSON()
             try json.set("hello", "world")
-            
-            
+            Schedule(drop: self).seconds()
             return json
         }
 

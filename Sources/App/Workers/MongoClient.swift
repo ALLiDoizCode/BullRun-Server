@@ -22,6 +22,9 @@ class MongoClient {
     var hourColleciton:MongoCollection!
     var dayCollection:MongoCollection!
     var weekCollection:MongoCollection!
+    var hourBetColleciton:MongoCollection!
+    var dayBetCollection:MongoCollection!
+    var weekBetCollection:MongoCollection!
     
     
     init() {
@@ -32,10 +35,64 @@ class MongoClient {
             hourColleciton = database["Hour"]
             dayCollection = database["Day"]
             weekCollection = database["Week"]
+            hourBetColleciton = database["BetHour"]
+            dayBetCollection = database["BetDay"]
+            weekBetCollection = database["BetWeek"]
             print("Successfully connected!")
         } else {
             print("Connection failed")
         }
+    }
+    
+    func deleteHourBets() {
+        
+        try! hourBetColleciton.remove()
+    }
+    
+    func deleteDayBets() {
+        
+        try! dayBetCollection.remove()
+    }
+    
+    func deleteWeekBets() {
+        
+        try! weekBetCollection.remove()
+    }
+    
+    func saveHourBet(wallet:Wallet) {
+        
+        let document:Document = [
+            
+            "address":wallet.address,
+            "coin":wallet.hourBet.coinId,
+            "amount":wallet.hourBet.amount
+        ]
+        
+        try! hourBetColleciton.insert(document)
+    }
+    
+    func saveDayBet(wallet:Wallet) {
+        
+        let document:Document = [
+            
+            "address":wallet.address,
+            "coin":wallet.dayBet.coinId,
+            "amount":wallet.dayBet.amount
+        ]
+        
+        try! dayBetCollection.insert(document)
+    }
+    
+    func saveWeekBet(wallet:Wallet) {
+        
+        let document:Document = [
+            
+            "address":wallet.address,
+            "coin":wallet.weekBet.coinId,
+            "amount":wallet.weekBet.amount
+        ]
+        
+        try! weekBetCollection.insert(document)
     }
     
     func saveHourRound(coins:[Coin]){
@@ -47,19 +104,16 @@ class MongoClient {
         
         try! hourColleciton.remove()
         
-        var array:[String] = []
-        
         for coin in coins {
             
-            array.append(coin.id)
+            let document:Document = [
+                
+                "coin":coin.id
+            ]
+            
+            try! hourColleciton.insert(document)
         }
         
-        let document:Document = [
-        
-            "coins":array
-        ]
-        
-        try! hourColleciton.insert(document)
     }
     
     func saveDayRound(coins:[Coin]){
@@ -71,19 +125,15 @@ class MongoClient {
         
         try! dayCollection.remove()
         
-        var array:[String] = []
-        
         for coin in coins {
             
-            array.append(coin.id)
-        }
-        
-        let document:Document = [
+            let document:Document = [
+                
+                "coin":coin.id
+            ]
             
-            "coins":array
-        ]
-        
-        try! dayCollection.insert(document)
+            try! dayCollection.insert(document)
+        }
     }
     
     func saveWeekRound(coins:[Coin]){
@@ -95,40 +145,39 @@ class MongoClient {
         
         try! weekCollection.remove()
         
-        var array:[String] = []
-        
         for coin in coins {
             
-            array.append(coin.id)
-        }
-        
-        let document:Document = [
+            let document:Document = [
+                
+                "coin":coin.id
+            ]
             
-            "coins":array
-        ]
-        
-        try! weekCollection.insert(document)
+            try! weekCollection.insert(document)
+        }
     }
     
-    func lastHourRound() -> Document{
+    func lastHourRound() -> ([Document],[Document]){
         
-        let lastEntity: Document = try! hourColleciton.find().first!
+        let lastEntity: [Document] = try! hourColleciton.find().array
+        let bets:[Document] = try! hourBetColleciton.find().array
         
-        return lastEntity
+        return (lastEntity,bets)
     }
     
-    func lastDayRound() -> Document{
+    func lastDayRound() -> ([Document],[Document]){
         
-        let lastEntity: Document = try! dayCollection.find().first!
+        let lastEntity: [Document] = try! dayCollection.find().array
+        let bets:[Document] = try! dayBetCollection.find().array
         
-        return lastEntity
+        return (lastEntity,bets)
     }
     
-    func lastWeekRound() -> Document{
+    func lastWeekRound() -> ([Document],[Document]){
         
-        let lastEntity: Document = try! weekCollection.find().first!
+        let lastEntity: [Document] = try! weekCollection.find().array
+        let bets:[Document] = try! weekBetCollection.find().array
         
-        return lastEntity
+        return (lastEntity,bets)
     }
     
     //let insertedID = try collection.insert(document)

@@ -9,6 +9,15 @@
 import Foundation
 class Math {
     
+    func payoutAmountCheck(payouts:Double,pool:Double) -> Bool {
+        
+        if payouts == pool {
+            return true
+        }else {
+            return false
+        }
+    }
+    
     func winners1hr(coins:[Coin]) -> ([String],[Coin]) {
         
         var winningCoins:[String] = []
