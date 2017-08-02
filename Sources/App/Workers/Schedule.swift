@@ -31,8 +31,11 @@ class Schedule {
         ///payouts
         let round = MongoClient().lastHourRound()
         
-        currentRoundAddress = String(describing: round.2["address"])
-        currentRoundSecret = String(describing: round.2["secret"])
+        let decryptAddress = MongoClient().decrypt(text: String(describing: round.2["address"]))
+        let decryptSecert = MongoClient().decrypt(text: String(describing: round.2["secret"]))
+        
+        currentRoundAddress = decryptAddress
+        currentRoundSecret = decryptSecert
         
         if round.1.count != 0 {
             
@@ -110,8 +113,11 @@ class Schedule {
         ///payouts
         let round = MongoClient().lastDayRound()
         
-        currentRoundAddress = String(describing: round.2["address"])
-        currentRoundSecret = String(describing: round.2["secret"])
+        let decryptAddress = MongoClient().decrypt(text: String(describing: round.2["address"]))
+        let decryptSecert = MongoClient().decrypt(text: String(describing: round.2["secret"]))
+
+        currentRoundAddress = decryptAddress
+        currentRoundSecret = decryptSecert
         
         if round.1.count != 0 {
             
@@ -189,8 +195,11 @@ class Schedule {
         ///payouts
         let round = MongoClient().lastWeekRound()
         
-        currentRoundAddress = String(describing: round.2["address"])
-        currentRoundSecret = String(describing: round.2["secret"])
+        let decryptAddress = MongoClient().decrypt(text: String(describing: round.2["address"]))
+        let decryptSecert = MongoClient().decrypt(text: String(describing: round.2["secret"]))
+        
+        currentRoundAddress = decryptAddress
+        currentRoundSecret = decryptSecert
         
         if round.1.count != 0 {
             
