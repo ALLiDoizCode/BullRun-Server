@@ -217,7 +217,27 @@ extension Droplet {
             
             let json = MongoClient(database:database).payouts()
             
-            return json
+            var payouts:[JSON] = []
+            
+            for payout in json {
+                
+                let object = try! JSON(node: [
+                    
+                    "address":payout["address"],
+                    "amount":payout["amount"]
+                    
+                    ])
+                
+                
+                payouts.append(object)
+            }
+            
+            let jsonObject = try! JSON(node: [
+                
+                    "payouts":payouts
+                ])
+            
+            return jsonObject
         }
         
         get("HourCoins") { req in

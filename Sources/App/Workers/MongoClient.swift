@@ -89,11 +89,11 @@ class MongoClient {
         try! payOutCollection.insert(document)
     }
     
-    func payouts() -> JSON {
+    func payouts() -> [Document] {
         
-        let results = try! payOutCollection.find().array.makeExtendedJSON()
+        let results = try! payOutCollection.find().array
         
-        return results as! JSON
+        return results
     }
     
     func saveHourBet(wallet:Wallet) {
