@@ -34,8 +34,8 @@ class Schedule {
         ///payouts
         let round = MongoClient(database: database).lastHourRound()
         
-        let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]))
-        let decryptSecert = MongoClient(database: database).decrypt(text: String(describing: round.2["secret"]))
+        let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]!))
+        let decryptSecert = MongoClient(database: database).decrypt(text: String(describing: round.2["secret"]!))
         
         currentRoundAddress = decryptAddress
         currentRoundSecret = decryptSecert
@@ -127,8 +127,8 @@ class Schedule {
         ///payouts
         let round = MongoClient(database: database).lastDayRound()
         
-        let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]))
-        let decryptSecert = MongoClient(database: database).decrypt(text: String(describing: round.2["secret"]))
+        let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]!))
+        let decryptSecert = MongoClient(database: database).decrypt(text: String(describing: round.2["secret"]!))
 
         currentRoundAddress = decryptAddress
         currentRoundSecret = decryptSecert
@@ -220,8 +220,8 @@ class Schedule {
         ///payouts
         let round = MongoClient(database: database).lastWeekRound()
         
-        let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]))
-        let decryptSecert = MongoClient(database: database).decrypt(text: String(describing: round.2["secret"]))
+        let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]!))
+        let decryptSecert = MongoClient(database: database).decrypt(text: String(describing: round.2["secret"]!))
         
         currentRoundAddress = decryptAddress
         currentRoundSecret = decryptSecert

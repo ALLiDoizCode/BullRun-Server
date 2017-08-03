@@ -342,6 +342,29 @@ extension Droplet {
             return jsonObject
         }
         
+        get("check") { req in
+            
+            let round = MongoClient(database: database).lastHourRound()
+            
+            let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]!))
+            
+            let round2 = MongoClient(database: database).lastDayRound()
+            
+            let decryptAddress2 = MongoClient(database: database).decrypt(text: String(describing: round2.2["address"]!))
+            
+            let json = Ripple(drop:self).balance(address: decryptAddress)
+            let json2 = Ripple(drop:self).balance(address: decryptAddress2)
+            
+            print(json)
+            print(json2)
+            
+            return try! JSON(node:[
+                
+                    "hour":json,
+                    "day":json2
+                ])
+        }
+        
         get("WeekCoins") { req in
             
             let coins = MongoClient(database:database).lastWeekRound().0.array
