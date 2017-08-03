@@ -72,8 +72,19 @@ class Schedule {
             
             ///pay myself fee
             let BOOK_PAY = pool * fee
-            Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(BOOK_PAY))
-            pool = pool - BOOK_PAY
+            if winingPlayers.count == 0 {
+                
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(pool))
+                
+                pool = pool - pool
+                
+            }else {
+                
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(BOOK_PAY))
+                
+                pool = pool - BOOK_PAY
+            }
+            
             //////////////////
             
             for player in winingPlayers {
@@ -155,8 +166,19 @@ class Schedule {
             
             ///pay myself fee
             let BOOK_PAY = pool * fee
-            Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(BOOK_PAY))
-            pool = pool - BOOK_PAY
+            if winingPlayers.count == 0 {
+                
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(pool))
+                
+                pool = pool - pool
+                
+            }else {
+                
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(BOOK_PAY))
+                
+                pool = pool - BOOK_PAY
+            }
+            
             //////////////////
             
             for player in winingPlayers {
@@ -237,8 +259,20 @@ class Schedule {
             
             ///pay myself fee
             let BOOK_PAY = pool * fee
-            Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(BOOK_PAY))
-            pool = pool - BOOK_PAY
+            
+            if winingPlayers.count == 0 {
+                
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(pool))
+                
+                pool = pool - pool
+                
+            }else {
+                
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(BOOK_PAY))
+                
+                pool = pool - BOOK_PAY
+            }
+            
             //////////////////
             
             for player in winingPlayers {
