@@ -54,6 +54,7 @@ extension Droplet {
         }
         
         post("betHour") { req in
+            print(1)
             
             guard let address = req.data["address"]?.string else {
                 
@@ -65,24 +66,33 @@ extension Droplet {
                 throw Abort.badRequest
             }
             
-            guard let amount = req.data["amount"]?.double else {
+            print(2)
+            
+            guard let amount = req.data["amount"]?.string else {
                 
                 throw Abort.badRequest
             }
-            
+            print(3)
             guard let coin = req.data["coin"]?.string else {
                 
                 throw Abort.badRequest
             }
+            print(4)
+            
+            print(Double(amount)!)
             
             let wallet = Wallet()
             wallet.address = address
-            wallet.hourBet.amount = amount
+            wallet.hourBet.amount = Double(amount)!
             wallet.dayBet.coinId = coin
             
-            let roundAddress = String(describing: MongoClient(database:database).lastHourRound().2["address"])
+            let roundAddress = String(describing: MongoClient(database:database).lastHourRound().2["address"]!)
             
-            let json = Ripple(drop: self).send(address1: wallet.address, address2: roundAddress, secret: secret, amount: String(amount))
+            let decrypted = MongoClient(database: database).decrypt(text: roundAddress)
+            
+            print(decrypted)
+            
+            let json = Ripple(drop: self).send(address1: wallet.address, address2: decrypted, secret: secret, amount: String(amount))
             
             let success = json["resultCode"]?.string
             
@@ -108,7 +118,7 @@ extension Droplet {
                 throw Abort.badRequest
             }
             
-            guard let amount = req.data["amount"]?.double else {
+            guard let amount = req.data["amount"]?.string else {
                 
                 throw Abort.badRequest
             }
@@ -120,12 +130,16 @@ extension Droplet {
             
             let wallet = Wallet()
             wallet.address = address
-            wallet.dayBet.amount = amount
+            wallet.dayBet.amount = Double(amount)!
             wallet.dayBet.coinId = coin
             
-            let roundAddress = String(describing: MongoClient(database:database).lastDayRound().2["address"])
+            let roundAddress = String(describing: MongoClient(database:database).lastDayRound().2["address"]!)
             
-            let json = Ripple(drop: self).send(address1: wallet.address, address2: roundAddress, secret: secret, amount: String(amount))
+            let decrypted = MongoClient(database: database).decrypt(text: roundAddress)
+            
+            print(decrypted)
+            
+            let json = Ripple(drop: self).send(address1: wallet.address, address2: decrypted, secret: secret, amount: String(amount))
             
             let success = json["resultCode"]?.string
             
@@ -151,7 +165,7 @@ extension Droplet {
                 throw Abort.badRequest
             }
             
-            guard let amount = req.data["amount"]?.double else {
+            guard let amount = req.data["amount"]?.string else {
                 
                 throw Abort.badRequest
             }
@@ -163,12 +177,16 @@ extension Droplet {
             
             let wallet = Wallet()
             wallet.address = address
-            wallet.weekBet.amount = amount
+            wallet.weekBet.amount = Double(amount)!
             wallet.weekBet.coinId = coin
             
-            let roundAddress = String(describing: MongoClient(database:database).lastWeekRound().2["address"])
+            let roundAddress = String(describing: MongoClient(database:database).lastWeekRound().2["address"]!)
             
-            let json = Ripple(drop: self).send(address1: wallet.address, address2: roundAddress, secret: secret, amount: String(amount))
+            let decrypted = MongoClient(database: database).decrypt(text: roundAddress)
+            
+            print(decrypted)
+            
+            let json = Ripple(drop: self).send(address1: wallet.address, address2: decrypted, secret: secret, amount: String(amount))
             
             let success = json["resultCode"]?.string
             
