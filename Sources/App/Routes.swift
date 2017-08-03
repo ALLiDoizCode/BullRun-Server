@@ -17,7 +17,7 @@ extension Droplet {
             
             guard let address = req.data["address"]?.string else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             let json = Ripple(drop:self).balance(address: address)
             
@@ -29,22 +29,22 @@ extension Droplet {
             
             guard let address1 = req.data["address1"]?.string else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             guard let address2 = req.data["address2"]?.string else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             guard let secret = req.data["secret"]?.string else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             guard let amount = req.data["amount"]?.string else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             let json = Ripple(drop:self).send(address1: address1, address2: address2, secret: secret, amount: amount)
@@ -57,22 +57,22 @@ extension Droplet {
             
             guard let address = req.data["address"]?.string else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             guard let secret = req.data["secret"]?.string else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             guard let amount = req.data["amount"]?.double else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             guard let coin = req.data["coin"]?.string else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             let wallet = Wallet()
@@ -100,22 +100,22 @@ extension Droplet {
             
             guard let address = req.data["address"]?.string else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             guard let secret = req.data["secret"]?.string else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             guard let amount = req.data["amount"]?.double else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             guard let coin = req.data["coin"]?.string else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             let wallet = Wallet()
@@ -143,22 +143,22 @@ extension Droplet {
             
             guard let address = req.data["address"]?.string else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             guard let secret = req.data["secret"]?.string else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             guard let amount = req.data["amount"]?.double else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             guard let coin = req.data["coin"]?.string else {
                 
-                return Abort.badRequest.reason
+                throw Abort.badRequest
             }
             
             let wallet = Wallet()
