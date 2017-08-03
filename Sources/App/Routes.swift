@@ -1,8 +1,17 @@
 import Vapor
-
+import MongoKitten
 extension Droplet {
     func setupRoutes() throws {
         
+        let server = try! Server("mongodb://heroku_h8lrwkbq:ntcqd6852m09ie14o2v6h4ktqv@ds129003.mlab.com:29003/heroku_h8lrwkbq")
+        let database = server["heroku_h8lrwkbq"]
+        if database.server.isConnected {
+            
+            print("Successfully connected!")
+            
+        } else {
+            print("Connection failed")
+        }
         
         get("balance") { req in
             
@@ -71,7 +80,7 @@ extension Droplet {
             wallet.hourBet.amount = amount
             wallet.dayBet.coinId = coin
             
-            let roundAddress = String(describing: MongoClient().lastHourRound().2["address"])
+            let roundAddress = String(describing: MongoClient(database:database).lastHourRound().2["address"])
             
             let json = Ripple(drop: self).send(address1: wallet.address, address2: roundAddress, secret: secret, amount: String(amount))
             
@@ -81,7 +90,7 @@ extension Droplet {
                 
                 print("currency sent")
                 
-                MongoClient().saveHourBet(wallet: wallet)
+                MongoClient(database:database).saveHourBet(wallet: wallet)
             }
             
             return json
@@ -114,7 +123,7 @@ extension Droplet {
             wallet.dayBet.amount = amount
             wallet.dayBet.coinId = coin
             
-            let roundAddress = String(describing: MongoClient().lastDayRound().2["address"])
+            let roundAddress = String(describing: MongoClient(database:database).lastDayRound().2["address"])
             
             let json = Ripple(drop: self).send(address1: wallet.address, address2: roundAddress, secret: secret, amount: String(amount))
             
@@ -124,7 +133,7 @@ extension Droplet {
                 
                 print("currency sent")
                 
-                MongoClient().saveDayBet(wallet: wallet)
+                MongoClient(database:database).saveDayBet(wallet: wallet)
             }
             
             return json
@@ -157,7 +166,7 @@ extension Droplet {
             wallet.weekBet.amount = amount
             wallet.weekBet.coinId = coin
             
-            let roundAddress = String(describing: MongoClient().lastWeekRound().2["address"])
+            let roundAddress = String(describing: MongoClient(database:database).lastWeekRound().2["address"])
             
             let json = Ripple(drop: self).send(address1: wallet.address, address2: roundAddress, secret: secret, amount: String(amount))
             
@@ -167,7 +176,7 @@ extension Droplet {
                 
                 print("currency sent")
                 
-                MongoClient().saveWeekBet(wallet: wallet)
+                MongoClient(database:database).saveWeekBet(wallet: wallet)
             }
             
             return json
@@ -182,7 +191,7 @@ extension Droplet {
         
         get("hourRound") { req in 
             
-            Schedule(drop: self).hourRound()
+            Schedule(drop: self,database: database).hourRound()
             
             return "Running Hour Round"
             
@@ -190,7 +199,7 @@ extension Droplet {
         
         get("dailyRound") { req in
             
-            Schedule(drop: self).dayRound()
+            Schedule(drop: self,database: database).dayRound()
             
             return "Running Day Round"
             
@@ -198,7 +207,7 @@ extension Droplet {
         
         get("weekRound") { req in
             
-            Schedule(drop: self).weekRound()
+            Schedule(drop: self,database: database).weekRound()
             
             return "Running week Round"
             
@@ -206,55 +215,160 @@ extension Droplet {
         
         get("payout") { req in
             
-            let json = MongoClient().payouts()
+            let json = MongoClient(database:database).payouts()
             
             return json
         }
         
         get("HourCoins") { req in
             
-            let json = MongoClient().lastHourRound().0.makeExtendedJSON()
-            let bets = MongoClient().lastHourRound().1.makeExtendedJSON()
-            let betCounts = MongoClient().lastHourRound().0.count
+            let coins = MongoClient(database:database).lastHourRound().0.array
+            let bets = MongoClient(database:database).lastHourRound().1.array
+            let betCounts = MongoClient(database:database).lastHourRound().1.count
             
-            let jsonObject:JSON = [
+            var coinObject:[JSON] = []
+            var betObject:[JSON] = []
             
-                "coin":json as! JSON,
-                "bets":bets as! JSON,
-                "betCounts":JSON(betCounts)
-            ]
+            for coin in coins {
+                
+                let object = try! JSON(node: [
+                    
+                        "coin":coin["coin"],
+                        "name":coin["name"],
+                        "percent":coin["percent"],
+                        "usd":coin["usd"],
+                        "BTC":coin["BTC"],
+                        
+                    ])
+                
+                
+                coinObject.append(object)
+            }
+            
+            for bet in bets {
+                
+                let object = try! JSON(node: [
+                    
+                    "address":bet["address"],
+                    "coin":bet["coin"],
+                    "amount":bet["amount"],
+                    
+                    ])
+                
+                
+                betObject.append(object)
+            }
+            
+            let jsonObject = try! JSON(node: [
+                
+                    "coin":coinObject,
+                    "bets":betObject,
+                    "betCounts":betCounts
+                
+                ])
+            
             
             return jsonObject
         }
         
         get("DayCoins") { req in
             
-            let json = MongoClient().lastDayRound().0.makeExtendedJSON()
-            let bets = MongoClient().lastDayRound().1.makeExtendedJSON()
-            let betCounts = MongoClient().lastDayRound().0.count
+            let coins = MongoClient(database:database).lastDayRound().0.array
+            let bets = MongoClient(database:database).lastDayRound().1.array
+            let betCounts = MongoClient(database:database).lastDayRound().1.count
             
-            let jsonObject:JSON = [
+            var coinObject:[JSON] = []
+            var betObject:[JSON] = []
+            
+            for coin in coins {
                 
-                "coin":json as! JSON,
-                "bets":bets as! JSON,
-                "betCounts":JSON(betCounts)
-            ]
+                let object = try! JSON(node: [
+                    
+                    "coin":coin["coin"],
+                    "name":coin["name"],
+                    "percent":coin["percent"],
+                    "usd":coin["usd"],
+                    "BTC":coin["BTC"],
+                    
+                    ])
+                
+                
+                coinObject.append(object)
+            }
+            
+            for bet in bets {
+                
+                let object = try! JSON(node: [
+                    
+                    "address":bet["address"],
+                    "coin":bet["coin"],
+                    "amount":bet["amount"],
+                    
+                    ])
+                
+                
+                betObject.append(object)
+            }
+            
+            let jsonObject = try! JSON(node: [
+                
+                "coin":coinObject,
+                "bets":betObject,
+                "betCounts":betCounts
+                
+                ])
+            
             
             return jsonObject
         }
         
         get("WeekCoins") { req in
             
-            let json = MongoClient().lastWeekRound().0.makeExtendedJSON()
-            let bets = MongoClient().lastWeekRound().1.makeExtendedJSON()
-            let betCounts = MongoClient().lastWeekRound().0.count
+            let coins = MongoClient(database:database).lastWeekRound().0.array
+            let bets = MongoClient(database:database).lastWeekRound().1.array
+            let betCounts = MongoClient(database:database).lastWeekRound().1.count
             
-            let jsonObject:JSON = [
+            var coinObject:[JSON] = []
+            var betObject:[JSON] = []
+            
+            for coin in coins {
                 
-                "coin":json as! JSON,
-                "bets":bets as! JSON,
-                "betCounts":JSON(betCounts)
-            ]
+                let object = try! JSON(node: [
+                    
+                    "coin":coin["coin"],
+                    "name":coin["name"],
+                    "percent":coin["percent"],
+                    "usd":coin["usd"],
+                    "BTC":coin["BTC"],
+                    
+                    ])
+                
+                
+                coinObject.append(object)
+            }
+            
+            for bet in bets {
+                
+                let object = try! JSON(node: [
+                    
+                    "address":bet["address"],
+                    "coin":bet["coin"],
+                    "amount":bet["amount"],
+                    
+                    ])
+                
+                
+                betObject.append(object)
+            }
+            
+            let jsonObject = try! JSON(node: [
+                
+                "coin":coinObject,
+                "bets":betObject,
+                "betCounts":betCounts
+                
+                ])
+            
             
             return jsonObject
         }

@@ -8,13 +8,16 @@
 
 import Foundation
 import Vapor
+import MongoKitten
 class Schedule {
     
     let delay:Double = 600.0
     var drop:Droplet!
+    var database:Database!
 
-    init(drop:Droplet) {
+    init(drop:Droplet,database:Database) {
         
+        self.database = database
         self.drop = drop
     }
     
@@ -29,10 +32,10 @@ class Schedule {
         var currentRoundSecret:String = ""
         
         ///payouts
-        let round = MongoClient().lastHourRound()
+        let round = MongoClient(database: database).lastHourRound()
         
-        let decryptAddress = MongoClient().decrypt(text: String(describing: round.2["address"]))
-        let decryptSecert = MongoClient().decrypt(text: String(describing: round.2["secret"]))
+        let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]))
+        let decryptSecert = MongoClient(database: database).decrypt(text: String(describing: round.2["secret"]))
         
         currentRoundAddress = decryptAddress
         currentRoundSecret = decryptSecert
@@ -94,7 +97,7 @@ class Schedule {
                 payouts += payout
                 
                 print("paided out \(payout) to address \(player.0)")
-                MongoClient().savePayout(address: player.0, amount: payout)
+                MongoClient(database: database).savePayout(address: player.0, amount: payout)
                 Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
             }
             
@@ -102,12 +105,12 @@ class Schedule {
             
             print("paid out correct amount: \(check), payouts:\(payouts),pool:\(pool)")
             
-            MongoClient().deleteHourBets()
+            MongoClient(database: database).deleteHourBets()
         }
         
         let top10 = Ripple(drop: self.drop).top10()
         
-        MongoClient().saveHourRound(coins:top10)
+        MongoClient(database: database).saveHourRound(coins:top10)
         
     }
     
@@ -122,10 +125,10 @@ class Schedule {
         var currentRoundSecret:String = ""
         
         ///payouts
-        let round = MongoClient().lastDayRound()
+        let round = MongoClient(database: database).lastDayRound()
         
-        let decryptAddress = MongoClient().decrypt(text: String(describing: round.2["address"]))
-        let decryptSecert = MongoClient().decrypt(text: String(describing: round.2["secret"]))
+        let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]))
+        let decryptSecert = MongoClient(database: database).decrypt(text: String(describing: round.2["secret"]))
 
         currentRoundAddress = decryptAddress
         currentRoundSecret = decryptSecert
@@ -188,7 +191,7 @@ class Schedule {
                 payouts += payout
                 
                 print("paided out \(payout) to address \(player.0)")
-                MongoClient().savePayout(address: player.0, amount: payout)
+                MongoClient(database: database).savePayout(address: player.0, amount: payout)
                 Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
             }
             
@@ -196,12 +199,12 @@ class Schedule {
             
             print("paid out correct amount: \(check), payouts:\(payouts),pool:\(pool)")
             
-            MongoClient().deleteDayBets()
+            MongoClient(database: database).deleteDayBets()
         }
         
         let top10 = Ripple(drop: self.drop).top10()
         
-        MongoClient().saveDayRound(coins:top10)
+        MongoClient(database: database).saveDayRound(coins:top10)
     }
     
     func weekRound() {
@@ -215,10 +218,10 @@ class Schedule {
         var currentRoundSecret:String = ""
         
         ///payouts
-        let round = MongoClient().lastWeekRound()
+        let round = MongoClient(database: database).lastWeekRound()
         
-        let decryptAddress = MongoClient().decrypt(text: String(describing: round.2["address"]))
-        let decryptSecert = MongoClient().decrypt(text: String(describing: round.2["secret"]))
+        let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]))
+        let decryptSecert = MongoClient(database: database).decrypt(text: String(describing: round.2["secret"]))
         
         currentRoundAddress = decryptAddress
         currentRoundSecret = decryptSecert
@@ -282,7 +285,7 @@ class Schedule {
                 payouts += payout
                 
                 print("paided out \(payout) to address \(player.0)")
-                MongoClient().savePayout(address: player.0, amount: payout)
+                MongoClient(database: database).savePayout(address: player.0, amount: payout)
                 Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
             }
             
@@ -290,12 +293,12 @@ class Schedule {
             
             print("paid out correct amount: \(check), payouts:\(payouts),pool:\(pool)")
             
-            MongoClient().deleteWeekBets()
+            MongoClient(database: database).deleteWeekBets()
         }
         
         let top10 = Ripple(drop: self.drop).top10()
         
-        MongoClient().saveWeekRound(coins:top10)
+        MongoClient(database: database).saveWeekRound(coins:top10)
     }
 }
 

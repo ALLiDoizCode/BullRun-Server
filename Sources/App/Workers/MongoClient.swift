@@ -30,26 +30,19 @@ class MongoClient {
     var payOutCollection:MongoCollection!
     
     
-    init() {
+    init(database:Database) {
         
-        let server = try! Server("mongodb://heroku_h8lrwkbq:ntcqd6852m09ie14o2v6h4ktqv@ds129003.mlab.com:29003/heroku_h8lrwkbq")
-        let database = server["heroku_h8lrwkbq"]
-        if database.server.isConnected {
-            hourColleciton = database["Hour"]
-            dayCollection = database["Day"]
-            weekCollection = database["Week"]
-            hourBetColleciton = database["BetHour"]
-            dayBetCollection = database["BetDay"]
-            weekBetCollection = database["BetWeek"]
-            hourAddressColleciton = database["HourAddress"]
-            dayAddressCollection = database["DayAddress"]
-            weekAddressCollection = database["WeekAdsress"]
-            payOutCollection = database["Payout"]
-            print("Successfully connected!")
-            
-        } else {
-            print("Connection failed")
-        }
+        hourColleciton = database["Hour"]
+        dayCollection = database["Day"]
+        weekCollection = database["Week"]
+        hourBetColleciton = database["BetHour"]
+        dayBetCollection = database["BetDay"]
+        weekBetCollection = database["BetWeek"]
+        hourAddressColleciton = database["HourAddress"]
+        dayAddressCollection = database["DayAddress"]
+        weekAddressCollection = database["WeekAdsress"]
+        payOutCollection = database["Payout"]
+        
     }
     
     
