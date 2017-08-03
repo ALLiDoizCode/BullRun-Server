@@ -84,7 +84,7 @@ extension Droplet {
             let wallet = Wallet()
             wallet.address = address
             wallet.hourBet.amount = Double(amount)!
-            wallet.dayBet.coinId = coin
+            wallet.hourBet.coinId = coin
             
             let roundAddress = String(describing: MongoClient(database:database).lastHourRound().2["address"]!)
             
