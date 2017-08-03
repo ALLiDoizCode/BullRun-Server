@@ -3,7 +3,7 @@ extension Droplet {
     func setupRoutes() throws {
         
         
-        post("balance") { req in
+        get("balance") { req in
             
             guard let address = req.data["address"]?.string else {
                 
