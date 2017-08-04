@@ -70,33 +70,92 @@ class MongoClient {
     
     func setHourStatus(status:Bool) {
         
-        let document:Document = [
+        if try! hourStatusCollection.findOne() == nil {
             
-            "betweenRounds":status
-        ]
-        
-        try! hourStatusCollection.update("_id" == ObjectId("hdaoushddfgdfraikasjdhsadoihus"), to: document, upserting: true)
+            let document:Document = [
+                
+                "betweenRounds":status
+            ]
+            
+            // Insert the document
+            try! hourStatusCollection.insert(document)
+            
+        }else {
+            
+            var currentDocument = try! hourStatusCollection.findOne()
+            
+            let id = try currentDocument!["_id"]
+            
+            print("status id is \(String(id)!)")
+            
+            let document:Document = [
+                
+                "betweenRounds":status
+            ]
+            
+            try! hourStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
+        }
         
     }
     
     func setDayStatus(status:Bool) {
         
-        let document:Document = [
+        if try! dayStatusCollection.findOne() == nil {
             
-            "betweenRounds":status
-        ]
+            let document:Document = [
+                
+                "betweenRounds":status
+            ]
+            
+            // Insert the document
+            try! dayStatusCollection.insert(document)
+            
+        }else {
+            
+            var currentDocument = try! dayStatusCollection.findOne()
+            
+            let id = try currentDocument!["_id"]
+            
+            print("status id is \(String(id)!)")
+            
+            let document:Document = [
+                
+                "betweenRounds":status
+            ]
+            
+            try! dayStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
+        }
         
-        try! dayStatusCollection.update("_id" == ObjectId("hhfdoushdfdgdfrajdhsadoihus"), to: document, upserting: true)
     }
     
     func setWeekStatus(status:Bool) {
         
-        let document:Document = [
+        if try! weekStatusCollection.findOne() == nil {
             
-            "betweenRounds":status
-        ]
+            let document:Document = [
+                
+                "betweenRounds":status
+            ]
+            
+            // Insert the document
+            try! weekStatusCollection.insert(document)
+            
+        }else {
+            
+            var currentDocument = try! weekStatusCollection.findOne()
+            
+            let id = try currentDocument!["_id"]
+            
+            print("status id is \(String(id)!)")
+            
+            let document:Document = [
+                
+                "betweenRounds":status
+            ]
+            
+            try! weekStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
+        }
         
-        try! weekStatusCollection.update("_id" == ObjectId("hdaougfdgdfb32raikjdhsadoihus"), to: document, upserting: true)
     }
     
     func getHourStatus() -> Bool {
@@ -116,7 +175,6 @@ class MongoClient {
         
         return Bool(status)!
     }
-    
     
     func getWeekStatus() -> Bool {
         
