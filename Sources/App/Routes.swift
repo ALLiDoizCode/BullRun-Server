@@ -362,6 +362,8 @@ extension Droplet {
         
         get("check") { req in
             
+            Schedule(drop: self, database: database).hourRound()
+            
             let round = MongoClient(database: database).lastHourRound()
             
             let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]!))

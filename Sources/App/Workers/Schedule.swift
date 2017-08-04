@@ -94,7 +94,7 @@ class Schedule {
                 
                 if reSupply == true {
                     
-                    BOOK_PAY - (fee + (fee * 0.33))
+                    BOOK_PAY = BOOK_PAY - (fee + (fee * 0.33))
                 }
                 
                 print("paided out \(payout) to address \(player.0)")
@@ -236,7 +236,7 @@ class Schedule {
                 
                 if reSupply == true {
                     
-                    BOOK_PAY - (fee + (fee * 0.33))
+                    BOOK_PAY = BOOK_PAY - (fee + (fee * 0.33))
                 }
                 
                 print("paided out \(payout) to address \(player.0)")
@@ -377,7 +377,7 @@ class Schedule {
                 
                 if reSupply == true {
                     
-                    BOOK_PAY - (fee + (fee * 0.33))
+                    BOOK_PAY = BOOK_PAY - (fee + (fee * 0.33))
                 }
                 
                 print("paided out \(payout) to address \(player.0)")
