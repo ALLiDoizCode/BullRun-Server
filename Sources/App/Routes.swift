@@ -48,7 +48,7 @@ extension Droplet {
             }
             
             let json = Ripple(drop:self).send(address1: address1, address2: address2, secret: secret, amount: amount)
-            
+            print(json["resultCode"]?.string)
             return json
             
         }

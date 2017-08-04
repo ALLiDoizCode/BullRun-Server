@@ -73,21 +73,10 @@ class Schedule {
                 }
             }
             
-            ///pay myself fee
-            let BOOK_PAY = pool * fee
-            if winingPlayers.count == 0 {
-                
-                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(pool))
-                
-                pool = pool - pool
-                
-            }else {
-                
-                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(BOOK_PAY))
-                
-                pool = pool - BOOK_PAY
-            }
-            
+            ///BOOK_PAY
+            var BOOK_PAY = pool * fee
+            var Owner2Pay:Double = 0
+            var Owner1Pay:Double = 0
             //////////////////
             
             for player in winingPlayers {
@@ -96,10 +85,69 @@ class Schedule {
                 
                 payouts += payout
                 
+                let fee = Ripple(drop: self.drop).fee()
+                
+                let getBalance = Ripple(drop: self.drop).balance(address: currentRoundAddress)
+                let balance = getBalance[0]!["value"]?.double
+                
+                let reSupply = Math().supplyRoundWallet(fee: fee, balance: balance!, currentPayout: payout,bookPay:BOOK_PAY)
+                
+                if reSupply == true {
+                    
+                    BOOK_PAY - (fee + (fee * 0.33))
+                }
+                
                 print("paided out \(payout) to address \(player.0)")
-                MongoClient(database: database).savePayout(address: player.0, amount: payout)
-                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
+                
+                if json["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    MongoClient(database: database).savePayout(address: player.0, amount: payout)
+                }
             }
+            ///pay myself fee
+            if winingPlayers.count == 0 {
+                
+                BOOK_PAY = pool
+                Owner2Pay = BOOK_PAY * 0.33
+                Owner1Pay = BOOK_PAY - Owner2Pay
+                
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay))
+                
+                if json["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    pool = pool - pool
+                }
+                
+                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay))
+                
+                if json2["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    
+                }
+                
+            }else {
+                
+                Owner2Pay = BOOK_PAY * 0.33
+                Owner1Pay = BOOK_PAY - Owner2Pay
+                
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay))
+                
+                if json["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    pool = pool - BOOK_PAY
+                }
+                
+                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay))
+                
+                if json2["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    
+                }
+                
+                
+            }
+            //////////////////
             
             let check = Math().payoutAmountCheck(payouts: payouts, pool: pool)
             
@@ -167,21 +215,10 @@ class Schedule {
                 }
             }
             
-            ///pay myself fee
-            let BOOK_PAY = pool * fee
-            if winingPlayers.count == 0 {
-                
-                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(pool))
-                
-                pool = pool - pool
-                
-            }else {
-                
-                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(BOOK_PAY))
-                
-                pool = pool - BOOK_PAY
-            }
-            
+            ///BOOK_PAY
+            var BOOK_PAY = pool * fee
+            var Owner2Pay:Double = 0
+            var Owner1Pay:Double = 0
             //////////////////
             
             for player in winingPlayers {
@@ -190,10 +227,69 @@ class Schedule {
                 
                 payouts += payout
                 
+                let fee = Ripple(drop: self.drop).fee()
+                
+                let getBalance = Ripple(drop: self.drop).balance(address: currentRoundAddress)
+                let balance = getBalance[0]!["value"]?.double
+                
+                let reSupply = Math().supplyRoundWallet(fee: fee, balance: balance!, currentPayout: payout,bookPay:BOOK_PAY)
+                
+                if reSupply == true {
+                    
+                    BOOK_PAY - (fee + (fee * 0.33))
+                }
+                
                 print("paided out \(payout) to address \(player.0)")
-                MongoClient(database: database).savePayout(address: player.0, amount: payout)
-                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
+                
+                if json["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    MongoClient(database: database).savePayout(address: player.0, amount: payout)
+                }
             }
+            ///pay myself fee
+            if winingPlayers.count == 0 {
+                
+                BOOK_PAY = pool
+                Owner2Pay = BOOK_PAY * 0.33
+                Owner1Pay = BOOK_PAY - Owner2Pay
+                
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay))
+                
+                if json["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    pool = pool - pool
+                }
+                
+                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay))
+                
+                if json2["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    
+                }
+                
+            }else {
+                
+                Owner2Pay = BOOK_PAY * 0.33
+                Owner1Pay = BOOK_PAY - Owner2Pay
+                
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay))
+                
+                if json["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    pool = pool - BOOK_PAY
+                }
+                
+                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay))
+                
+                if json2["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    
+                }
+                
+                
+            }
+            //////////////////
             
             let check = Math().payoutAmountCheck(payouts: payouts, pool: pool)
             
@@ -260,22 +356,10 @@ class Schedule {
                 }
             }
             
-            ///pay myself fee
-            let BOOK_PAY = pool * fee
-            
-            if winingPlayers.count == 0 {
-                
-                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(pool))
-                
-                pool = pool - pool
-                
-            }else {
-                
-                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(BOOK_PAY))
-                
-                pool = pool - BOOK_PAY
-            }
-            
+            ///BOOK_PAY
+            var BOOK_PAY = pool * fee
+            var Owner2Pay:Double = 0
+            var Owner1Pay:Double = 0
             //////////////////
             
             for player in winingPlayers {
@@ -284,10 +368,69 @@ class Schedule {
                 
                 payouts += payout
                 
+                let fee = Ripple(drop: self.drop).fee()
+                
+                let getBalance = Ripple(drop: self.drop).balance(address: currentRoundAddress)
+                let balance = getBalance[0]!["value"]?.double
+                
+                let reSupply = Math().supplyRoundWallet(fee: fee, balance: balance!, currentPayout: payout,bookPay:BOOK_PAY)
+                
+                if reSupply == true {
+                    
+                    BOOK_PAY - (fee + (fee * 0.33))
+                }
+                
                 print("paided out \(payout) to address \(player.0)")
-                MongoClient(database: database).savePayout(address: player.0, amount: payout)
-                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
+                
+                if json["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    MongoClient(database: database).savePayout(address: player.0, amount: payout)
+                }
             }
+            ///pay myself fee
+            if winingPlayers.count == 0 {
+                
+                BOOK_PAY = pool
+                Owner2Pay = BOOK_PAY * 0.33
+                Owner1Pay = BOOK_PAY - Owner2Pay
+                
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay))
+                
+                if json["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    pool = pool - pool
+                }
+                
+                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay))
+                
+                if json2["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    
+                }
+                
+            }else {
+                
+                Owner2Pay = BOOK_PAY * 0.33
+                Owner1Pay = BOOK_PAY - Owner2Pay
+                
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay))
+                
+                if json["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    pool = pool - BOOK_PAY
+                }
+                
+                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay))
+                
+                if json2["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    
+                }
+                
+                
+            }
+            //////////////////
             
             let check = Math().payoutAmountCheck(payouts: payouts, pool: pool)
             

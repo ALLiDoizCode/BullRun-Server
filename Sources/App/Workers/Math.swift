@@ -121,18 +121,17 @@ class Math {
         return amount
     }
     
-    /*typealias Rational = (num : Double, den : Double)
-    
-    func rationalApproximation(of x0 : Double, withPrecision eps : Double = 1.0E-6) -> Rational {
-        var x = x0
-        var a = x.rounded(.down)
-        var (h1, k1, h, k) = (1, 0, Int(a), 1)
+    func supplyRoundWallet(fee:Double,balance:Double,currentPayout:Double,bookPay:Double) -> Bool {
         
-        while x - a > eps * Double(k) * Double(k) {
-            x = 1.0/(x - a)
-            a = x.rounded(.down)
-            (h1, k1, h, k) = (h, k, h1 + Int(a) * h, k1 + Int(a) * k)
+        let amount = fee + currentPayout + bookPay
+        
+        if (balance - amount) < 20 {
+            
+            return true
+            
+        }else {
+            
+            return false
         }
-        return (Double(h), Double(k))
-    }*/
+    }
 }

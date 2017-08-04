@@ -19,6 +19,32 @@ class Ripple {
         self.drop = drop
     }
     
+    func fee() ->Double {
+        
+        var json:JSON!
+        
+        do {
+            let request = try Request(method: .get, uri: "https://ripple-server.herokuapp.com/fee")
+            print("1")
+            //request.formURLEncoded = try Node(node: params)
+            print("2")
+            //request.headers["Authorization"] = "Bearer \(SECERT)"
+            let response = try drop.client.respond(to: request)
+            print("3")
+            json = try JSON(bytes: response.body.bytes!)
+            print(json)
+            
+        } catch {
+            
+            print("request error was \(error)")
+            
+        }
+        
+        print("fee is \(String(format:"%.8f", json.double!))")
+        
+        return json.double!
+    }
+    
     
     func balance(address:String) -> JSON {
         
