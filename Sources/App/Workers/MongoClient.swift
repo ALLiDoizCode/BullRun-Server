@@ -28,7 +28,9 @@ class MongoClient {
     var dayAddressCollection:MongoCollection!
     var weekAddressCollection:MongoCollection!
     var payOutCollection:MongoCollection!
-    
+    var hourStatusCollection:MongoCollection!
+    var dayStatusCollection:MongoCollection!
+    var weekStatusCollection:MongoCollection!
     
     init(database:Database) {
         
@@ -42,6 +44,9 @@ class MongoClient {
         dayAddressCollection = database["DayAddress"]
         weekAddressCollection = database["WeekAdsress"]
         payOutCollection = database["Payout"]
+        hourStatusCollection = database["HourStatus"]
+        dayStatusCollection = database["DayStatus"]
+        weekStatusCollection = database["WeekStatus"]
         
     }
     
@@ -61,6 +66,65 @@ class MongoClient {
         let decrypted = try! bytes.decrypt(cipher: Rabbit(key: HASH_KEY))
         
         return decrypted.makeString()
+    }
+    
+    func setHourStatus(status:Bool) {
+        
+        let document:Document = [
+            
+            "betweenRounds":status
+        ]
+        
+        try! hourStatusCollection.update("_id" == ObjectId("hdaoushddfgdfraikasjdhsadoihus"), to: document, upserting: true)
+        
+    }
+    
+    func setDayStatus(status:Bool) {
+        
+        let document:Document = [
+            
+            "betweenRounds":status
+        ]
+        
+        try! dayStatusCollection.update("_id" == ObjectId("hhfdoushdfdgdfrajdhsadoihus"), to: document, upserting: true)
+    }
+    
+    func setWeekStatus(status:Bool) {
+        
+        let document:Document = [
+            
+            "betweenRounds":status
+        ]
+        
+        try! weekStatusCollection.update("_id" == ObjectId("hdaougfdgdfb32raikjdhsadoihus"), to: document, upserting: true)
+    }
+    
+    func getHourStatus() -> Bool {
+        
+        let results = try! hourStatusCollection.findOne()
+        
+        let status = results!["betweenRounds"]!
+        
+        return Bool(status)!
+    }
+    
+    func getDayStatus() -> Bool {
+        
+        let results = try! dayStatusCollection.findOne()
+        
+        let status = results!["betweenRounds"]!
+        
+        return Bool(status)!
+    }
+    
+    
+    func getWeekStatus() -> Bool {
+        
+        let results = try! weekStatusCollection.findOne()
+        
+        let status = results!["betweenRounds"]!
+        
+        return Bool(status)!
     }
     
     func deleteHourBets() {

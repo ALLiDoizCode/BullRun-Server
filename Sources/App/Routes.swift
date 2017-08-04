@@ -56,6 +56,14 @@ extension Droplet {
         post("betHour") { req in
             print(1)
             
+            guard MongoClient(database: database).getHourStatus() == false else {
+                
+                return try! JSON(node:[
+                        "betweenRounds":true
+                    
+                    ])
+            }
+            
             guard let address = req.data["address"]?.string else {
                 
                 throw Abort.badRequest
@@ -108,6 +116,14 @@ extension Droplet {
         
         post("betDay") { req in
             
+            guard MongoClient(database: database).getDayStatus() == false else {
+                
+                return try! JSON(node:[
+                    "betweenRounds":true
+                    
+                    ])
+            }
+            
             guard let address = req.data["address"]?.string else {
                 
                 throw Abort.badRequest
@@ -154,6 +170,14 @@ extension Droplet {
         }
         
         post("betWeek") { req in
+            
+            guard MongoClient(database: database).getWeekStatus() == false else {
+                
+                return try! JSON(node:[
+                    "betweenRounds":true
+                    
+                    ])
+            }
             
             guard let address = req.data["address"]?.string else {
                 
@@ -209,7 +233,11 @@ extension Droplet {
         
         get("hourRound") { req in 
             
+            MongoClient(database: database).setHourStatus(status: true)
+            
             Schedule(drop: self,database: database).hourRound()
+            
+            MongoClient(database: database).setHourStatus(status: false)
             
             return "Running Hour Round"
             
@@ -217,7 +245,11 @@ extension Droplet {
         
         get("dailyRound") { req in
             
+            MongoClient(database: database).setDayStatus(status: true)
+            
             Schedule(drop: self,database: database).dayRound()
+            
+            MongoClient(database: database).setDayStatus(status: false)
             
             return "Running Day Round"
             
@@ -225,7 +257,11 @@ extension Droplet {
         
         get("weekRound") { req in
             
+            MongoClient(database: database).setWeekStatus(status: true)
+            
             Schedule(drop: self,database: database).weekRound()
+            
+            MongoClient(database: database).setWeekStatus(status: false)
             
             return "Running week Round"
             

@@ -1,0 +1,1501 @@
+2017-08-04T03:51:19.114199+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.138918+00:00 app[web.1]: 1
+2017-08-04T03:51:19.138921+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.138921+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.204163+00:00 app[web.1]: 1
+2017-08-04T03:51:19.204167+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.204167+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.207263+00:00 app[web.1]: 1
+2017-08-04T03:51:19.207264+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.207264+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.220984+00:00 app[web.1]: 1
+2017-08-04T03:51:19.220986+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.220987+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.263450+00:00 app[web.1]: 1
+2017-08-04T03:51:19.263455+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.263454+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.296646+00:00 app[web.1]: 1
+2017-08-04T03:51:19.342461+00:00 app[web.1]: 1
+2017-08-04T03:51:19.296649+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.296651+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.342464+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.342465+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.357145+00:00 app[web.1]: 1
+2017-08-04T03:51:19.357149+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.357150+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.264958+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=b8a02902-acd0-4c0f-8c09-3caf50238a90 fwd="136.57.54.38" dyno=web.1 connect=0ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.207761+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=a3a0197e-914b-493d-9291-e2b76c82fb58 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.222390+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=f2636dd6-4af5-431d-96f8-b485db28b2b3 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.297518+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=f64c4f99-aeb5-4969-8f7b-47614c07cb93 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.463853+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=81737603-b9ed-4153-b260-a31735a4ed66 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.362783+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=bb9d19f0-d3b1-4094-a812-1fa5dbcb9fe1 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.438251+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=31f29ae0-5f22-44c3-b02d-5c12c642795c fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.343393+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=ee1ec6aa-7b68-41c0-89c6-5e61139707f3 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.364823+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=0e5b7533-0e6f-4ef1-af5b-385b3d0e1383 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.365346+00:00 app[web.1]: 1
+2017-08-04T03:51:19.365361+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.365362+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.437504+00:00 app[web.1]: 1
+2017-08-04T03:51:19.437508+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.437509+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.466229+00:00 app[web.1]: 1
+2017-08-04T03:51:19.466232+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.466234+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.483459+00:00 app[web.1]: 1
+2017-08-04T03:51:19.483462+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.483464+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.500677+00:00 app[web.1]: 1
+2017-08-04T03:51:19.500680+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.500681+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.510385+00:00 app[web.1]: 1
+2017-08-04T03:51:19.510386+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.510387+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.559095+00:00 app[web.1]: 1
+2017-08-04T03:51:19.559100+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.559102+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.603860+00:00 app[web.1]: 1
+2017-08-04T03:51:19.603864+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.603865+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.612481+00:00 app[web.1]: 1
+2017-08-04T03:51:19.612483+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.612483+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.503203+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=95663e32-2349-46ba-84b0-566e38e65d0d fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.604676+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=40cf7ead-f6c4-409b-9fc8-898bd54a1cc6 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.484740+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=e56a3894-a684-4591-9c11-591db1e65445 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.640698+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=c9e3aba5-9120-4afd-8500-1511268eb138 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.559948+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=6ec7550f-4877-4b2c-a07b-8e788914b660 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.511277+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=8971ad5c-87e7-4a1d-8761-b626a5d6f4dd fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.702134+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=9ded865c-c986-40a5-966b-5e71613a96c3 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.639780+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=08331343-5cf5-4d46-8263-40077ebe63aa fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.639059+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=458b7438-4f61-4820-a1eb-93500db84a98 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.613781+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=cabe2710-c666-4b2d-a9d1-8f1f41de4255 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.638962+00:00 app[web.1]: 1
+2017-08-04T03:51:19.638977+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.639415+00:00 app[web.1]: 1
+2017-08-04T03:51:19.638976+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.639418+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.639417+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.642361+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.642359+00:00 app[web.1]: 1
+2017-08-04T03:51:19.701519+00:00 app[web.1]: 1
+2017-08-04T03:51:19.642361+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.701522+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.701522+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.777744+00:00 app[web.1]: 1
+2017-08-04T03:51:19.777748+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.777747+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.858323+00:00 app[web.1]: 1
+2017-08-04T03:51:19.858326+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.858327+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.858516+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=bc292ea2-be2b-4077-abf8-5878ddc18f5d fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.924745+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=2b558784-42b4-42d1-8575-16a18ecb791a fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.779239+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=9157dbd2-f47d-4f29-97d6-d40077380712 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.988274+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=5cad434c-c4ba-43a2-bd02-60160cf4b7fb fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.970913+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=99781792-04ea-4864-9753-95af293e936f fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.053649+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=5b1e8253-b102-496c-965e-788dc59ab0a1 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.923691+00:00 app[web.1]: 1
+2017-08-04T03:51:19.923706+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.923708+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.970805+00:00 app[web.1]: 1
+2017-08-04T03:51:19.970808+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.970809+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.986811+00:00 app[web.1]: 1
+2017-08-04T03:51:19.986812+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:19.986813+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.997154+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:19.997151+00:00 app[web.1]: 1
+2017-08-04T03:51:19.997153+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.051896+00:00 app[web.1]: 1
+2017-08-04T03:51:20.051899+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.051898+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.119936+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.119932+00:00 app[web.1]: 1
+2017-08-04T03:51:20.130097+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.130096+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.119935+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.130095+00:00 app[web.1]: 1
+2017-08-04T03:51:20.123253+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=c436b5c3-338e-4cae-9536-99394d92452e fwd="136.57.54.38" dyno=web.1 connect=2ms service=5ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.131074+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=0770bdce-b877-464e-a576-aa6f0a8fa72b fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:19.998407+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=e0e97ecb-36c5-4024-bb30-a4ad2b23ea5b fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.227539+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=c35d420c-9a28-4090-a2f9-f7d2272c51a3 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.177521+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=c3826738-8406-4c60-b5f2-e154f7e0802b fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.176171+00:00 app[web.1]: 1
+2017-08-04T03:51:20.176180+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.176181+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.226043+00:00 app[web.1]: 1
+2017-08-04T03:51:20.226046+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.226047+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.238397+00:00 app[web.1]: 1
+2017-08-04T03:51:20.238400+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.238401+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.315160+00:00 app[web.1]: 1
+2017-08-04T03:51:20.315168+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.315169+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.345001+00:00 app[web.1]: 1
+2017-08-04T03:51:20.345005+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.345006+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.357779+00:00 app[web.1]: 1
+2017-08-04T03:51:20.357782+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.357784+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.363715+00:00 app[web.1]: 1
+2017-08-04T03:51:20.363717+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.363718+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.358110+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=f40d1e2e-c891-4a7a-8bfd-4b28b310acf9 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.239404+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=bc010778-caed-4d3d-98a1-2398995bc216 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.320649+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=9362cfe0-eac6-490f-b80e-e8d8ccde3c8c fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.345423+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=3b05ac9c-8ae8-445f-a7e2-34092b44e847 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.365813+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=9911bdbf-7e74-41d8-975b-1bb99c5276f3 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.466568+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=3e1a6b90-a558-4bb2-a209-f6073032ac62 fwd="136.57.54.38" dyno=web.1 connect=1ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.462884+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=2b721b44-9e98-4645-8bc8-9eb1b5f0876c fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.461849+00:00 app[web.1]: 1
+2017-08-04T03:51:20.461866+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.461868+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.464383+00:00 app[web.1]: 1
+2017-08-04T03:51:20.464385+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.464386+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.514444+00:00 app[web.1]: 1
+2017-08-04T03:51:20.514448+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.514449+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.652335+00:00 app[web.1]: 1
+2017-08-04T03:51:20.652338+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.652339+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.515136+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=0cc240e9-1596-4b00-89b9-661be1a8cb0c fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.653116+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=9d078fff-a5ba-4c16-862b-92180fdb4be2 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.717567+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=b4a19e64-8b26-4957-857a-e602f03c900d fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.884450+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=8d374c59-5918-4c32-9db0-1ca88332d726 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:20.717301+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.717289+00:00 app[web.1]: 1
+2017-08-04T03:51:20.854485+00:00 app[web.1]: 1
+2017-08-04T03:51:20.854489+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.717302+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.854488+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.884186+00:00 app[web.1]: 1
+2017-08-04T03:51:20.884189+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:51:20.884190+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:51:20.852194+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=23c44b8f-571d-4104-9d11-c0d81ec06a20 fwd="136.57.54.38" dyno=web.1 connect=0ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T03:51:25.287501+00:00 heroku[router]: at=info method=GET path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg" host=bullrun-server.herokuapp.com request_id=efeb4fcf-0bf9-42b5-af54-266818e24fa3 fwd="47.156.75.248" dyno=web.1 connect=1ms service=1ms status=404 bytes=128 protocol=https
+2017-08-04T03:51:25.286807+00:00 app[web.1]: [31m[Abort request error: Not Found] [Identifier: Vapor.Abort.notFound][0m
+2017-08-04T03:51:30.125361+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=6686442e-6f8d-4833-a16a-84ed918d78cf fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=0ms service=13ms status=200 bytes=1638 protocol=https
+2017-08-04T03:51:39.446323+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=f34bc28f-601e-4912-964e-20a494170cca fwd="47.156.75.248" dyno=web.1 connect=0ms service=1266ms status=200 bytes=135 protocol=https
+2017-08-04T03:52:06.369568+00:00 heroku[router]: at=info method=GET path="/balance?address=rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5" host=bullrun-server.herokuapp.com request_id=62deea4d-2c07-4483-be5f-89b1321fc94b fwd="47.156.75.248" dyno=web.1 connect=0ms service=342ms status=200 bytes=163 protocol=https
+2017-08-04T03:52:09.493788+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=f79c666d-f114-441c-a6c4-39c5ac63cac7 fwd="47.156.75.248" dyno=web.1 connect=0ms service=84ms status=200 bytes=135 protocol=https
+2017-08-04T03:52:11.181699+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=4976865b-514e-4f47-89ad-1b5a0da33c5d fwd="47.156.75.248" dyno=web.1 connect=1ms service=66ms status=200 bytes=135 protocol=https
+2017-08-04T03:52:11.927083+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=b9ed683d-c6b5-41b9-9d04-6a751571ac1a fwd="47.156.75.248" dyno=web.1 connect=0ms service=86ms status=200 bytes=135 protocol=https
+2017-08-04T03:52:12.378032+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=9a40c7a6-a75c-450f-8203-b091cace67da fwd="47.156.75.248" dyno=web.1 connect=0ms service=117ms status=200 bytes=135 protocol=https
+2017-08-04T03:52:12.846283+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=1f72de36-2b38-409b-9265-b31f0510de5b fwd="47.156.75.248" dyno=web.1 connect=0ms service=122ms status=200 bytes=135 protocol=https
+2017-08-04T03:52:13.281871+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=b067e9e5-93ed-4a5b-afc8-eeaa66e353d3 fwd="47.156.75.248" dyno=web.1 connect=0ms service=100ms status=200 bytes=135 protocol=https
+2017-08-04T03:52:13.715980+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=5d546879-3821-493a-a174-1f3369de97bc fwd="47.156.75.248" dyno=web.1 connect=0ms service=97ms status=200 bytes=135 protocol=https
+2017-08-04T03:52:14.192958+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=3a0706cb-1042-4588-9db2-70e2cb64f489 fwd="47.156.75.248" dyno=web.1 connect=0ms service=133ms status=200 bytes=135 protocol=https
+2017-08-04T03:52:16.176573+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=a23a56ee-87f1-42ed-9f42-7f4995e8f961 fwd="47.156.75.248" dyno=web.1 connect=0ms service=118ms status=200 bytes=135 protocol=https
+2017-08-04T03:52:17.638878+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=c5b9f95a-750f-410e-8146-d26ab2d5a9ed fwd="47.156.75.248" dyno=web.1 connect=0ms service=136ms status=200 bytes=135 protocol=https
+2017-08-04T03:52:19.656395+00:00 heroku[router]: at=info method=GET path="/balance?address=rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5" host=bullrun-server.herokuapp.com request_id=4d269c5b-681e-4cc4-a60e-e91d7db77743 fwd="47.156.75.248" dyno=web.1 connect=0ms service=134ms status=200 bytes=163 protocol=https
+2017-08-04T03:52:24.241342+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=f2c9812f-1aac-4351-9955-01f3c2003589 fwd="47.156.75.248" dyno=web.1 connect=0ms service=78ms status=200 bytes=135 protocol=https
+2017-08-04T03:52:25.715046+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=95f762eb-1b82-4001-af5b-c37bc842b40c fwd="47.156.75.248" dyno=web.1 connect=0ms service=89ms status=200 bytes=135 protocol=https
+2017-08-04T03:52:27.291673+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=93667853-05b9-4e5a-8a59-a61e5478ec46 fwd="47.156.75.248" dyno=web.1 connect=0ms service=72ms status=200 bytes=135 protocol=https
+2017-08-04T03:52:27.506027+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=c522b2df-401b-459d-bf8f-6fc73ad974aa fwd="136.57.54.38" dyno=web.1 connect=0ms service=4ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.503695+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=187271b2-be98-4432-bd70-65ab4d8d2c32 fwd="136.57.54.38" dyno=web.1 connect=1ms service=5ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.505313+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=ee8cd64d-3137-4d18-bf4a-1e27c7703563 fwd="136.57.54.38" dyno=web.1 connect=1ms service=6ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.499400+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=6503d6d2-8e09-4430-ad57-4dc97438ee61 fwd="136.57.54.38" dyno=web.1 connect=0ms service=4ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.512263+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=3aef3103-58e9-478a-88ff-b4047104168e fwd="136.57.54.38" dyno=web.1 connect=1ms service=13ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.501968+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=aa0ff888-f994-4c25-9b8b-8ea40896c859 fwd="136.57.54.38" dyno=web.1 connect=0ms service=4ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.495868+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=3a295972-9b83-457f-98a5-f928da989be3 fwd="136.57.54.38" dyno=web.1 connect=0ms service=3ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.524670+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=6b6f0b30-1c46-4375-8850-ec4683440654 fwd="136.57.54.38" dyno=web.1 connect=0ms service=3ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.499061+00:00 app[web.1]: bitcoin
+2017-08-04T03:52:27.499072+00:00 app[web.1]: ethereum
+2017-08-04T03:52:27.499073+00:00 app[web.1]: ripple
+2017-08-04T03:52:27.499073+00:00 app[web.1]: bitcoin-cash
+2017-08-04T03:52:27.499074+00:00 app[web.1]: litecoin
+2017-08-04T03:52:27.499075+00:00 app[web.1]: nem
+2017-08-04T03:52:27.499076+00:00 app[web.1]: ethereum-classic
+2017-08-04T03:52:27.499077+00:00 app[web.1]: dash
+2017-08-04T03:52:27.499078+00:00 app[web.1]: monero
+2017-08-04T03:52:27.499077+00:00 app[web.1]: iota
+2017-08-04T03:52:27.499081+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:52:27.499082+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:52:27.499083+00:00 app[web.1]: paid out correct amount: true, payouts:0.0,pool:0.0
+2017-08-04T03:52:27.499084+00:00 app[web.1]: address is rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5
+2017-08-04T03:52:27.499085+00:00 app[web.1]: 1
+2017-08-04T03:52:27.499086+00:00 app[web.1]: 2
+2017-08-04T03:52:27.499086+00:00 app[web.1]: 3
+2017-08-04T03:52:27.499087+00:00 app[web.1]: JSON(wrapped: [[value: 24.957401, currency: XRP]], context: JSON.JSONContext)
+2017-08-04T03:52:27.499088+00:00 app[web.1]: address is rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5
+2017-08-04T03:52:27.499088+00:00 app[web.1]: 1
+2017-08-04T03:52:27.499089+00:00 app[web.1]: 2
+2017-08-04T03:52:27.499089+00:00 app[web.1]: 3
+2017-08-04T03:52:27.499090+00:00 app[web.1]: JSON(wrapped: [[value: 24.957401, currency: XRP]], context: JSON.JSONContext)
+2017-08-04T03:52:27.499091+00:00 app[web.1]: 1
+2017-08-04T03:52:27.499092+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.499093+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.499695+00:00 app[web.1]: 1
+2017-08-04T03:52:27.499696+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.499697+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.500372+00:00 app[web.1]: 1
+2017-08-04T03:52:27.500374+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.500374+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.501037+00:00 app[web.1]: 1
+2017-08-04T03:52:27.501038+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.501039+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.502961+00:00 app[web.1]: 1
+2017-08-04T03:52:27.502963+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.502964+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.503643+00:00 app[web.1]: 1
+2017-08-04T03:52:27.503644+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.503645+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.504274+00:00 app[web.1]: 1
+2017-08-04T03:52:27.504275+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.504276+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.510028+00:00 app[web.1]: 1
+2017-08-04T03:52:27.510030+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.510031+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.522521+00:00 app[web.1]: 1
+2017-08-04T03:52:27.522524+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.522525+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.529844+00:00 app[web.1]: 1
+2017-08-04T03:52:27.529847+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.529848+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.602757+00:00 app[web.1]: 1
+2017-08-04T03:52:27.602761+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.602762+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.650903+00:00 app[web.1]: 1
+2017-08-04T03:52:27.650908+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.650909+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.682730+00:00 app[web.1]: 1
+2017-08-04T03:52:27.682734+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.682735+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.747961+00:00 app[web.1]: 1
+2017-08-04T03:52:27.747966+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.747967+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.502525+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=45294d89-4183-4398-b4f1-47804c187079 fwd="136.57.54.38" dyno=web.1 connect=0ms service=4ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.531172+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=fd6b78d2-5aa7-4fec-95ba-f6d4a9a5c63b fwd="136.57.54.38" dyno=web.1 connect=0ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.653159+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=42577e7e-7ef0-4d44-87fc-7baa01a701bd fwd="136.57.54.38" dyno=web.1 connect=0ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.754225+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=31911519-9234-4c0a-ad3e-2547e5de115d fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.755765+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=639e547c-71c4-42f5-8dd2-31ba26f2b78a fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.608928+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=e4374876-3309-4330-a31f-164b25cca849 fwd="136.57.54.38" dyno=web.1 connect=0ms service=3ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.683229+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=8a254432-7230-40b3-b685-3ead731a6c02 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.899335+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=1f2d7322-d573-4069-9f7d-efd494f080b1 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.752322+00:00 app[web.1]: 1
+2017-08-04T03:52:27.752336+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.752337+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.754001+00:00 app[web.1]: 1
+2017-08-04T03:52:27.754003+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.754004+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.812489+00:00 app[web.1]: 1
+2017-08-04T03:52:27.812493+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.812494+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.843285+00:00 app[web.1]: 1
+2017-08-04T03:52:27.843287+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.843288+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.866804+00:00 app[web.1]: 1
+2017-08-04T03:52:27.745763+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=b0dc0da9-2d8b-4075-9c45-32c9084c9bc9 fwd="136.57.54.38" dyno=web.1 connect=1ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.866807+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.866808+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.873148+00:00 app[web.1]: 1
+2017-08-04T03:52:27.873151+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.873152+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.898906+00:00 app[web.1]: 1
+2017-08-04T03:52:27.898910+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.898911+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.911812+00:00 app[web.1]: 1
+2017-08-04T03:52:27.911816+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.911817+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.928033+00:00 app[web.1]: 1
+2017-08-04T03:52:27.928037+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:27.928038+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:27.813021+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=0a1592f0-1f33-4218-b748-a6ba1215f449 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.913412+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=4057d890-4d99-4a68-8aae-c872fb357736 fwd="136.57.54.38" dyno=web.1 connect=0ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.864603+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=2d5ac4ca-6695-49fb-871d-f37242093d3c fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.874384+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=85481c4f-197f-4fb4-9b06-7b0f7d025050 fwd="136.57.54.38" dyno=web.1 connect=0ms service=3ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.843882+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=78b349c2-e927-4097-b65a-97336599c93f fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.028717+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=92146e73-1db2-45d4-bd00-cdf258622b6e fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:27.928603+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=be78b196-802f-446a-9f19-155597e469aa fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.024314+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=d6e0ed44-4f78-4c21-9725-1313a8d85a92 fwd="136.57.54.38" dyno=web.1 connect=0ms service=17ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.023656+00:00 app[web.1]: 1
+2017-08-04T03:52:28.023667+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.023668+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.027282+00:00 app[web.1]: 1
+2017-08-04T03:52:28.027284+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.027285+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.075161+00:00 app[web.1]: 1
+2017-08-04T03:52:28.075164+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.075165+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.179583+00:00 app[web.1]: 1
+2017-08-04T03:52:28.179587+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.179589+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.072013+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=aeba9d65-d9b0-46be-952f-667804211750 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.180983+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=96cae0c9-ed9f-428b-949f-91cedd7a735d fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.282954+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=e8784266-77b3-4d4e-bcb2-787bc334bad9 fwd="136.57.54.38" dyno=web.1 connect=1ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.289394+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=bf5c88a2-9557-47c0-802e-e6d5cda41899 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.278295+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=a92d6df8-8db4-437e-8c20-26495e120e88 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.291572+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=f816e571-5dc6-4e6c-9856-47ad60ba260b fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.411101+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=f03acb6b-1aac-45df-9cd9-778522e6c82f fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.277921+00:00 app[web.1]: 1
+2017-08-04T03:52:28.277932+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.277933+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.285369+00:00 app[web.1]: 1
+2017-08-04T03:52:28.285371+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.285372+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.287867+00:00 app[web.1]: 1
+2017-08-04T03:52:28.287869+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.287870+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.290761+00:00 app[web.1]: 1
+2017-08-04T03:52:28.290762+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.290763+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.333820+00:00 app[web.1]: 1
+2017-08-04T03:52:28.333823+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.333824+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.409567+00:00 app[web.1]: 1
+2017-08-04T03:52:28.409570+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.409571+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.446030+00:00 app[web.1]: 1
+2017-08-04T03:52:28.446033+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.446034+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.449313+00:00 app[web.1]: 1
+2017-08-04T03:52:28.449315+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.449316+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.452735+00:00 app[web.1]: 1
+2017-08-04T03:52:28.452737+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.452738+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.335117+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=3077e456-ad85-469c-b249-47be819cb25b fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.450248+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=f208fe14-e9ea-4dd6-8093-9076e8f04f99 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.452962+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=c8e0f496-ae25-457b-aa7a-facfeeae3bf7 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.446594+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=4e78c274-5591-4954-81c0-64ee5cb8ccd0 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.610324+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=77518499-40d1-43a4-8e02-0556ae30ce75 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.661346+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=27e709d9-6ebe-47c4-aaa5-5ad2e4f25041 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.651072+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=bf543348-79ea-4eaf-827c-c40b18b745d9 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.604714+00:00 app[web.1]: 1
+2017-08-04T03:52:28.604726+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.604727+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.649427+00:00 app[web.1]: 1
+2017-08-04T03:52:28.649431+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.649432+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.658959+00:00 app[web.1]: 1
+2017-08-04T03:52:28.658962+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.658961+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.663274+00:00 app[web.1]: 1
+2017-08-04T03:52:28.663275+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.663276+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.746385+00:00 app[web.1]: 1
+2017-08-04T03:52:28.746388+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.746389+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.756804+00:00 app[web.1]: 1
+2017-08-04T03:52:28.756806+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.756807+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.768297+00:00 app[web.1]: 1
+2017-08-04T03:52:28.768301+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.768302+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.799458+00:00 app[web.1]: 1
+2017-08-04T03:52:28.799462+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.799463+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.818863+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.818860+00:00 app[web.1]: 1
+2017-08-04T03:52:28.818864+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.842442+00:00 app[web.1]: 1
+2017-08-04T03:52:28.842446+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.842447+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.659597+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=5f7e0ab6-04ab-48ec-a936-fd2cefccc55f fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.748950+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=9a8e1836-1412-4757-aca3-8d85c90cfb0c fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.800432+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=701746aa-7b54-41a2-8aae-a16153fff3e6 fwd="136.57.54.38" dyno=web.1 connect=3ms service=4ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.770069+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=1f3a5bb7-2909-4496-a473-ad91552d7e99 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.758078+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=079c52b1-411a-4128-aec3-95e2706fccc4 fwd="136.57.54.38" dyno=web.1 connect=0ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.820828+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=4d773665-444a-4016-9992-5a3f7f268761 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.991653+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=d5c5ba96-d2ce-487d-a7a0-2b4223fad532 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:29.028714+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=bfa630b4-c0b2-49fe-b3fe-5f53c7409cab fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.842998+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=b6e26975-733b-4aee-bbcc-d4562824c3a8 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.874426+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=056c6fb0-4472-42fa-96ce-dd1425a716fb fwd="136.57.54.38" dyno=web.1 connect=9ms service=9ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:28.874186+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.874187+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:28.990698+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:28.874170+00:00 app[web.1]: 1
+2017-08-04T03:52:29.027784+00:00 app[web.1]: 1
+2017-08-04T03:52:29.056842+00:00 app[web.1]: 1
+2017-08-04T03:52:28.990694+00:00 app[web.1]: 1
+2017-08-04T03:52:28.990699+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:29.056846+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:29.027788+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:29.027789+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:29.082749+00:00 app[web.1]: 1
+2017-08-04T03:52:29.056845+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:29.082755+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:29.082754+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:29.102797+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:29.102794+00:00 app[web.1]: 1
+2017-08-04T03:52:29.120998+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:29.102798+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:29.120996+00:00 app[web.1]: 1
+2017-08-04T03:52:29.120999+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:29.076824+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=6b1a83df-4df6-40bf-aa41-46da5603d394 fwd="136.57.54.38" dyno=web.1 connect=19ms service=40ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:29.084505+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=cd8a240e-d703-46ff-9208-cbc7c947e87d fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:29.099780+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=7fd09ef1-a89d-4be0-8109-ff89f5d23ef0 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:29.133590+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=5ba3e00f-de62-464c-bd30-c7dc50b4057f fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:29.130599+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=7ad6feb7-83d8-44bc-b1a0-814ec4b86689 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:29.123228+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=123c5be8-14c8-4978-888b-59e887e347f4 fwd="136.57.54.38" dyno=web.1 connect=1ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T03:52:29.129268+00:00 app[web.1]: 1
+2017-08-04T03:52:29.129283+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:29.129284+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:29.136082+00:00 app[web.1]: 1
+2017-08-04T03:52:29.136083+00:00 app[web.1]: Found bad encoded pair {"coin": "ethereum", "amount": 0.0001, "secret": "snt5W79Kx6mrbaWsMHuXGiBDdg66z", "address": "rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5"} ... continuing
+2017-08-04T03:52:29.136084+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:52:30.274602+00:00 heroku[router]: at=info method=GET path="/balance?address=rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5" host=bullrun-server.herokuapp.com request_id=7977461c-0db7-44f7-a769-f0ce6bdd2481 fwd="47.156.75.248" dyno=web.1 connect=0ms service=109ms status=200 bytes=163 protocol=https
+2017-08-04T03:53:33.227853+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=1287989b-def9-454d-981d-a0d2391ae7c8 fwd="47.156.75.248" dyno=web.1 connect=1ms service=12ms status=200 bytes=977 protocol=https
+2017-08-04T03:54:16.108823+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=e5d34c29-d370-4707-88e9-740eba52d63b fwd="47.156.75.248" dyno=web.1 connect=1ms service=259ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:20.617497+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=9e722c21-d8eb-4618-9280-78b1def40121 fwd="47.156.75.248" dyno=web.1 connect=1ms service=758ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:22.205103+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=7e42038d-9980-4ed1-95bd-f49a2ecdca37 fwd="47.156.75.248" dyno=web.1 connect=1ms service=872ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:23.807214+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=bde4c11d-90d7-4021-9f4e-4421fecd0d69 fwd="47.156.75.248" dyno=web.1 connect=1ms service=1221ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:24.862206+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=488d3819-83c4-4567-ae0e-782d6e1efb13 fwd="47.156.75.248" dyno=web.1 connect=2ms service=751ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:25.958947+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=4fabd7b1-7fc0-4576-8586-d791c6a9fb0d fwd="47.156.75.248" dyno=web.1 connect=1ms service=675ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:27.449677+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=9e189603-cb40-437d-9c1c-7ec587371c0b fwd="47.156.75.248" dyno=web.1 connect=1ms service=1081ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:28.516639+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=d263c6c0-0d1b-473d-842f-9270a2ccbc98 fwd="47.156.75.248" dyno=web.1 connect=1ms service=761ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:29.663492+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=48534074-ef43-4199-adc0-7f7529d0887a fwd="47.156.75.248" dyno=web.1 connect=1ms service=693ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:30.834359+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=de7d4b32-1f37-4397-98f1-dd24081a8167 fwd="47.156.75.248" dyno=web.1 connect=0ms service=741ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:31.886724+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=67d230de-7d44-407b-959a-7da0291412f4 fwd="47.156.75.248" dyno=web.1 connect=1ms service=709ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:32.977045+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=9bf1ccaf-7ff4-49c3-8f24-bb9ac50fdcb4 fwd="47.156.75.248" dyno=web.1 connect=1ms service=697ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:34.027346+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=54186e07-52f4-4384-b405-8bcaa61a1c12 fwd="47.156.75.248" dyno=web.1 connect=1ms service=702ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:35.177365+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=dfbf198b-9706-40b2-a38e-14d1dd54145e fwd="47.156.75.248" dyno=web.1 connect=1ms service=721ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:36.851376+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=df3a5f2b-fa04-4194-a29d-cca6d3a065c8 fwd="47.156.75.248" dyno=web.1 connect=1ms service=1214ms status=200 bytes=232 protocol=https
+2017-08-04T03:54:51.782366+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=19ab53b4-3d0a-4eab-86fb-b5b38f94d1ae fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=0ms service=15ms status=200 bytes=2208 protocol=https
+2017-08-04T03:55:18.202324+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=4e1f909f-7d05-4067-ad2a-d6db69813bd4 fwd="47.156.75.248" dyno=web.1 connect=0ms service=2081ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:20.725004+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=bd9ae194-d0b4-4fea-9097-725ac6caacdc fwd="47.156.75.248" dyno=web.1 connect=1ms service=604ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:21.511945+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=b3aefc49-21c7-4701-bafd-9f485c2d9db7 fwd="47.156.75.248" dyno=web.1 connect=0ms service=373ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:22.359698+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=bb84617f-5d2c-472c-b0f4-8d5e29464ce8 fwd="47.156.75.248" dyno=web.1 connect=1ms service=386ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:22.353439+00:00 app[web.1]: address is rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5
+2017-08-04T03:55:22.356368+00:00 app[web.1]: 1
+2017-08-04T03:55:22.356373+00:00 app[web.1]: 2
+2017-08-04T03:55:22.356374+00:00 app[web.1]: 3
+2017-08-04T03:55:22.356375+00:00 app[web.1]: JSON(wrapped: [[value: 24.957401, currency: XRP]], context: JSON.JSONContext)
+2017-08-04T03:55:22.356376+00:00 app[web.1]: 1
+2017-08-04T03:55:22.356376+00:00 app[web.1]: 2
+2017-08-04T03:55:22.356377+00:00 app[web.1]: 4
+2017-08-04T03:55:22.356377+00:00 app[web.1]: 3
+2017-08-04T03:55:22.356378+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.356378+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.356382+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.356383+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.356383+00:00 app[web.1]: 1
+2017-08-04T03:55:22.356384+00:00 app[web.1]: 2
+2017-08-04T03:55:22.356384+00:00 app[web.1]: 3
+2017-08-04T03:55:22.356385+00:00 app[web.1]: 4
+2017-08-04T03:55:22.356385+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.356386+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.356386+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.356387+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.356387+00:00 app[web.1]: 1
+2017-08-04T03:55:22.356388+00:00 app[web.1]: 2
+2017-08-04T03:55:22.356388+00:00 app[web.1]: 3
+2017-08-04T03:55:22.356388+00:00 app[web.1]: 4
+2017-08-04T03:55:22.356389+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.356389+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.356390+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.356391+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.356391+00:00 app[web.1]: 1
+2017-08-04T03:55:22.356391+00:00 app[web.1]: 2
+2017-08-04T03:55:22.356392+00:00 app[web.1]: 3
+2017-08-04T03:55:22.356392+00:00 app[web.1]: 4
+2017-08-04T03:55:22.356393+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.356393+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.356394+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.356395+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.356395+00:00 app[web.1]: 1
+2017-08-04T03:55:22.356395+00:00 app[web.1]: 2
+2017-08-04T03:55:22.356396+00:00 app[web.1]: 3
+2017-08-04T03:55:22.356396+00:00 app[web.1]: 4
+2017-08-04T03:55:22.356397+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.356397+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.356398+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.356399+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.356399+00:00 app[web.1]: 1
+2017-08-04T03:55:22.356400+00:00 app[web.1]: 2
+2017-08-04T03:55:22.356400+00:00 app[web.1]: 3
+2017-08-04T03:55:22.356400+00:00 app[web.1]: 4
+2017-08-04T03:55:22.356401+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.356401+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.356402+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.356402+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.356403+00:00 app[web.1]: 1
+2017-08-04T03:55:22.356403+00:00 app[web.1]: 2
+2017-08-04T03:55:22.356403+00:00 app[web.1]: 3
+2017-08-04T03:55:22.356404+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.356404+00:00 app[web.1]: 4
+2017-08-04T03:55:22.356405+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.356405+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.356406+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.356406+00:00 app[web.1]: 1
+2017-08-04T03:55:22.356407+00:00 app[web.1]: 2
+2017-08-04T03:55:22.356407+00:00 app[web.1]: 3
+2017-08-04T03:55:22.356407+00:00 app[web.1]: 4
+2017-08-04T03:55:22.356408+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.356408+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.356409+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.356409+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.356410+00:00 app[web.1]: 1
+2017-08-04T03:55:22.356410+00:00 app[web.1]: 2
+2017-08-04T03:55:22.356411+00:00 app[web.1]: 3
+2017-08-04T03:55:22.356411+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.356411+00:00 app[web.1]: 4
+2017-08-04T03:55:22.356412+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.356413+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.356413+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.356413+00:00 app[web.1]: 1
+2017-08-04T03:55:22.356414+00:00 app[web.1]: 3
+2017-08-04T03:55:22.356414+00:00 app[web.1]: 2
+2017-08-04T03:55:22.356415+00:00 app[web.1]: 4
+2017-08-04T03:55:22.356415+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.356416+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.356416+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.357088+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.357089+00:00 app[web.1]: 1
+2017-08-04T03:55:22.357090+00:00 app[web.1]: 2
+2017-08-04T03:55:22.357090+00:00 app[web.1]: 3
+2017-08-04T03:55:22.357091+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.357090+00:00 app[web.1]: 4
+2017-08-04T03:55:22.357092+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.357092+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.357093+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.357093+00:00 app[web.1]: 1
+2017-08-04T03:55:22.357094+00:00 app[web.1]: 2
+2017-08-04T03:55:22.357094+00:00 app[web.1]: 3
+2017-08-04T03:55:22.357094+00:00 app[web.1]: 4
+2017-08-04T03:55:22.357095+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.357095+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.357095+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.357096+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.357096+00:00 app[web.1]: 1
+2017-08-04T03:55:22.357097+00:00 app[web.1]: 2
+2017-08-04T03:55:22.357097+00:00 app[web.1]: 3
+2017-08-04T03:55:22.357097+00:00 app[web.1]: 4
+2017-08-04T03:55:22.357098+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.357098+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.357098+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.357099+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.357099+00:00 app[web.1]: 1
+2017-08-04T03:55:22.357099+00:00 app[web.1]: 2
+2017-08-04T03:55:22.357100+00:00 app[web.1]: 3
+2017-08-04T03:55:22.357100+00:00 app[web.1]: 4
+2017-08-04T03:55:22.357100+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.357101+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.357101+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.357101+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.357102+00:00 app[web.1]: 1
+2017-08-04T03:55:22.357102+00:00 app[web.1]: 2
+2017-08-04T03:55:22.357102+00:00 app[web.1]: 3
+2017-08-04T03:55:22.357103+00:00 app[web.1]: 4
+2017-08-04T03:55:22.357103+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.357103+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.357104+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.357104+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.357105+00:00 app[web.1]: 1
+2017-08-04T03:55:22.357105+00:00 app[web.1]: 2
+2017-08-04T03:55:22.357105+00:00 app[web.1]: 3
+2017-08-04T03:55:22.357106+00:00 app[web.1]: 4
+2017-08-04T03:55:22.357106+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.357106+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.357107+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.357107+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.357107+00:00 app[web.1]: 1
+2017-08-04T03:55:22.357108+00:00 app[web.1]: 2
+2017-08-04T03:55:22.357108+00:00 app[web.1]: 4
+2017-08-04T03:55:22.357108+00:00 app[web.1]: 3
+2017-08-04T03:55:22.357109+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.357109+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.357109+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.357110+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.357110+00:00 app[web.1]: 1
+2017-08-04T03:55:22.357110+00:00 app[web.1]: 2
+2017-08-04T03:55:22.357111+00:00 app[web.1]: 3
+2017-08-04T03:55:22.357111+00:00 app[web.1]: 4
+2017-08-04T03:55:22.357111+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.357111+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:22.357112+00:00 app[web.1]: currency sent
+2017-08-04T03:55:22.357112+00:00 app[web.1]: 1
+2017-08-04T03:55:22.357112+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:55:22.357113+00:00 app[web.1]: 2
+2017-08-04T03:55:22.357113+00:00 app[web.1]: 3
+2017-08-04T03:55:22.357114+00:00 app[web.1]: 0.0001
+2017-08-04T03:55:22.357113+00:00 app[web.1]: 4
+2017-08-04T03:55:22.357114+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:55:23.176835+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=a99c1ce2-6189-4691-9dc5-e731794baf89 fwd="47.156.75.248" dyno=web.1 connect=1ms service=391ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:24.515052+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=1bc70a20-e482-4f6c-940f-9275a16057b6 fwd="47.156.75.248" dyno=web.1 connect=1ms service=969ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:25.306824+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=830bfcfc-c9ca-448e-bd31-7a4ce18c8639 fwd="47.156.75.248" dyno=web.1 connect=1ms service=396ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:26.056555+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=6223f221-2f46-434d-84b7-797ff8350461 fwd="47.156.75.248" dyno=web.1 connect=2ms service=390ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:27.078973+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=e3ab2dd3-893e-4355-8408-1af094e228b2 fwd="47.156.75.248" dyno=web.1 connect=3ms service=426ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:28.323754+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=6e8ddfbb-34be-4158-a68c-8351f7c4bf84 fwd="47.156.75.248" dyno=web.1 connect=0ms service=841ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:29.086099+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=f3402fe4-c952-4f8f-9de8-a68bf807aeb6 fwd="47.156.75.248" dyno=web.1 connect=1ms service=380ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:29.973810+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=1f246067-9e7d-4a29-a6d5-10475c06e7d1 fwd="47.156.75.248" dyno=web.1 connect=1ms service=389ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:30.722853+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=a62db712-2d4e-405a-bb76-6ddb1de8582b fwd="47.156.75.248" dyno=web.1 connect=1ms service=415ms status=200 bytes=199 protocol=https
+2017-08-04T03:55:32.440430+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=8a5f390d-ec82-496e-b623-9b2911635ed4 fwd="47.156.75.248" dyno=web.1 connect=1ms service=1195ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:33.185865+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=4c343a1b-adae-4a5f-92b7-f82ce91c9c05 fwd="47.156.75.248" dyno=web.1 connect=1ms service=381ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:33.886341+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=3bd6983a-1e45-4566-9fe2-a132b89cd427 fwd="47.156.75.248" dyno=web.1 connect=0ms service=379ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:35.391599+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=de2403cb-e410-475e-bec1-1b9cad1edc97 fwd="47.156.75.248" dyno=web.1 connect=1ms service=1055ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:36.126397+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=9a5c45b1-11b4-4dcd-9281-e0ebff7be229 fwd="47.156.75.248" dyno=web.1 connect=1ms service=386ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:36.887048+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=ed90de67-07ca-401c-b11d-ee49dfd3a7b2 fwd="47.156.75.248" dyno=web.1 connect=0ms service=376ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:37.591888+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=83a39311-92df-4c27-8b85-6ea61c6244f4 fwd="47.156.75.248" dyno=web.1 connect=1ms service=358ms status=200 bytes=232 protocol=https
+2017-08-04T03:55:54.201256+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=81399230-0d01-438e-9c0c-b7c6f2cc82ac fwd="47.156.75.248" dyno=web.1 connect=1ms service=17ms status=200 bytes=3766 protocol=https
+2017-08-04T03:55:55.944463+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=6ec1572b-ce79-4d7a-9319-41c8573e2120 fwd="47.156.75.248" dyno=web.1 connect=1ms service=18ms status=200 bytes=3766 protocol=https
+2017-08-04T03:56:02.906910+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=cb8f42ac-1da6-4158-92f7-e86606ef1b47 fwd="47.156.75.248" dyno=web.1 connect=4ms service=390ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:04.615329+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=8dc27734-9676-4c71-8369-f4a879f2d7c2 fwd="47.156.75.248" dyno=web.1 connect=1ms service=983ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:05.346769+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=e3361b2a-de36-4a90-8ddc-721fdc20e1d0 fwd="47.156.75.248" dyno=web.1 connect=2ms service=371ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:06.108753+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=ca9edcad-247a-4cbe-a21c-90ea8bf28cba fwd="47.156.75.248" dyno=web.1 connect=1ms service=368ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:06.102347+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102363+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102366+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102365+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102365+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102366+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102367+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102368+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102369+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102369+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102370+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102370+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102371+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102371+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102372+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102373+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102373+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102374+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102374+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102375+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102375+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102376+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102377+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102377+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102378+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102378+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102379+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102380+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102380+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102381+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102381+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102382+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102382+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102383+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102384+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102384+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102385+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102385+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102386+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102387+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102387+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102388+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102389+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102389+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102390+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102390+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102392+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102391+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102392+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102393+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102393+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102394+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102394+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102395+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102395+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102396+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102397+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102397+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102398+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102398+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102398+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102399+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102399+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102400+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102400+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102401+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102401+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102402+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102402+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102402+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102403+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102403+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102404+00:00 app[web.1]: JSON(wrapped: [resultMessage: Held until escalated fee drops., resultCode: terQUEUED], context: JSON.JSONContext)
+2017-08-04T03:56:06.102404+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102404+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102405+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102405+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102406+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102405+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102406+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102406+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102407+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102407+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102407+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102408+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102408+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102408+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102409+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102409+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102410+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102410+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102410+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102411+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102411+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102411+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102412+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102412+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102413+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102413+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102413+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102414+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102414+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102414+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102415+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102415+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102415+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102416+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102416+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102416+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102417+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102417+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102417+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102418+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102418+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102418+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102419+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102419+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102419+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102419+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102420+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102420+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102420+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102421+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102421+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102421+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102422+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102422+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102422+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102423+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102423+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102423+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102424+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102424+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102424+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102425+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102425+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102426+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102426+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102426+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102426+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102427+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102427+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102427+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102430+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102431+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102431+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102431+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102432+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102432+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102432+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102433+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.102433+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:06.102437+00:00 app[web.1]: currency sent
+2017-08-04T03:56:06.102438+00:00 app[web.1]: 1
+2017-08-04T03:56:06.102438+00:00 app[web.1]: 2
+2017-08-04T03:56:06.102438+00:00 app[web.1]: 3
+2017-08-04T03:56:06.102439+00:00 app[web.1]: 4
+2017-08-04T03:56:06.102439+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:06.102439+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:06.797007+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=4aa60715-f99d-437c-9b5d-6cc7c5adec77 fwd="47.156.75.248" dyno=web.1 connect=1ms service=364ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:08.262024+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=60223c65-e7e1-49ed-a81d-49426d534e3e fwd="47.156.75.248" dyno=web.1 connect=1ms service=1107ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:09.105099+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=b09ce663-b538-4fb4-86ab-7a7e29f8dc68 fwd="47.156.75.248" dyno=web.1 connect=1ms service=386ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:09.920161+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=a7a233fe-8637-4947-8914-97af00678973 fwd="47.156.75.248" dyno=web.1 connect=0ms service=417ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:10.730208+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=032be953-40f3-499a-82d2-6feb19f8ba3b fwd="47.156.75.248" dyno=web.1 connect=1ms service=407ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:16.299387+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=ae39e502-002e-4cbc-9b43-2576ba1d1de4 fwd="47.156.75.248" dyno=web.1 connect=1ms service=596ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:21.122992+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=09d25b2a-1457-4d48-9a80-ee3cda28adb3 fwd="47.156.75.248" dyno=web.1 connect=0ms service=1658ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:24.099091+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=b8c5b006-0a2d-441a-826e-20d7da7a598b fwd="47.156.75.248" dyno=web.1 connect=1ms service=769ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:25.914338+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=76a89dd5-8a57-4953-9170-9a4127886ef3 fwd="47.156.75.248" dyno=web.1 connect=2ms service=682ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:27.738143+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=82cffeed-1c0a-4f2a-9b20-d5f188bfa5be fwd="47.156.75.248" dyno=web.1 connect=1ms service=1381ms status=200 bytes=199 protocol=https
+2017-08-04T03:56:28.798009+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=a675afe1-b178-4bbf-8450-fbde26278e3c fwd="47.156.75.248" dyno=web.1 connect=1ms service=722ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:29.842598+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=95ad4fe5-ee93-44e7-857d-1d24f272eaa1 fwd="47.156.75.248" dyno=web.1 connect=1ms service=675ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:31.991756+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=95013a81-4559-4b72-ac5a-136cb0d49282 fwd="47.156.75.248" dyno=web.1 connect=1ms service=1854ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:33.002205+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=fc38be9b-aa73-4a51-b919-62c7f46cd7bb fwd="47.156.75.248" dyno=web.1 connect=1ms service=680ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:34.115407+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=5d53d14d-0d35-4726-b2dc-ce3299d31bcb fwd="47.156.75.248" dyno=web.1 connect=1ms service=773ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:35.819066+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=f7079227-fc6e-4357-ba0a-12cb905e472d fwd="47.156.75.248" dyno=web.1 connect=1ms service=1272ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:48.635496+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=a0b5a3f2-ff5d-4359-814e-4cab8bdcbee6 fwd="47.156.75.248" dyno=web.1 connect=1ms service=634ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:50.504806+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=a8123224-9fa7-407f-86a0-6a220735a548 fwd="47.156.75.248" dyno=web.1 connect=0ms service=1073ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:51.903777+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=ba915ac8-f10e-445f-b9de-946ef969220d fwd="47.156.75.248" dyno=web.1 connect=1ms service=690ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:53.210983+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=b10eab16-24a5-4dbd-b652-94ff5e3b12aa fwd="47.156.75.248" dyno=web.1 connect=0ms service=693ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:53.204413+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204424+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204425+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204426+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204426+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204427+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204427+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204428+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204429+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204430+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204431+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204430+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204431+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204432+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204432+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204433+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204434+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204434+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204435+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204435+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204437+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204436+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204436+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204437+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204438+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204439+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204439+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204440+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204440+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204441+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204441+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204442+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204443+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204443+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204444+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204444+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204445+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204445+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204446+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204447+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204450+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204450+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204451+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204452+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204452+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204453+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204453+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204454+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204455+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204455+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204456+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204457+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204456+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204457+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204458+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204458+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204460+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204459+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204460+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204460+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204461+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204461+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204461+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204463+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204463+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204464+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204464+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204464+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204465+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204465+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204466+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204465+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204466+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204467+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204467+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204468+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204468+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204468+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204468+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204469+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204470+00:00 app[web.1]: JSON(wrapped: [resultMessage: Held until escalated fee drops., resultCode: terQUEUED], context: JSON.JSONContext)
+2017-08-04T03:56:53.204470+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204470+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204470+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204471+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204471+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204471+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204472+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204472+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204473+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204473+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204473+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204474+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204475+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204474+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204475+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204475+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204476+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204476+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204477+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204476+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204477+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204477+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204478+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204478+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204478+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204479+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204479+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204479+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204479+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204480+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204480+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204480+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204481+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204481+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204481+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204482+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204482+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204482+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204483+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204483+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204483+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204483+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204484+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204484+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204484+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204485+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204485+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204485+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204486+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204486+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204486+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204487+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204487+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204487+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204489+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204488+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204488+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204489+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204489+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204490+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204490+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204490+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204491+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204491+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204491+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204492+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204492+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204492+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204492+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204493+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:56:53.204493+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:53.204530+00:00 app[web.1]: currency sent
+2017-08-04T03:56:53.204531+00:00 app[web.1]: 1
+2017-08-04T03:56:53.204532+00:00 app[web.1]: 2
+2017-08-04T03:56:53.204532+00:00 app[web.1]: 3
+2017-08-04T03:56:53.204533+00:00 app[web.1]: 0.0001
+2017-08-04T03:56:53.204533+00:00 app[web.1]: 4
+2017-08-04T03:56:53.204534+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:56:54.282532+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=5889c2fc-d55a-43cc-ab02-8050dc069105 fwd="47.156.75.248" dyno=web.1 connect=0ms service=683ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:55.354919+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=f5d1d237-129f-4406-ba18-2d7a4d64c831 fwd="47.156.75.248" dyno=web.1 connect=1ms service=685ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:56.539024+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=6f9a4e37-a618-47a1-9cb2-8ee872a06463 fwd="47.156.75.248" dyno=web.1 connect=1ms service=773ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:58.179861+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=0c42d0f3-e367-43bc-beac-886632abc90e fwd="47.156.75.248" dyno=web.1 connect=1ms service=1174ms status=200 bytes=232 protocol=https
+2017-08-04T03:56:59.344000+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=ec8d0ef8-6708-4c09-9c94-60cdbea4fa69 fwd="47.156.75.248" dyno=web.1 connect=0ms service=803ms status=200 bytes=232 protocol=https
+2017-08-04T03:57:00.181744+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=caa22cd3-7943-4eb5-a586-583280d385c9 fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=1ms service=19ms status=200 bytes=6062 protocol=https
+2017-08-04T03:57:00.758775+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=ebaa8df5-f991-4582-97b0-8267389fd9f7 fwd="47.156.75.248" dyno=web.1 connect=1ms service=1013ms status=200 bytes=232 protocol=https
+2017-08-04T03:57:01.897181+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=5c6901e1-a6c9-4ea9-8956-4d48288347f3 fwd="47.156.75.248" dyno=web.1 connect=1ms service=820ms status=200 bytes=232 protocol=https
+2017-08-04T03:57:02.990228+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=db2166fb-980a-4647-ac24-8688e69a5c27 fwd="47.156.75.248" dyno=web.1 connect=1ms service=679ms status=200 bytes=232 protocol=https
+2017-08-04T03:57:04.021745+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=01cbafc7-6f1c-48b0-872f-365b59cff296 fwd="47.156.75.248" dyno=web.1 connect=1ms service=696ms status=200 bytes=232 protocol=https
+2017-08-04T03:57:05.355950+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=bc601ab8-ad74-4cd3-ac04-e76d99c81b7e fwd="47.156.75.248" dyno=web.1 connect=0ms service=902ms status=200 bytes=232 protocol=https
+2017-08-04T03:57:06.374575+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=43ba8db2-a24b-4ceb-b227-242a7ad2b3be fwd="47.156.75.248" dyno=web.1 connect=0ms service=689ms status=200 bytes=232 protocol=https
+2017-08-04T03:57:07.508609+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=58782dc6-aa5a-44a6-8128-ac77b5e302a2 fwd="47.156.75.248" dyno=web.1 connect=1ms service=685ms status=200 bytes=232 protocol=https
+2017-08-04T03:57:09.766353+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=13055fd4-391c-49a8-a373-364dbb611765 fwd="47.156.75.248" dyno=web.1 connect=1ms service=695ms status=200 bytes=232 protocol=https
+2017-08-04T03:57:15.786819+00:00 app[api]: Starting process with command `curl https://bullrun-server.herokuapp.com/hourRound` by user scheduler@addons.heroku.com
+2017-08-04T03:57:19.858230+00:00 heroku[scheduler.9704]: Starting process with command `curl https://bullrun-server.herokuapp.com/hourRound`
+2017-08-04T03:57:20.418481+00:00 heroku[scheduler.9704]: State changed from starting to up
+2017-08-04T03:57:21.728954+00:00 app[scheduler.9704]:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2017-08-04T03:57:21.728996+00:00 app[scheduler.9704]:                                  Dload  Upload   Total   Spent    Left  Speed
+2017-08-04T03:57:24.029585+00:00 heroku[router]: at=info method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=73f71d31-0f24-4d0e-87fd-925904b1334e fwd="54.197.97.174" dyno=web.1 connect=0ms service=2178ms status=200 bytes=135 protocol=https
+2017-08-04T03:57:24.031126+00:00 app[scheduler.9704]:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0100    18  100    18    0     0      7      0  0:00:02  0:00:02 --:--:--     7
+2017-08-04T03:57:24.078595+00:00 app[scheduler.9704]: Running Hour Round
+2017-08-04T03:57:24.092798+00:00 heroku[scheduler.9704]: State changed from up to complete
+2017-08-04T03:57:24.081623+00:00 heroku[scheduler.9704]: Process exited with status 0
+2017-08-04T03:57:50.436779+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=21eb828a-0ea6-4fdf-b9e7-994b08facc25 fwd="47.156.75.248" dyno=web.1 connect=1ms service=401ms status=200 bytes=232 protocol=https
+2017-08-04T03:57:52.769663+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=e14cc576-5618-46a4-a9d4-b73fb470d7ce fwd="47.156.75.248" dyno=web.1 connect=0ms service=405ms status=200 bytes=232 protocol=https
+2017-08-04T03:59:54.371241+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=a2390daa-fab3-40f0-8899-42acea47c894 fwd="136.57.54.38" dyno=web.1 connect=1ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T03:59:54.359761+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359773+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359774+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359774+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359775+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359778+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359776+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359777+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359779+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359778+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359780+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359780+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359781+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359781+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359782+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359783+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359783+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359784+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359785+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359785+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359786+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359786+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359787+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359788+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359788+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359789+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359792+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359789+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359790+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359791+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359791+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359793+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359793+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359794+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359794+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359795+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359792+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359796+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359793+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359796+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359796+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359797+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359795+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359795+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359797+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359797+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359799+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359799+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359798+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359798+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359799+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359800+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359800+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359800+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359800+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359801+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359801+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359801+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359802+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359802+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359802+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359803+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359803+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359803+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359805+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359805+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359806+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359806+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359806+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359806+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359807+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359807+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359808+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359808+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359808+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359809+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359809+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359809+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359810+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359810+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359810+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359811+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359811+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359811+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359812+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359812+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359812+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359813+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359814+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359813+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359814+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359814+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359815+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359815+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359815+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359816+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359817+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359816+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359817+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359817+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359818+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359818+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359818+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359819+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359819+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359819+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359820+00:00 app[web.1]: bitcoin
+2017-08-04T03:59:54.359820+00:00 app[web.1]: ethereum
+2017-08-04T03:59:54.359820+00:00 app[web.1]: ripple
+2017-08-04T03:59:54.359821+00:00 app[web.1]: bitcoin-cash
+2017-08-04T03:59:54.359821+00:00 app[web.1]: litecoin
+2017-08-04T03:59:54.359822+00:00 app[web.1]: nem
+2017-08-04T03:59:54.359822+00:00 app[web.1]: ethereum-classic
+2017-08-04T03:59:54.359823+00:00 app[web.1]: dash
+2017-08-04T03:59:54.359823+00:00 app[web.1]: iota
+2017-08-04T03:59:54.359823+00:00 app[web.1]: monero
+2017-08-04T03:59:54.359824+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359824+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359825+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359824+00:00 app[web.1]: paid out correct amount: true, payouts:0.0,pool:0.0
+2017-08-04T03:59:54.359825+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359825+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359826+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359826+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359826+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359827+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359827+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359828+00:00 app[web.1]: 2
+2017-08-04T03:59:54.359827+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359828+00:00 app[web.1]: 3
+2017-08-04T03:59:54.359828+00:00 app[web.1]: 4
+2017-08-04T03:59:54.359829+00:00 app[web.1]: 0.0001
+2017-08-04T03:59:54.359829+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T03:59:54.359829+00:00 app[web.1]: JSON(wrapped: [resultMessage: The transaction was applied. Only final in a validated ledger., resultCode: tesSUCCESS], context: JSON.JSONContext)
+2017-08-04T03:59:54.359830+00:00 app[web.1]: currency sent
+2017-08-04T03:59:54.359830+00:00 app[web.1]: 1
+2017-08-04T03:59:54.359831+00:00 app[web.1]: Found bad encoded pair {"secret":"snt5W79Kx6mrbaWsMHuXGiBDdg66z","address":"rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5","coin":"ethereum","amount":0.0001} ... continuing
+2017-08-04T03:59:54.359832+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:59:54.370079+00:00 app[web.1]: 1
+2017-08-04T03:59:54.370082+00:00 app[web.1]: Found bad encoded pair {"secret":"snt5W79Kx6mrbaWsMHuXGiBDdg66z","address":"rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5","coin":"ethereum","amount":0.0001} ... continuing
+2017-08-04T03:59:54.370083+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:59:54.362308+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=f7f7a0d1-7bc3-4e6d-b0ba-97b08a505aca fwd="136.57.54.38" dyno=web.1 connect=0ms service=9ms status=400 bytes=132 protocol=https
+2017-08-04T03:59:54.649279+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=f665d91a-f591-4565-a448-8f0ddfb20706 fwd="136.57.54.38" dyno=web.1 connect=1ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T03:59:54.646403+00:00 app[web.1]: 1
+2017-08-04T03:59:54.646429+00:00 app[web.1]: Found bad encoded pair {"secret":"snt5W79Kx6mrbaWsMHuXGiBDdg66z","address":"rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5","coin":"ethereum","amount":0.0001} ... continuing
+2017-08-04T03:59:54.646430+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:59:54.681129+00:00 app[web.1]: 1
+2017-08-04T03:59:54.681131+00:00 app[web.1]: Found bad encoded pair {"secret":"snt5W79Kx6mrbaWsMHuXGiBDdg66z","address":"rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5","coin":"ethereum","amount":0.0001} ... continuing
+2017-08-04T03:59:54.681133+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T03:59:54.682353+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=e5f817d6-400a-4a8a-8f45-11c635003a12 fwd="136.57.54.38" dyno=web.1 connect=1ms service=3ms status=400 bytes=132 protocol=https
+2017-08-04T04:00:12.449889+00:00 app[api]: Starting process with command `curl https://bullrun-server.herokuapp.com/dailyRound` by user scheduler@addons.heroku.com
+2017-08-04T04:00:16.556092+00:00 heroku[scheduler.3902]: Starting process with command `curl https://bullrun-server.herokuapp.com/dailyRound`
+2017-08-04T04:00:17.100783+00:00 heroku[scheduler.3902]: State changed from starting to up
+2017-08-04T04:00:18.051742+00:00 app[scheduler.3902]:                                  Dload  Upload   Total   Spent    Left  Speed
+2017-08-04T04:00:18.299734+00:00 app[scheduler.3902]:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    17  100    17    0     0     68      0 --:--:-- --:--:-- --:--:--    68
+2017-08-04T04:00:18.051640+00:00 app[scheduler.3902]:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2017-08-04T04:00:18.373995+00:00 app[scheduler.3902]: Running Day Round
+2017-08-04T04:00:18.299063+00:00 heroku[router]: at=info method=GET path="/dailyRound" host=bullrun-server.herokuapp.com request_id=2675e19a-7958-4e64-b5cb-8888563ac0ea fwd="54.204.58.152" dyno=web.1 connect=0ms service=80ms status=200 bytes=134 protocol=https
+2017-08-04T04:00:18.377176+00:00 heroku[scheduler.3902]: Process exited with status 0
+2017-08-04T04:00:18.403256+00:00 heroku[scheduler.3902]: State changed from up to complete
+2017-08-04T04:00:28.674935+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=d83c7b6b-1f92-460b-9271-cce4755445d4 fwd="136.57.54.38" dyno=web.1 connect=1ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T04:00:28.669935+00:00 app[web.1]: 1
+2017-08-04T04:00:28.669951+00:00 app[web.1]: Found bad encoded pair {"secret":"snt5W79Kx6mrbaWsMHuXGiBDdg66z","address":"rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5","coin":"ethereum","amount":0.0001} ... continuing
+2017-08-04T04:00:28.669953+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T04:00:28.671043+00:00 app[web.1]: 1
+2017-08-04T04:00:28.671045+00:00 app[web.1]: Found bad encoded pair {"secret":"snt5W79Kx6mrbaWsMHuXGiBDdg66z","address":"rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5","coin":"ethereum","amount":0.0001} ... continuing
+2017-08-04T04:00:28.671045+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T04:00:28.861233+00:00 app[web.1]: 1
+2017-08-04T04:00:28.861236+00:00 app[web.1]: Found bad encoded pair {"secret":"snt5W79Kx6mrbaWsMHuXGiBDdg66z","address":"rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5","coin":"ethereum","amount":0.0001} ... continuing
+2017-08-04T04:00:28.861238+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T04:00:28.671524+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=a347de18-037d-4d46-92de-65f8b284c5ae fwd="136.57.54.38" dyno=web.1 connect=1ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T04:00:28.863098+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=3cb5c2c4-b8d9-4ee6-b782-3558e7090634 fwd="136.57.54.38" dyno=web.1 connect=0ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T04:00:29.192973+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=ce715774-197f-4998-a849-cd4c3d8b948b fwd="136.57.54.38" dyno=web.1 connect=1ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T04:00:29.188998+00:00 app[web.1]: 1
+2017-08-04T04:00:29.189017+00:00 app[web.1]: Found bad encoded pair {"secret":"snt5W79Kx6mrbaWsMHuXGiBDdg66z","address":"rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5","coin":"ethereum","amount":0.0001} ... continuing
+2017-08-04T04:00:29.189018+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T04:00:55.225340+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=075503fb-323e-4726-9a4b-8fcf16a19538 fwd="136.57.54.38" dyno=web.1 connect=0ms service=4ms status=400 bytes=132 protocol=https
+2017-08-04T04:00:55.225561+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=d8cde4cb-7d9c-4321-b289-451f8d772b94 fwd="136.57.54.38" dyno=web.1 connect=1ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T04:00:55.224476+00:00 app[web.1]: 1
+2017-08-04T04:00:55.224477+00:00 app[web.1]: Found bad encoded pair {"secret":"snt5W79Kx6mrbaWsMHuXGiBDdg66z","address":"rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5","coin":"ethereum","amount":"0.0001"} ... continuing
+2017-08-04T04:00:55.224478+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T04:00:55.224236+00:00 app[web.1]: Found bad encoded pair {"secret":"snt5W79Kx6mrbaWsMHuXGiBDdg66z","address":"rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5","coin":"ethereum","amount":"0.0001"} ... continuing
+2017-08-04T04:00:55.224227+00:00 app[web.1]: 1
+2017-08-04T04:00:55.224237+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T04:00:55.546411+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=5d40b8b6-a95e-404e-b7ae-ac2f450c2b60 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1ms status=400 bytes=132 protocol=https
+2017-08-04T04:00:55.544313+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T04:00:55.544297+00:00 app[web.1]: 1
+2017-08-04T04:00:55.544312+00:00 app[web.1]: Found bad encoded pair {"secret":"snt5W79Kx6mrbaWsMHuXGiBDdg66z","address":"rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5","coin":"ethereum","amount":"0.0001"} ... continuing
+2017-08-04T04:00:55.789736+00:00 app[web.1]: Found bad encoded pair {"secret":"snt5W79Kx6mrbaWsMHuXGiBDdg66z","address":"rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5","coin":"ethereum","amount":"0.0001"} ... continuing
+2017-08-04T04:00:55.789732+00:00 app[web.1]: 1
+2017-08-04T04:00:55.789737+00:00 app[web.1]: [31m[Abort request error: Bad Request] [Identifier: Vapor.Abort.badRequest][0m
+2017-08-04T04:00:55.791020+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=8401fb66-3d7d-4df3-9c6a-08b09dc2223b fwd="136.57.54.38" dyno=web.1 connect=1ms service=2ms status=400 bytes=132 protocol=https
+2017-08-04T04:01:23.452954+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=e08b56ae-e892-4ecc-b802-6283ec1dcedd fwd="47.156.75.248" dyno=web.1 connect=0ms service=499ms status=200 bytes=232 protocol=https
+2017-08-04T04:01:25.007097+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=276df34e-b588-4de3-a47d-5598dbcc19b6 fwd="47.156.75.248" dyno=web.1 connect=0ms service=495ms status=200 bytes=232 protocol=https
+2017-08-04T04:01:34.242036+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=be0c0056-ee3c-4757-bb1c-286c82c8ada3 fwd="47.156.75.248" dyno=web.1 connect=0ms service=484ms status=200 bytes=232 protocol=https
+2017-08-04T04:01:35.972496+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=90eacea6-ff69-4d43-903d-20f9ff52b39c fwd="47.156.75.248" dyno=web.1 connect=0ms service=489ms status=200 bytes=232 protocol=https
+2017-08-04T04:01:41.834235+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=97fceaa0-8d8c-4f0d-b4fa-2def121ab284 fwd="47.156.75.248" dyno=web.1 connect=0ms service=433ms status=200 bytes=232 protocol=https
+2017-08-04T04:01:43.768545+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=7310a0b8-6c5b-4914-a177-bb76a093548e fwd="47.156.75.248" dyno=web.1 connect=0ms service=473ms status=200 bytes=232 protocol=https
+2017-08-04T04:02:24.620996+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=de15f2ab-c6a9-4883-9118-6666abf8fb9c fwd="47.156.75.248" dyno=web.1 connect=0ms service=429ms status=200 bytes=232 protocol=https
+2017-08-04T04:02:26.625629+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=f753ed6e-ae4b-43ab-93b4-f533d1d5fd5f fwd="47.156.75.248" dyno=web.1 connect=0ms service=676ms status=200 bytes=232 protocol=https
+2017-08-04T04:02:28.699565+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=28c4396f-d4ba-49b4-8f55-0908cd28aa6c fwd="47.156.75.248" dyno=web.1 connect=0ms service=404ms status=200 bytes=232 protocol=https
+2017-08-04T04:03:11.659222+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=90610b7d-f51f-4fa5-ae2f-cf90b290efaa fwd="136.57.54.38" dyno=web.1 connect=0ms service=266ms status=200 bytes=197 protocol=https
+2017-08-04T04:03:12.268535+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=dcd08cec-c99c-4bc6-aa17-5663d4dd0057 fwd="136.57.54.38" dyno=web.1 connect=1ms service=889ms status=200 bytes=232 protocol=https
+2017-08-04T04:03:12.812479+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=5131730c-c76e-4f93-a18a-20b1ad1d3e99 fwd="136.57.54.38" dyno=web.1 connect=0ms service=858ms status=200 bytes=218 protocol=https
+2017-08-04T04:03:19.108441+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=c0f80671-aefd-4d9e-ac89-879778b07b5b fwd="136.57.54.38" dyno=web.1 connect=0ms service=6661ms status=200 bytes=232 protocol=https
+2017-08-04T04:03:33.804874+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=d0b78145-0655-4e7f-852d-95745610d801 fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=1ms service=15ms status=200 bytes=2045 protocol=https
+2017-08-04T04:03:37.219358+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=c73045d7-7102-4ce1-aba5-b1a7f9ebe785 fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=0ms service=14ms status=200 bytes=2045 protocol=https
+2017-08-04T04:03:41.620960+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=5b3043e9-5577-48c4-9767-f7f3776ee593 fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=0ms service=15ms status=200 bytes=2045 protocol=https
+2017-08-04T04:03:47.348355+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=51e0eac1-9515-4d33-aacf-89e8b48f402e fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=0ms service=14ms status=200 bytes=2045 protocol=https
+2017-08-04T04:03:48.800955+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=f4f2fbf7-0533-4763-89ef-46b1a6dea09b fwd="47.156.75.248" dyno=web.1 connect=0ms service=30000ms status=503 bytes=0 protocol=https
+2017-08-04T04:03:48.916358+00:00 heroku[web.1]: Process exited with status 132
+2017-08-04T04:03:48.930421+00:00 heroku[web.1]: State changed from up to crashed
+2017-08-04T04:03:48.931884+00:00 heroku[web.1]: State changed from crashed to starting
+2017-08-04T04:03:52.794733+00:00 heroku[web.1]: Starting process with command `Run --env=production --workdir=./ --config:servers.default.port=37902`
+2017-08-04T04:03:54.794743+00:00 app[web.1]: [36mProduction mode enabled, disabling informational logs.[0m
+2017-08-04T04:03:54.920233+00:00 app[web.1]: Successfully connected!
+2017-08-04T04:03:54.920234+00:00 app[web.1]: [33mNo command supplied, defaulting to serve...[0m
+2017-08-04T04:03:54.920444+00:00 app[web.1]: [36mStarting server on 0.0.0.0:37902[0m
+2017-08-04T04:03:54.862550+00:00 app[web.1]: [36mDatabase prepared[0m
+2017-08-04T04:03:56.440404+00:00 heroku[web.1]: State changed from starting to up
+2017-08-04T04:03:57.551700+00:00 heroku[router]: at=info method=GET path="/balance?address=rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5" host=bullrun-server.herokuapp.com request_id=6a0e1fd7-4665-49d7-ad68-30834f42f359 fwd="47.156.75.248" dyno=web.1 connect=0ms service=292ms status=200 bytes=163 protocol=https
+2017-08-04T04:03:57.564692+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=3434d3f2-de56-4a0d-9bc1-1eef838ade52 fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=2ms service=18ms status=200 bytes=2045 protocol=https
+2017-08-04T04:03:58.311908+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=dffeaf96-4b0a-4986-add3-f73e6450a006 fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=0ms service=15ms status=200 bytes=2045 protocol=https
+2017-08-04T04:04:03.134671+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=fcd03f53-86d5-4830-b71d-9133b9940fac fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=1ms service=15ms status=200 bytes=2045 protocol=https
+2017-08-04T04:04:02.989529+00:00 heroku[router]: at=info method=GET path="/balance?address=rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5" host=bullrun-server.herokuapp.com request_id=88148b6a-ad79-434b-898a-29beee1b0ee1 fwd="47.156.75.248" dyno=web.1 connect=15ms service=314ms status=200 bytes=163 protocol=https
+2017-08-04T04:04:03.855754+00:00 heroku[router]: at=info method=GET path="/check" host=bullrun-server.herokuapp.com request_id=488feb45-e22b-41a5-b981-f02b1c8a29a7 fwd="47.156.75.248" dyno=web.1 connect=0ms service=7080ms status=200 bytes=214 protocol=https
+2017-08-04T04:04:11.768257+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=6871b72f-c536-4f91-900d-bf1880811cef fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=1ms service=14ms status=200 bytes=975 protocol=https
+2017-08-04T04:04:16.542180+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=b347a74b-4f7c-4581-9bc5-befe6b6d3c39 fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=0ms service=12ms status=200 bytes=975 protocol=https
+2017-08-04T04:04:20.982191+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=a25f2677-99d2-4a31-abfd-60f14ac642c9 fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=0ms service=12ms status=200 bytes=975 protocol=https
+2017-08-04T04:04:40.972310+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=ad73de6d-32ea-4a65-8afe-08939370de7f fwd="47.156.75.248" dyno=web.1 connect=0ms service=224ms status=200 bytes=232 protocol=https
+2017-08-04T04:04:58.266225+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=539b80da-31e3-4334-aa43-cab7c310d728 fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=0ms service=16ms status=200 bytes=1056 protocol=https
+2017-08-04T04:05:21.898540+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=49a3ce13-ee50-4d80-8b14-ebc68610deb8 fwd="136.57.54.38" dyno=web.1 connect=0ms service=443ms status=200 bytes=197 protocol=https
+2017-08-04T04:05:22.764338+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=efbd7454-650f-454b-b623-ca7cec5d417f fwd="136.57.54.38" dyno=web.1 connect=0ms service=1307ms status=200 bytes=232 protocol=https
+2017-08-04T04:05:23.454584+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=134d16e2-58db-4b44-a0cd-b42771491e80 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1076ms status=200 bytes=218 protocol=https
+2017-08-04T04:05:24.270348+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=4b844aa3-9d41-4344-98bd-5340305b9004 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1219ms status=200 bytes=232 protocol=https
+2017-08-04T04:05:24.932143+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=03b916be-4204-4603-8375-b3e6738e1927 fwd="136.57.54.38" dyno=web.1 connect=1ms service=1091ms status=200 bytes=218 protocol=https
+2017-08-04T04:05:25.573004+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=0193fb68-e344-4bab-94f2-b47af3104842 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1033ms status=200 bytes=232 protocol=https
+2017-08-04T04:05:26.098233+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=0bbaeedd-dd23-473d-9b12-1256734e2e5e fwd="136.57.54.38" dyno=web.1 connect=0ms service=950ms status=200 bytes=210 protocol=https
+2017-08-04T04:05:26.726810+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=68b40cd4-d711-44d3-adba-c0cd0034a189 fwd="136.57.54.38" dyno=web.1 connect=1ms service=992ms status=200 bytes=232 protocol=https
+2017-08-04T04:05:27.083311+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=757a8260-efc5-4137-9765-266e2cc079f2 fwd="136.57.54.38" dyno=web.1 connect=0ms service=764ms status=200 bytes=218 protocol=https
+2017-08-04T04:05:28.042499+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=d2ec299c-2a95-4ef1-8c33-45b4b3c41cba fwd="136.57.54.38" dyno=web.1 connect=3ms service=1196ms status=200 bytes=199 protocol=https
+2017-08-04T04:05:28.098451+00:00 heroku[router]: at=info method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=bc98ab19-5f75-4b9c-999d-5c68d89bb67d fwd="47.156.75.248" dyno=web.1 connect=0ms service=1379ms status=200 bytes=232 protocol=https
+2017-08-04T04:05:30.657466+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=983a1a05-be76-43c3-b465-e3a39fa14c36 fwd="136.57.54.38" dyno=web.1 connect=0ms service=3007ms status=200 bytes=210 protocol=https
+2017-08-04T04:05:31.172710+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=35a8255c-cdbd-4ce8-ae33-2fd027ee6f51 fwd="136.57.54.38" dyno=web.1 connect=0ms service=2587ms status=200 bytes=232 protocol=https
+2017-08-04T04:05:32.114339+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=e0acb72d-1f40-498f-9d10-bb04610d66b3 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1320ms status=200 bytes=218 protocol=https
+2017-08-04T04:05:32.757416+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=37aba62d-1636-4808-828d-c664bea1510d fwd="136.57.54.38" dyno=web.1 connect=0ms service=1055ms status=200 bytes=232 protocol=https
+2017-08-04T04:05:32.752058+00:00 app[web.1]: bitcoin
+2017-08-04T04:05:32.752075+00:00 app[web.1]: ethereum
+2017-08-04T04:05:32.752076+00:00 app[web.1]: ripple
+2017-08-04T04:05:32.752076+00:00 app[web.1]: bitcoin-cash
+2017-08-04T04:05:32.752078+00:00 app[web.1]: nem
+2017-08-04T04:05:32.752077+00:00 app[web.1]: litecoin
+2017-08-04T04:05:32.752079+00:00 app[web.1]: ethereum-classic
+2017-08-04T04:05:32.752079+00:00 app[web.1]: dash
+2017-08-04T04:05:32.752080+00:00 app[web.1]: iota
+2017-08-04T04:05:32.752081+00:00 app[web.1]: address is rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5
+2017-08-04T04:05:32.752081+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752082+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752082+00:00 app[web.1]: monero
+2017-08-04T04:05:32.752083+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752084+00:00 app[web.1]: JSON(wrapped: [[currency: XRP, value: 24.959599]], context: JSON.JSONContext)
+2017-08-04T04:05:32.752084+00:00 app[web.1]: address is rBWbvMfb1NxPFNn1FJmDeiwCrdVo4gaEG5
+2017-08-04T04:05:32.752085+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752085+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752086+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752087+00:00 app[web.1]: JSON(wrapped: [[currency: XRP, value: 24.959599]], context: JSON.JSONContext)
+2017-08-04T04:05:32.752087+00:00 app[web.1]: JSON(wrapped: [resultCode: tefMAX_LEDGER, resultMessage: Ledger sequence too high.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752091+00:00 app[web.1]: JSON(wrapped: [resultCode: tesSUCCESS, resultMessage: The transaction was applied. Only final in a validated ledger.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752093+00:00 app[web.1]: paid out correct amount: true, payouts:0.0,pool:0.0013
+2017-08-04T04:05:32.752093+00:00 app[web.1]: address is r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752094+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752094+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752095+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752096+00:00 app[web.1]: address is rrnkCbkABCyfLDTWpEsp8sF67N33Bzjjsk
+2017-08-04T04:05:32.752095+00:00 app[web.1]: JSON(wrapped: [[currency: XRP, value: 22.590621]], context: JSON.JSONContext)
+2017-08-04T04:05:32.752096+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752097+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752098+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752098+00:00 app[web.1]: JSON(wrapped: [[currency: XRP, value: 22.5]], context: JSON.JSONContext)
+2017-08-04T04:05:32.752099+00:00 app[web.1]: JSON(wrapped: [[currency: XRP, value: 22.590621]], context: JSON.JSONContext)
+2017-08-04T04:05:32.752100+00:00 app[web.1]: JSON(wrapped: [[currency: XRP, value: 22.5]], context: JSON.JSONContext)
+2017-08-04T04:05:32.752100+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752101+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752101+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752101+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752102+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752103+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752103+00:00 app[web.1]: JSON(wrapped: [resultCode: tesSUCCESS, resultMessage: The transaction was applied. Only final in a validated ledger.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752104+00:00 app[web.1]: currency sent
+2017-08-04T04:05:32.752104+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752104+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752105+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752105+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752105+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752106+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752106+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752107+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752107+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752107+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752108+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752108+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752109+00:00 app[web.1]: JSON(wrapped: [resultCode: tefMAX_LEDGER, resultMessage: Ledger sequence too high.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752109+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752109+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752109+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752110+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752110+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752110+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752111+00:00 app[web.1]: JSON(wrapped: [resultCode: tesSUCCESS, resultMessage: The transaction was applied. Only final in a validated ledger.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752111+00:00 app[web.1]: currency sent
+2017-08-04T04:05:32.752112+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752112+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752112+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752112+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752113+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752113+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752114+00:00 app[web.1]: JSON(wrapped: [resultCode: tefALREADY, resultMessage: The exact transaction was already in this ledger.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752115+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752115+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752115+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752116+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752116+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752116+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752117+00:00 app[web.1]: JSON(wrapped: [resultCode: tesSUCCESS, resultMessage: The transaction was applied. Only final in a validated ledger.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752117+00:00 app[web.1]: currency sent
+2017-08-04T04:05:32.752117+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752118+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752118+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752118+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752119+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752119+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752119+00:00 app[web.1]: JSON(wrapped: [resultCode: tefALREADY, resultMessage: The exact transaction was already in this ledger.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752135+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752135+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752136+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752136+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752137+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752137+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752138+00:00 app[web.1]: JSON(wrapped: [resultCode: tesSUCCESS, resultMessage: The transaction was applied. Only final in a validated ledger.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752138+00:00 app[web.1]: currency sent
+2017-08-04T04:05:32.752139+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752140+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752140+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752141+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752142+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752141+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752142+00:00 app[web.1]: JSON(wrapped: [resultCode: tefPAST_SEQ, resultMessage: This sequence number has already passed.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752142+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752143+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752143+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752143+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752144+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752144+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752145+00:00 app[web.1]: JSON(wrapped: [resultCode: tesSUCCESS, resultMessage: The transaction was applied. Only final in a validated ledger.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752145+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752145+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752146+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752145+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752146+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752146+00:00 app[web.1]: currency sent
+2017-08-04T04:05:32.752147+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752147+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752147+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752148+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752148+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752148+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752149+00:00 app[web.1]: JSON(wrapped: [resultCode: tefALREADY, resultMessage: The exact transaction was already in this ledger.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752149+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752149+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752150+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752150+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752150+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752151+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752151+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752151+00:00 app[web.1]: JSON(wrapped: [resultCode: terQUEUED, resultMessage: Held until escalated fee drops.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752152+00:00 app[web.1]: JSON(wrapped: [resultCode: tesSUCCESS, resultMessage: The transaction was applied. Only final in a validated ledger.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752152+00:00 app[web.1]: currency sent
+2017-08-04T04:05:32.752152+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752153+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752153+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752153+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752154+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752154+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752154+00:00 app[web.1]: JSON(wrapped: [resultCode: tefPAST_SEQ, resultMessage: This sequence number has already passed.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752155+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752155+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752155+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752156+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752156+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752156+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752157+00:00 app[web.1]: JSON(wrapped: [resultCode: tesSUCCESS, resultMessage: The transaction was applied. Only final in a validated ledger.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752157+00:00 app[web.1]: currency sent
+2017-08-04T04:05:32.752157+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752157+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752158+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752158+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752158+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752159+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:32.752159+00:00 app[web.1]: JSON(wrapped: [resultCode: tefALREADY, resultMessage: The exact transaction was already in this ledger.], context: JSON.JSONContext)
+2017-08-04T04:05:32.752160+00:00 app[web.1]: 1
+2017-08-04T04:05:32.752160+00:00 app[web.1]: 2
+2017-08-04T04:05:32.752160+00:00 app[web.1]: 3
+2017-08-04T04:05:32.752160+00:00 app[web.1]: 4
+2017-08-04T04:05:32.752161+00:00 app[web.1]: 0.0001
+2017-08-04T04:05:32.752161+00:00 app[web.1]: r34WdBMkCHgRhGYtuhrRxKA21BXtBR3tQh
+2017-08-04T04:05:33.529439+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=e7a972d4-0a5b-4e9e-a746-ec074585acaa fwd="136.57.54.38" dyno=web.1 connect=0ms service=1209ms status=200 bytes=218 protocol=https
+2017-08-04T04:05:34.403362+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=f394ad56-6456-4faf-a71b-f7a33f19a132 fwd="136.57.54.38" dyno=web.1 connect=0ms service=1260ms status=200 bytes=232 protocol=https
+2017-08-04T04:05:35.294236+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=b6c2bbf5-9612-408e-bfdd-01418c4b37f4 fwd="136.57.54.38" dyno=web.1 connect=1ms service=1304ms status=200 bytes=218 protocol=https
+2017-08-04T04:05:36.096356+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=2e206c63-ea9c-46f9-99f6-63c7a4caa08f fwd="136.57.54.38" dyno=web.1 connect=0ms service=1195ms status=200 bytes=232 protocol=https
+2017-08-04T04:05:36.622338+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=ce0f8f3a-729d-44f7-aa1d-750e45769ddd fwd="136.57.54.38" dyno=web.1 connect=5ms service=938ms status=200 bytes=210 protocol=https
+2017-08-04T04:06:01.021783+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=5b6d2812-49c5-43a9-ab89-5eb649684638 fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=1ms service=14ms status=200 bytes=1804 protocol=https
+2017-08-04T04:06:02.223460+00:00 heroku[router]: at=info method=POST path="/betHour" host=bullrun-server.herokuapp.com request_id=f021d396-372e-49c3-812b-5045d3107dde fwd="136.57.54.38" dyno=web.1 connect=0ms service=26020ms status=200 bytes=197 protocol=https
+2017-08-04T04:06:12.395053+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=7abdcce1-1e52-4eb4-bf0e-216fd27b6204 fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=1ms service=14ms status=200 bytes=1804 protocol=https
+2017-08-04T04:06:16.288547+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=4ce268ec-f880-4a2f-97b7-c755e07f78d7 fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=0ms service=17ms status=200 bytes=1804 protocol=https
+2017-08-04T04:06:22.604402+00:00 heroku[router]: at=info method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=a427fb7e-efd1-4f4b-9354-5171a9d3287b fwd="136.57.54.38,54.163.164.251" dyno=web.1 connect=0ms service=14ms status=200 bytes=1804 protocol=https
+2017-08-04T04:06:31.806606+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=92224ef2-b558-42ca-a283-15dabbe4a179 fwd="47.156.75.248" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0 protocol=https
+2017-08-04T04:06:31.974843+00:00 app[web.1]: JSON(wrapped: [resultCode: tesSUCCESS, resultMessage: T
+2017-08-04T04:06:31.977966+00:00 heroku[web.1]: Process exited with status 132
+2017-08-04T04:06:31.990951+00:00 heroku[web.1]: State changed from up to crashed
+2017-08-04T04:06:34.526806+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=edceabbd-0b14-4da5-81a2-9506e9297237 fwd="136.57.54.38,54.163.164.251" dyno= connect= service= status=503 bytes= protocol=https
+2017-08-04T04:06:35.657429+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=146ebb6a-ba22-47ab-93af-8c6814b2a7e7 fwd="136.57.54.38,54.163.164.251" dyno= connect= service= status=503 bytes= protocol=https
+2017-08-04T04:06:38.290773+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=2d7b3161-b530-428f-bf88-a613b224ca77 fwd="47.156.75.248" dyno= connect= service= status=503 bytes= protocol=https
+2017-08-04T04:06:40.246875+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=c4ee9571-58f8-4a42-9c33-a605a5a7559c fwd="47.156.75.248" dyno= connect= service= status=503 bytes= protocol=https
+2017-08-04T04:06:43.146850+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=7cdf9075-5740-4159-a4d2-16ab0a952adf fwd="47.156.75.248" dyno= connect= service= status=503 bytes= protocol=https
+2017-08-04T04:06:53.004964+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=24d56dec-445f-405e-82bc-d4c3109f9e92 fwd="47.156.75.248" dyno= connect= service= status=503 bytes= protocol=https
+2017-08-04T04:06:53.703045+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=bba2994d-fc92-45c5-a830-48319ab93611 fwd="136.57.54.38,54.163.164.251" dyno= connect= service= status=503 bytes= protocol=https
+2017-08-04T04:07:01.450824+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=23d56b7d-5646-465f-a15e-407874dd8dd6 fwd="47.156.75.248" dyno= connect= service= status=503 bytes= protocol=https
+2017-08-04T04:07:07.300377+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/betHour?address=rKTZNXALMGFHPM3GoxqS2MZ9P8dGA5yoVg&secret=saUjazr5zPKm6YVFcoH93sQDcggCE&amount=0.0001&coin=bitcoin" host=bullrun-server.herokuapp.com request_id=2c039bd1-4b09-4d48-a28a-8505682a9ded fwd="47.156.75.248" dyno= connect= service= status=503 bytes= protocol=https
+2017-08-04T04:07:12.373408+00:00 app[api]: Starting process with command `curl https://bullrun-server.herokuapp.com/hourRound` by user scheduler@addons.heroku.com
+2017-08-04T04:07:17.156069+00:00 heroku[scheduler.2402]: Starting process with command `curl https://bullrun-server.herokuapp.com/hourRound`
+2017-08-04T04:07:17.869088+00:00 heroku[scheduler.2402]: State changed from starting to up
+2017-08-04T04:07:18.975576+00:00 app[scheduler.2402]:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2017-08-04T04:07:18.976128+00:00 app[scheduler.2402]:                                  Dload  Upload   Total   Spent    Left  Speed
+2017-08-04T04:07:19.095840+00:00 app[scheduler.2402]:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   506  100   506    0     0   4196      0 --:--:-- --:--:-- --:--:--  4216
+2017-08-04T04:07:19.095844+00:00 app[scheduler.2402]: <!DOCTYPE html>
+2017-08-04T04:07:19.095845+00:00 app[scheduler.2402]: 	<html>
+2017-08-04T04:07:19.095846+00:00 app[scheduler.2402]: 	  <head>
+2017-08-04T04:07:19.095847+00:00 app[scheduler.2402]: 		<meta name="viewport" content="width=device-width, initial-scale=1">
+2017-08-04T04:07:19.095848+00:00 app[scheduler.2402]: 		<meta charset="utf-8">
+2017-08-04T04:07:19.095849+00:00 app[scheduler.2402]: 		<title>Application Error</title>
+2017-08-04T04:07:19.095849+00:00 app[scheduler.2402]: 		<style media="screen">
+2017-08-04T04:07:19.095850+00:00 app[scheduler.2402]: 		  html,body,iframe {
+2017-08-04T04:07:19.094824+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=6d221cc5-a209-471d-a003-f4dd691f1a26 fwd="54.161.148.41" dyno= connect= service= status=503 bytes= protocol=https
+2017-08-04T04:07:19.095851+00:00 app[scheduler.2402]: 			margin: 0;
+2017-08-04T04:07:19.095851+00:00 app[scheduler.2402]: 			padding: 0;
+2017-08-04T04:07:19.095852+00:00 app[scheduler.2402]: 		  }
+2017-08-04T04:07:19.095852+00:00 app[scheduler.2402]: 		  html,body {
+2017-08-04T04:07:19.095853+00:00 app[scheduler.2402]: 			height: 100%;
+2017-08-04T04:07:19.095854+00:00 app[scheduler.2402]: 			overflow: hidden;
+2017-08-04T04:07:19.095854+00:00 app[scheduler.2402]: 		  }
+2017-08-04T04:07:19.095855+00:00 app[scheduler.2402]: 		  iframe {
+2017-08-04T04:07:19.095856+00:00 app[scheduler.2402]: 			width: 100%;
+2017-08-04T04:07:19.095856+00:00 app[scheduler.2402]: 			height: 100%;
+2017-08-04T04:07:19.095857+00:00 app[scheduler.2402]: 			border: 0;
+2017-08-04T04:07:19.095857+00:00 app[scheduler.2402]: 		  }
+2017-08-04T04:07:19.095858+00:00 app[scheduler.2402]: 		</style>
+2017-08-04T04:07:19.095859+00:00 app[scheduler.2402]: 	  </head>
+2017-08-04T04:07:19.095859+00:00 app[scheduler.2402]: 	  <body>
+2017-08-04T04:07:19.095861+00:00 app[scheduler.2402]: 	  </body>
+2017-08-04T04:07:19.095860+00:00 app[scheduler.2402]: 		<iframe src="//www.herokucdn.com/error-pages/application-error.html"></iframe>
+2017-08-04T04:07:19.185055+00:00 app[scheduler.2402]: 	</html>
+2017-08-04T04:07:19.204463+00:00 heroku[scheduler.2402]: State changed from up to complete
+2017-08-04T04:07:19.188941+00:00 heroku[scheduler.2402]: Process exited with status 0
+2017-08-04T04:07:35.881458+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=5deba2fe-40c7-4d57-9dcd-8f31e229461d fwd="136.57.54.38,54.163.164.251" dyno= connect= service= status=503 bytes= protocol=https
+2017-08-04T04:08:13.754512+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/HourCoins" host=bullrun-server.herokuapp.com request_id=3d7a4e9c-ef7e-43ba-9315-cb5f6e4f98cd fwd="136.57.54.38,54.163.164.251" dyno= connect= service= status=503 bytes= protocol=https
+2017-08-04T04:17:37.999435+00:00 app[api]: Starting process with command `curl https://bullrun-server.herokuapp.com/hourRound` by user scheduler@addons.heroku.com
+2017-08-04T04:17:44.598862+00:00 heroku[scheduler.6406]: Starting process with command `curl https://bullrun-server.herokuapp.com/hourRound`
+2017-08-04T04:17:45.193886+00:00 heroku[scheduler.6406]: State changed from starting to up
+2017-08-04T04:17:46.844352+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/hourRound" host=bullrun-server.herokuapp.com request_id=e452a042-ab7c-463d-9021-413198abb0b4 fwd="54.196.57.50" dyno= connect= service= status=503 bytes= protocol=https
+2017-08-04T04:17:46.666519+00:00 app[scheduler.6406]:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2017-08-04T04:17:46.666621+00:00 app[scheduler.6406]:                                  Dload  Upload   Total   Spent    Left  Speed
+2017-08-04T04:17:46.844982+00:00 app[scheduler.6406]:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   506  100   506    0     0   2833      0 --:--:-- --:--:-- --:--:--  2826
+2017-08-04T04:17:46.844987+00:00 app[scheduler.6406]: <!DOCTYPE html>
+2017-08-04T04:17:46.844987+00:00 app[scheduler.6406]: 	<html>
+2017-08-04T04:17:46.844988+00:00 app[scheduler.6406]: 	  <head>
+2017-08-04T04:17:46.844989+00:00 app[scheduler.6406]: 		<meta name="viewport" content="width=device-width, initial-scale=1">
+2017-08-04T04:17:46.844989+00:00 app[scheduler.6406]: 		<meta charset="utf-8">
+2017-08-04T04:17:46.844990+00:00 app[scheduler.6406]: 		<title>Application Error</title>
+2017-08-04T04:17:46.844990+00:00 app[scheduler.6406]: 		<style media="screen">
+2017-08-04T04:17:46.844991+00:00 app[scheduler.6406]: 		  html,body,iframe {
+2017-08-04T04:17:46.844991+00:00 app[scheduler.6406]: 			margin: 0;
+2017-08-04T04:17:46.844992+00:00 app[scheduler.6406]: 			padding: 0;
+2017-08-04T04:17:46.844992+00:00 app[scheduler.6406]: 		  }
+2017-08-04T04:17:46.844993+00:00 app[scheduler.6406]: 		  html,body {
+2017-08-04T04:17:46.844993+00:00 app[scheduler.6406]: 			height: 100%;
+2017-08-04T04:17:46.844993+00:00 app[scheduler.6406]: 			overflow: hidden;
+2017-08-04T04:17:46.844994+00:00 app[scheduler.6406]: 		  }
+2017-08-04T04:17:46.844994+00:00 app[scheduler.6406]: 		  iframe {
+2017-08-04T04:17:46.938173+00:00 app[scheduler.6406]: 	</html>
+2017-08-04T04:17:46.844994+00:00 app[scheduler.6406]: 			width: 100%;
+2017-08-04T04:17:46.844995+00:00 app[scheduler.6406]: 			height: 100%;
+2017-08-04T04:17:46.844995+00:00 app[scheduler.6406]: 			border: 0;
+2017-08-04T04:17:46.844995+00:00 app[scheduler.6406]: 		  }
+2017-08-04T04:17:46.844996+00:00 app[scheduler.6406]: 		</style>
+2017-08-04T04:17:46.844996+00:00 app[scheduler.6406]: 	  </head>
+2017-08-04T04:17:46.844996+00:00 app[scheduler.6406]: 	  <body>
+2017-08-04T04:17:46.844997+00:00 app[scheduler.6406]: 		<iframe src="//www.herokucdn.com/error-pages/application-error.html"></iframe>
+2017-08-04T04:17:46.844998+00:00 app[scheduler.6406]: 	  </body>
+2017-08-04T04:17:46.956884+00:00 heroku[scheduler.6406]: State changed from up to complete
+2017-08-04T04:17:46.943012+00:00 heroku[scheduler.6406]: Process exited with status 0
