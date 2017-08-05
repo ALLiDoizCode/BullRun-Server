@@ -13,6 +13,11 @@ extension Droplet {
             print("Connection failed")
         }
         
+        get("loaderio-d58ed4d0fbe205d391f2c16dee45f3eb") { req in
+            
+            return "loaderio-d58ed4d0fbe205d391f2c16dee45f3eb"
+        }
+        
         get("balance") { req in
             
             guard let address = req.data["address"]?.string else {

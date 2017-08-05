@@ -9,6 +9,7 @@
 import Foundation
 import MongoKitten
 import CryptoSwift
+import Dispatch
 
 extension ObjectId {
     public init?(from string: String) throws {
@@ -32,21 +33,15 @@ class MongoClient {
     var dayStatusCollection:MongoCollection!
     var weekStatusCollection:MongoCollection!
     
-    var queue:DispatchQueue!
-    var dispatchGroup:DispatchGroup!
+    let queue = DispatchQueue(label: "insertion", attributes: .concurrent)
+    let dispatchGroup = DispatchGroup()
     let parallel = true
     
-    var queue2:DispatchQueue!
-    var dispatchGroup2:DispatchGroup!
+    let queue2 = DispatchQueue(label: "delete", attributes: .concurrent)
+    let dispatchGroup2 = DispatchGroup()
     let parallel2 = true
     
     init(database:Database) {
-        
-        queue = DispatchQueue(label: "insertion", attributes: .concurrent)
-        dispatchGroup = DispatchGroup()
-        
-        queue2 = DispatchQueue(label: "delete", attributes: .concurrent)
-        dispatchGroup2 = DispatchGroup()
         
         hourColleciton = database["Hour"]
         dayCollection = database["Day"]
