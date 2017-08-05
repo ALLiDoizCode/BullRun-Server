@@ -33,31 +33,35 @@ class MongoClient {
     var dayStatusCollection:MongoCollection!
     var weekStatusCollection:MongoCollection!
     var loadTestCollection:MongoCollection!
+    var database:Database!
     
     static var hourBetArray:[Document] = []
     static var dayBetArray:[Document] = []
     static var weekBetArray:[Document] = []
+    
+    static var sharedInstance:MongoClient!
     
     let queue = DispatchQueue(label: "insertion", attributes: .concurrent)
     let dispatchGroup = DispatchGroup()
     let parallel = true
     
     init(database:Database) {
-        
-        hourColleciton = database["Hour"]
-        dayCollection = database["Day"]
-        weekCollection = database["Week"]
-        hourBetColleciton = database["BetHour"]
-        dayBetCollection = database["BetDay"]
-        weekBetCollection = database["BetWeek"]
-        hourAddressColleciton = database["HourAddress"]
-        dayAddressCollection = database["DayAddress"]
-        weekAddressCollection = database["WeekAdsress"]
-        payOutCollection = database["Payout"]
-        hourStatusCollection = database["HourStatus"]
-        dayStatusCollection = database["DayStatus"]
-        weekStatusCollection = database["WeekStatus"]
-        loadTestCollection = database["loadtest"]
+        self.database = database
+        hourColleciton = self.database["Hour"]
+        dayCollection = self.database["Day"]
+        weekCollection = self.database["Week"]
+        hourBetColleciton = self.database["BetHour"]
+        dayBetCollection = self.database["BetDay"]
+        weekBetCollection = self.database["BetWeek"]
+        hourAddressColleciton = self.database["HourAddress"]
+        dayAddressCollection = self.database["DayAddress"]
+        weekAddressCollection = self.database["WeekAdsress"]
+        payOutCollection = self.database["Payout"]
+        hourStatusCollection = self.database["HourStatus"]
+        dayStatusCollection = self.database["DayStatus"]
+        weekStatusCollection = self.database["WeekStatus"]
+        loadTestCollection = self.database["loadtest"]
+        MongoClient.sharedInstance = self
         
     }
     
@@ -528,11 +532,11 @@ class MongoClient {
         }
     }
     
-    func insertweekBets() -> Int {
+    func insertweekBets() {
         
         guard MongoClient.weekBetArray.count != 0 else {
             
-            return 0
+            return 
         }
         
         if parallel {

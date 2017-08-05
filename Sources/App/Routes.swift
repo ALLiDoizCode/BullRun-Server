@@ -9,13 +9,15 @@ extension Droplet {
             
             print("Successfully connected!")
             
+            MongoClient.sharedInstance = MongoClient(database: database)
+            
         } else {
             print("Connection failed")
         }
         
         get("loaderio-d58ed4d0fbe205d391f2c16dee45f3eb") { req in
             
-            return MongoClient(database: database).benchMark()
+            return MongoClient.sharedInstance.benchMark()
         }
         
         get("balance") { req in
@@ -61,7 +63,7 @@ extension Droplet {
         post("betHour") { req in
             print(1)
             
-            guard MongoClient(database: database).getHourStatus() == false else {
+            guard MongoClient.sharedInstance.getHourStatus() == false else {
                 
                 return try! JSON(node:[
                         "betweenRounds":true
@@ -99,9 +101,9 @@ extension Droplet {
             wallet.hourBet.amount = Double(amount)!
             wallet.hourBet.coinId = coin
             
-            let roundAddress = String(describing: MongoClient(database:database).lastHourRound().2["address"]!)
+            let roundAddress = String(describing: MongoClient.sharedInstance.lastHourRound().2["address"]!)
             
-            let decrypted = MongoClient(database: database).decrypt(text: roundAddress)
+            let decrypted = MongoClient.sharedInstance.decrypt(text: roundAddress)
             
             print(decrypted)
             
@@ -113,7 +115,7 @@ extension Droplet {
                 
                 print("currency sent")
                 
-                MongoClient(database:database).saveHourBet(wallet: wallet)
+                MongoClient.sharedInstance.saveHourBet(wallet: wallet)
             }
             
             return json
@@ -121,7 +123,7 @@ extension Droplet {
         
         post("betDay") { req in
             
-            guard MongoClient(database: database).getDayStatus() == false else {
+            guard MongoClient.sharedInstance.getDayStatus() == false else {
                 
                 return try! JSON(node:[
                     "betweenRounds":true
@@ -154,9 +156,9 @@ extension Droplet {
             wallet.dayBet.amount = Double(amount)!
             wallet.dayBet.coinId = coin
             
-            let roundAddress = String(describing: MongoClient(database:database).lastDayRound().2["address"]!)
+            let roundAddress = String(describing: MongoClient.sharedInstance.lastDayRound().2["address"]!)
             
-            let decrypted = MongoClient(database: database).decrypt(text: roundAddress)
+            let decrypted = MongoClient.sharedInstance.decrypt(text: roundAddress)
             
             print(decrypted)
             
@@ -168,7 +170,7 @@ extension Droplet {
                 
                 print("currency sent")
                 
-                MongoClient(database:database).saveDayBet(wallet: wallet)
+                MongoClient.sharedInstance.saveDayBet(wallet: wallet)
             }
             
             return json
@@ -176,7 +178,7 @@ extension Droplet {
         
         post("betWeek") { req in
             
-            guard MongoClient(database: database).getWeekStatus() == false else {
+            guard MongoClient.sharedInstance.getWeekStatus() == false else {
                 
                 return try! JSON(node:[
                     "betweenRounds":true
@@ -209,9 +211,9 @@ extension Droplet {
             wallet.weekBet.amount = Double(amount)!
             wallet.weekBet.coinId = coin
             
-            let roundAddress = String(describing: MongoClient(database:database).lastWeekRound().2["address"]!)
+            let roundAddress = String(describing: MongoClient.sharedInstance.lastWeekRound().2["address"]!)
             
-            let decrypted = MongoClient(database: database).decrypt(text: roundAddress)
+            let decrypted = MongoClient.sharedInstance.decrypt(text: roundAddress)
             
             print(decrypted)
             
@@ -223,7 +225,7 @@ extension Droplet {
                 
                 print("currency sent")
                 
-                MongoClient(database:database).saveWeekBet(wallet: wallet)
+                MongoClient.sharedInstance.saveWeekBet(wallet: wallet)
             }
             
             return json
@@ -231,9 +233,9 @@ extension Droplet {
         
         get("insertBets") { req in
             
-            MongoClient(database: database).insertHourBets()
-            MongoClient(database: database).insertDayBets()
-            MongoClient(database: database).insertweekBets()
+            MongoClient.sharedInstance.insertHourBets()
+            MongoClient.sharedInstance.insertDayBets()
+            MongoClient.sharedInstance.insertweekBets()
             
             return "Inserted Bets to Database"
         }
@@ -247,15 +249,15 @@ extension Droplet {
         
         get("hourRound") { req in 
             
-            MongoClient(database: database).setHourStatus(status: true)
+            MongoClient.sharedInstance.setHourStatus(status: true)
             
-            let insertedDocuments = MongoClient(database: database).insertHourBets()
+            let insertedDocuments = MongoClient.sharedInstance.insertHourBets()
             
             MongoClient.hourBetArray = []
             
             Schedule(drop: self,database: database).hourRound()
             
-            MongoClient(database: database).setHourStatus(status: false)
+            MongoClient.sharedInstance.setHourStatus(status: false)
             
             return "Running Hour Round"
             
@@ -263,15 +265,15 @@ extension Droplet {
         
         get("dailyRound") { req in
             
-            MongoClient(database: database).setDayStatus(status: true)
+           MongoClient.sharedInstance.setDayStatus(status: true)
             
-            let insertedDocuments = MongoClient(database: database).insertDayBets()
+            let insertedDocuments = MongoClient.sharedInstance.insertDayBets()
             
             MongoClient.dayBetArray = []
             
             Schedule(drop: self,database: database).dayRound()
             
-            MongoClient(database: database).setDayStatus(status: false)
+            MongoClient.sharedInstance.setDayStatus(status: false)
             
             return "Running Day Round"
             
@@ -279,15 +281,15 @@ extension Droplet {
         
         get("weekRound") { req in
             
-            MongoClient(database: database).setWeekStatus(status: true)
+            MongoClient.sharedInstance.setWeekStatus(status: true)
             
-            let insertedDocuments = MongoClient(database: database).insertweekBets()
+            let insertedDocuments = MongoClient.sharedInstance.insertweekBets()
             
             MongoClient.weekBetArray = []
             
             Schedule(drop: self,database: database).weekRound()
             
-            MongoClient(database: database).setWeekStatus(status: false)
+            MongoClient.sharedInstance.setWeekStatus(status: false)
             
             return "Running week Round"
             
@@ -295,7 +297,7 @@ extension Droplet {
         
         get("payout") { req in
             
-            let json = MongoClient(database:database).payouts()
+            let json = MongoClient.sharedInstance.payouts()
             
             var payouts:[JSON] = []
             
@@ -322,9 +324,9 @@ extension Droplet {
         
         get("HourCoins") { req in
             
-            let coins = MongoClient(database:database).lastHourRound().0.array
-            let bets = MongoClient(database:database).lastHourRound().1.array
-            let betCounts = MongoClient(database:database).lastHourRound().1.count
+            let coins = MongoClient.sharedInstance.lastHourRound().0.array
+            let bets = MongoClient.sharedInstance.lastHourRound().1.array
+            let betCounts = MongoClient.sharedInstance.lastHourRound().1.count
             
             var coinObject:[JSON] = []
             var betObject:[JSON] = []
@@ -373,9 +375,9 @@ extension Droplet {
         
         get("DayCoins") { req in
             
-            let coins = MongoClient(database:database).lastDayRound().0.array
-            let bets = MongoClient(database:database).lastDayRound().1.array
-            let betCounts = MongoClient(database:database).lastDayRound().1.count
+            let coins = MongoClient.sharedInstance.lastDayRound().0.array
+            let bets = MongoClient.sharedInstance.lastDayRound().1.array
+            let betCounts = MongoClient.sharedInstance.lastDayRound().1.count
             
             var coinObject:[JSON] = []
             var betObject:[JSON] = []
@@ -426,13 +428,13 @@ extension Droplet {
             
             Schedule(drop: self, database: database).hourRound()
             
-            let round = MongoClient(database: database).lastHourRound()
+            let round = MongoClient.sharedInstance.lastHourRound()
             
-            let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]!))
+            let decryptAddress = MongoClient.sharedInstance.decrypt(text: String(describing: round.2["address"]!))
             
-            let round2 = MongoClient(database: database).lastDayRound()
+            let round2 = MongoClient.sharedInstance.lastDayRound()
             
-            let decryptAddress2 = MongoClient(database: database).decrypt(text: String(describing: round2.2["address"]!))
+            let decryptAddress2 = MongoClient.sharedInstance.decrypt(text: String(describing: round2.2["address"]!))
             
             let json = Ripple(drop:self).balance(address: decryptAddress)
             let json2 = Ripple(drop:self).balance(address: decryptAddress2)
@@ -449,9 +451,9 @@ extension Droplet {
         
         get("WeekCoins") { req in
             
-            let coins = MongoClient(database:database).lastWeekRound().0.array
-            let bets = MongoClient(database:database).lastWeekRound().1.array
-            let betCounts = MongoClient(database:database).lastWeekRound().1.count
+            let coins = MongoClient.sharedInstance.lastWeekRound().0.array
+            let bets = MongoClient.sharedInstance.lastWeekRound().1.array
+            let betCounts = MongoClient.sharedInstance.lastWeekRound().1.count
             
             var coinObject:[JSON] = []
             var betObject:[JSON] = []
