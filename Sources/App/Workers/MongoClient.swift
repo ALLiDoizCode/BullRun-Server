@@ -32,6 +32,7 @@ class MongoClient {
     var hourStatusCollection:MongoCollection!
     var dayStatusCollection:MongoCollection!
     var weekStatusCollection:MongoCollection!
+    var loadTestCollection:MongoCollection!
     
     let queue = DispatchQueue(label: "insertion", attributes: .concurrent)
     let dispatchGroup = DispatchGroup()
@@ -52,6 +53,7 @@ class MongoClient {
         hourStatusCollection = database["HourStatus"]
         dayStatusCollection = database["DayStatus"]
         weekStatusCollection = database["WeekStatus"]
+        loadTestCollection = database["loadtest"]
         
     }
     
@@ -71,6 +73,15 @@ class MongoClient {
         let decrypted = try! bytes.decrypt(cipher: Rabbit(key: HASH_KEY))
         
         return decrypted.makeString()
+    }
+    
+    func loadTest() -> String {
+        
+        let results = try! loadTestCollection.findOne()
+        
+        let key = results!["key"]!
+        
+        return String(describing: key)
     }
     
     func setHourStatus(status:Bool) {
