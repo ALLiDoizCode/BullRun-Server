@@ -32,15 +32,21 @@ class MongoClient {
     var dayStatusCollection:MongoCollection!
     var weekStatusCollection:MongoCollection!
     
-    let queue = DispatchQueue(label: "insertion", attributes: .concurrent)
-    let dispatchGroup = DispatchGroup()
+    var queue:DispatchQueue!
+    var dispatchGroup:DispatchGroup!
     let parallel = true
     
-    let queue2 = DispatchQueue(label: "delete", attributes: .concurrent)
-    let dispatchGroup2 = DispatchGroup()
+    var queue2:DispatchQueue!
+    var dispatchGroup2:DispatchGroup!
     let parallel2 = true
     
     init(database:Database) {
+        
+        queue = DispatchQueue(label: "insertion", attributes: .concurrent)
+        dispatchGroup = DispatchGroup()
+        
+        queue2 = DispatchQueue(label: "delete", attributes: .concurrent)
+        dispatchGroup2 = DispatchGroup()
         
         hourColleciton = database["Hour"]
         dayCollection = database["Day"]
