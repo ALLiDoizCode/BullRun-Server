@@ -82,6 +82,9 @@ class MongoClient {
         //let key = results!["key"]
         
         //return String(describing: key)
+        
+        return ""
+    
     }
     
     func setHourStatus(status:Bool) {
