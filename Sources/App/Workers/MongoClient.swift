@@ -32,6 +32,14 @@ class MongoClient {
     var dayStatusCollection:MongoCollection!
     var weekStatusCollection:MongoCollection!
     
+    let queue = DispatchQueue(label: "insertion", attributes: .concurrent)
+    let dispatchGroup = DispatchGroup()
+    let parallel = true
+    
+    let queue2 = DispatchQueue(label: "delete", attributes: .concurrent)
+    let dispatchGroup2 = DispatchGroup()
+    let parallel2 = true
+    
     init(database:Database) {
         
         hourColleciton = database["Hour"]
@@ -77,8 +85,20 @@ class MongoClient {
                 "betweenRounds":status
             ]
             
-            // Insert the document
-            try! hourStatusCollection.insert(document)
+            if parallel2 {
+                queue2.async(group: dispatchGroup2) {
+                    // Insert the document
+                    try! self.hourStatusCollection.insert(document)
+                    
+                }
+            } else {
+                // Insert the document
+                try! hourStatusCollection.insert(document)
+            }
+            
+            if parallel2 {
+                dispatchGroup2.wait()
+            }
             
         }else {
             
@@ -93,7 +113,20 @@ class MongoClient {
                 "betweenRounds":status
             ]
             
-            try! hourStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
+            if parallel2 {
+                queue2.async(group: dispatchGroup2) {
+                    // Insert the document
+                    try! self.hourStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
+                    
+                }
+            } else {
+                // Insert the document
+                try! hourStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
+            }
+            
+            if parallel2 {
+                dispatchGroup2.wait()
+            }
         }
         
     }
@@ -107,8 +140,20 @@ class MongoClient {
                 "betweenRounds":status
             ]
             
-            // Insert the document
-            try! dayStatusCollection.insert(document)
+            if parallel2 {
+                queue2.async(group: dispatchGroup2) {
+                    // Insert the document
+                    try! self.dayStatusCollection.insert(document)
+                    
+                }
+            } else {
+                // Insert the document
+                try! dayStatusCollection.insert(document)
+            }
+            
+            if parallel2 {
+                dispatchGroup2.wait()
+            }
             
         }else {
             
@@ -123,7 +168,20 @@ class MongoClient {
                 "betweenRounds":status
             ]
             
-            try! dayStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
+            if parallel2 {
+                queue2.async(group: dispatchGroup2) {
+                    // Insert the document
+                    try! self.dayStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
+                    
+                }
+            } else {
+                // Insert the document
+                try! dayStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
+            }
+            
+            if parallel2 {
+                dispatchGroup2.wait()
+            }
         }
         
     }
@@ -137,8 +195,22 @@ class MongoClient {
                 "betweenRounds":status
             ]
             
-            // Insert the document
-            try! weekStatusCollection.insert(document)
+            if parallel2 {
+                queue2.async(group: dispatchGroup2) {
+                    // Insert the document
+                    try! self.weekStatusCollection.insert(document)
+                    
+                }
+            } else {
+                // Insert the document
+                try! weekStatusCollection.insert(document)
+            }
+            
+            if parallel2 {
+                dispatchGroup2.wait()
+            }
+            
+            print("Finished deleting week bet documents from the database")
             
         }else {
             
@@ -153,7 +225,20 @@ class MongoClient {
                 "betweenRounds":status
             ]
             
-            try! weekStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
+            if parallel2 {
+                queue2.async(group: dispatchGroup2) {
+                    // Insert the document
+                    try! self.weekStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
+                    
+                }
+            } else {
+                // Insert the document
+                try! weekStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
+            }
+            
+            if parallel2 {
+                dispatchGroup2.wait()
+            }
         }
         
     }
@@ -187,17 +272,56 @@ class MongoClient {
     
     func deleteHourBets() {
         
-        try! hourBetColleciton.remove()
+        if parallel2 {
+            queue2.async(group: dispatchGroup2) {
+                try! self.hourBetColleciton.remove()
+                
+            }
+        } else {
+            try! hourBetColleciton.remove()
+        }
+        
+        if parallel2 {
+            dispatchGroup2.wait()
+        }
+        
+        print("Finished deleting hour bet documents from the database")
     }
     
     func deleteDayBets() {
         
-        try! dayBetCollection.remove()
+        if parallel2 {
+            queue2.async(group: dispatchGroup2) {
+                try! self.dayBetCollection.remove()
+                
+            }
+        } else {
+            try! dayBetCollection.remove()
+        }
+        
+        if parallel2 {
+            dispatchGroup2.wait()
+        }
+        
+        print("Finished deleting day bet documents from the database")
     }
     
     func deleteWeekBets() {
         
-        try! weekBetCollection.remove()
+        if parallel2 {
+            queue2.async(group: dispatchGroup2) {
+                try! self.weekBetCollection.remove()
+                
+            }
+        } else {
+            try! weekBetCollection.remove()
+        }
+        
+        if parallel2 {
+            dispatchGroup2.wait()
+        }
+        
+        print("Finished deleting week bet documents from the database")
     }
     
     func savePayout(address:String,amount:Double) {
@@ -208,7 +332,20 @@ class MongoClient {
             "amount":amount
         ]
         
-        try! payOutCollection.insert(document)
+        if parallel2 {
+            queue2.async(group: dispatchGroup2) {
+                try! self.payOutCollection.insert(document)
+                
+            }
+        } else {
+            try! payOutCollection.insert(document)
+        }
+        
+        if parallel2 {
+            dispatchGroup2.wait()
+        }
+        
+        print("Finished saving payout documents to the database")
     }
     
     func payouts() -> [Document] {
@@ -227,7 +364,21 @@ class MongoClient {
             "amount":wallet.hourBet.amount
         ]
         
-        try! hourBetColleciton.insert(document)
+        if parallel {
+            queue.async(group: dispatchGroup) {
+                 try! self.hourBetColleciton.insert(document)
+                
+            }
+        } else {
+             try! hourBetColleciton.insert(document)
+        }
+    
+        if parallel {
+            dispatchGroup.wait()
+        }
+    
+        print("Finished adding HourBet documents to the database")
+    
     }
     
     func saveDayBet(wallet:Wallet) {
@@ -239,7 +390,20 @@ class MongoClient {
             "amount":wallet.dayBet.amount
         ]
         
-        try! dayBetCollection.insert(document)
+        if parallel {
+            queue.async(group: dispatchGroup) {
+                try! self.dayBetCollection.insert(document)
+                
+            }
+        } else {
+            try! dayBetCollection.insert(document)
+        }
+        
+        if parallel {
+            dispatchGroup.wait()
+        }
+        
+        print("Finished adding DayBet documents to the database")
     }
     
     func saveWeekBet(wallet:Wallet) {
@@ -251,7 +415,20 @@ class MongoClient {
             "amount":wallet.weekBet.amount
         ]
         
-        try! weekBetCollection.insert(document)
+        if parallel {
+            queue.async(group: dispatchGroup) {
+                try! self.weekBetCollection.insert(document)
+                
+            }
+        } else {
+            try! weekBetCollection.insert(document)
+        }
+        
+        if parallel {
+            dispatchGroup.wait()
+        }
+        
+        print("Finished adding WeekBet documents to the database")
     }
     
     func saveHourRound(coins:[Coin]){
@@ -260,8 +437,6 @@ class MongoClient {
             
             return
         }
-        
-        //try! hourAddressColleciton.remove()
         
         try! hourColleciton.remove()
         
@@ -276,16 +451,21 @@ class MongoClient {
                 "BTC":coin.price_btc
             ]
             
-            try! hourColleciton.insert(document)
-        }
-        
-        /*let document:Document = [
+            if parallel2 {
+                queue.async(group: dispatchGroup2) {
+                    try! self.hourColleciton.insert(document)
+                    
+                }
+            } else {
+                try! hourColleciton.insert(document)
+            }
             
-            "address":address,
-            "secret":secert
-        ]
-        
-        try! hourAddressColleciton.insert(document)*/
+            if parallel2 {
+                dispatchGroup2.wait()
+            }
+            
+            print("Finished adding HourRound documents to the database")
+        }
         
     }
     
@@ -295,8 +475,7 @@ class MongoClient {
             
             return
         }
-        
-        //try! dayAddressCollection.remove()
+    
         try! dayCollection.remove()
         
         for coin in coins {
@@ -310,16 +489,23 @@ class MongoClient {
                 "BTC":coin.price_btc
             ]
             
-            try! dayCollection.insert(document)
+            if parallel2 {
+                queue.async(group: dispatchGroup2) {
+                    try! self.dayCollection.insert(document)
+                    
+                }
+            } else {
+                try! dayCollection.insert(document)
+            }
+            
+            if parallel2 {
+                dispatchGroup2.wait()
+            }
+            
+            print("Finished adding DayRound documents to the database")
+            
         }
         
-        /*let document:Document = [
-            
-            "address":address,
-            "secret":secert
-        ]*/
-        
-        //try! dayAddressCollection.insert(document)
     }
     
     func saveWeekRound(coins:[Coin]){
@@ -329,7 +515,6 @@ class MongoClient {
             return
         }
         
-        //try! weekAddressCollection.remove()
         try! weekCollection.remove()
         
         for coin in coins {
@@ -343,16 +528,23 @@ class MongoClient {
                 "BTC":coin.price_btc
             ]
             
-            try! weekCollection.insert(document)
+            if parallel2 {
+                queue.async(group: dispatchGroup2) {
+                    try! self.weekCollection.insert(document)
+                    
+                }
+            } else {
+                try! weekCollection.insert(document)
+            }
+            
+            if parallel2 {
+                dispatchGroup2.wait()
+            }
+            
+            print("Finished adding weekRound documents to the database")
+            
         }
         
-        /*let document:Document = [
-            
-            "address":address,
-            "secret":secert
-        ]
-        
-        try! weekAddressCollection.insert(document)*/
     }
     
     func lastHourRound() -> ([Document],[Document],Document){
@@ -390,9 +582,5 @@ class MongoClient {
         
         return (lastEntity,bets,Document())
     }
-    
-    //let insertedID = try collection.insert(document)
-    //let amountOfEntities: Int = try collection.count()
-    //let allEntities: CollectionSlice<Document> = try collection.find()
-    //let firstEntity: Document = try collection.findOne()
+
 }
