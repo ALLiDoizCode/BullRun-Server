@@ -34,6 +34,10 @@ class MongoClient {
     var weekStatusCollection:MongoCollection!
     var loadTestCollection:MongoCollection!
     
+    static var hourBetArray:[Document] = []
+    static var dayBetArray:[Document] = []
+    static var weekBetArray:[Document] = []
+    
     let queue = DispatchQueue(label: "insertion", attributes: .concurrent)
     let dispatchGroup = DispatchGroup()
     let parallel = true
@@ -373,7 +377,9 @@ class MongoClient {
             "amount":wallet.hourBet.amount
         ]
         
-        if parallel {
+        MongoClient.hourBetArray.append(document)
+        
+        /*if parallel {
             queue.async(group: dispatchGroup) {
                  try! self.hourBetColleciton.insert(document)
                 
@@ -386,7 +392,7 @@ class MongoClient {
             dispatchGroup.wait()
         }
     
-        print("Finished adding HourBet documents to the database")
+        print("Finished adding HourBet documents to the database")*/
     
     }
     
@@ -399,7 +405,9 @@ class MongoClient {
             "amount":wallet.dayBet.amount
         ]
         
-        if parallel {
+        MongoClient.dayBetArray.append(document)
+        
+        /*if parallel {
             queue.async(group: dispatchGroup) {
                 try! self.dayBetCollection.insert(document)
                 
@@ -412,7 +420,7 @@ class MongoClient {
             dispatchGroup.wait()
         }
         
-        print("Finished adding DayBet documents to the database")
+        print("Finished adding DayBet documents to the database")*/
     }
     
     func saveWeekBet(wallet:Wallet) {
@@ -424,7 +432,7 @@ class MongoClient {
             "amount":wallet.weekBet.amount
         ]
         
-        if parallel {
+        /*if parallel {
             queue.async(group: dispatchGroup) {
                 try! self.weekBetCollection.insert(document)
                 
@@ -437,7 +445,69 @@ class MongoClient {
             dispatchGroup.wait()
         }
         
-        print("Finished adding WeekBet documents to the database")
+        print("Finished adding WeekBet documents to the database")*/
+        
+        MongoClient.weekBetArray.append(document)
+    }
+    
+    func insertHourBets() -> Int {
+        
+        guard MongoClient.hourBetArray.count != 0 else {
+            
+            return 0
+        }
+        
+        let savedDocuments = try! hourBetColleciton.insert(contentsOf: MongoClient.hourBetArray)
+        
+        print("docs insertd \(savedDocuments)")
+        print("docsArray \(MongoClient.hourBetArray.count)")
+        
+        for _ in 0 ..< savedDocuments.count {
+            
+            MongoClient.hourBetArray.remove(at: 0)
+        }
+        
+        return savedDocuments.count
+    }
+    
+    func insertDayBets() -> Int {
+        
+        guard MongoClient.dayBetArray.count != 0 else {
+            
+            return 0
+        }
+        
+        let savedDocuments = try! dayBetCollection.insert(contentsOf: MongoClient.dayBetArray)
+        
+        print("docs insertd \(savedDocuments)")
+        print("docsArray \(MongoClient.dayBetArray.count)")
+        
+        for _ in 0 ..< savedDocuments.count {
+            
+            MongoClient.dayBetArray.remove(at: 0)
+        }
+        
+        return savedDocuments.count
+    }
+    
+    func insertweekBets() -> Int {
+        
+        guard MongoClient.weekBetArray.count != 0 else {
+            
+            return 0
+        }
+        
+        let savedDocuments = try! weekBetCollection.insert(contentsOf: MongoClient.weekBetArray)
+        
+        print("docs insertd \(savedDocuments)")
+        print("docsArray \(MongoClient.weekBetArray.count)")
+        
+        for _ in 0 ..< savedDocuments.count {
+            
+            MongoClient.weekBetArray.remove(at: 0)
+        }
+        
+        return savedDocuments.count
     }
     
     func saveHourRound(coins:[Coin]){

@@ -229,6 +229,15 @@ extension Droplet {
             return json
         }
         
+        get("insertBets") { req in
+            
+            MongoClient(database: database).insertHourBets()
+            MongoClient(database: database).insertDayBets()
+            MongoClient(database: database).insertweekBets()
+            
+            return "Inserted Bets to Database"
+        }
+        
         get("newAddress") { req in
             
             let json = Ripple(drop: self).generateWallet()
@@ -239,6 +248,10 @@ extension Droplet {
         get("hourRound") { req in 
             
             MongoClient(database: database).setHourStatus(status: true)
+            
+            let insertedDocuments = MongoClient(database: database).insertHourBets()
+            
+            MongoClient.hourBetArray = []
             
             Schedule(drop: self,database: database).hourRound()
             
@@ -252,6 +265,10 @@ extension Droplet {
             
             MongoClient(database: database).setDayStatus(status: true)
             
+            let insertedDocuments = MongoClient(database: database).insertDayBets()
+            
+            MongoClient.dayBetArray = []
+            
             Schedule(drop: self,database: database).dayRound()
             
             MongoClient(database: database).setDayStatus(status: false)
@@ -263,6 +280,10 @@ extension Droplet {
         get("weekRound") { req in
             
             MongoClient(database: database).setWeekStatus(status: true)
+            
+            let insertedDocuments = MongoClient(database: database).insertweekBets()
+            
+            MongoClient.weekBetArray = []
             
             Schedule(drop: self,database: database).weekRound()
             
