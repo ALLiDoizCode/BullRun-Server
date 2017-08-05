@@ -30,37 +30,42 @@ class Schedule {
         var winingPlayers:[(String,Double)] = []
         var currentRoundAddress:String = ""
         var currentRoundSecret:String = ""
-        
+        print("foo 1")
         ///payouts
-        let round = MongoClient(database: database).lastHourRound()
-        
-        let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]!))
-        let decryptSecert = MongoClient(database: database).decrypt(text: String(describing: round.2["secret"]!))
+        let round = MongoClient.sharedInstance.lastHourRound()
+        print("foo 2")
+        let decryptAddress = MongoClient.sharedInstance.decrypt(text: String(describing: round.2["address"]!))
+        print("foo 3")
+        let decryptSecert = MongoClient.sharedInstance.decrypt(text: String(describing: round.2["secret"]!))
+        print("foo 4")
         
         currentRoundAddress = decryptAddress
+        print("foo 5")
         currentRoundSecret = decryptSecert
+        print("foo 6")
         
         if round.1.count != 0 {
-            
+            print("foo 6")
             for coin in round.0 {
-                
+                print("foo 6")
                 let result = String(coin["coin"])
-                
+                print("foo 6")
                 let oldCoin = Ripple(drop: self.drop).getCoin(coinId: result!)
                 print(oldCoin.id)
                 oldCoins.append(oldCoin)
+                print("foo 6")
             }
             
             let winners = Math().winners1hr(coins: oldCoins)
             
             for winningId in winners.0 {
-                
+               
                 for player in round.1 {
                     
                     let address = String(player["address"])
                     let coin = String(player["coin"])
                     let bet = Double(player["amount"])
-                    
+                  
                     pool += bet!
                     
                     if coin == winningId {
@@ -72,7 +77,7 @@ class Schedule {
                     }
                 }
             }
-            
+           
             ///BOOK_PAY
             var BOOK_PAY = pool * fee
             var Owner2Pay:Double = 0
@@ -102,9 +107,10 @@ class Schedule {
                 
                 if json["resultCode"]?.string == "tesSUCCESS" {
                     
-                    MongoClient(database: database).savePayout(address: player.0, amount: payout)
+                    MongoClient.sharedInstance.savePayout(address: player.0, amount: payout)
                 }
             }
+            print("Bar")
             ///pay myself fee
             if winingPlayers.count == 0 {
                 
@@ -153,12 +159,12 @@ class Schedule {
             
             print("paid out correct amount: \(check), payouts:\(payouts),pool:\(pool)")
             
-            MongoClient(database: database).deleteHourBets()
+           MongoClient.sharedInstance.deleteHourBets()
         }
         
         let top10 = Ripple(drop: self.drop).top10()
         
-        MongoClient(database: database).saveHourRound(coins:top10)
+       MongoClient.sharedInstance.saveHourRound(coins:top10)
         
     }
     
@@ -173,10 +179,10 @@ class Schedule {
         var currentRoundSecret:String = ""
         
         ///payouts
-        let round = MongoClient(database: database).lastDayRound()
+        let round = MongoClient.sharedInstance.lastDayRound()
         
-        let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]!))
-        let decryptSecert = MongoClient(database: database).decrypt(text: String(describing: round.2["secret"]!))
+        let decryptAddress = MongoClient.sharedInstance.decrypt(text: String(describing: round.2["address"]!))
+        let decryptSecert = MongoClient.sharedInstance.decrypt(text: String(describing: round.2["secret"]!))
 
         currentRoundAddress = decryptAddress
         currentRoundSecret = decryptSecert
@@ -244,7 +250,7 @@ class Schedule {
                 
                 if json["resultCode"]?.string == "tesSUCCESS" {
                     
-                    MongoClient(database: database).savePayout(address: player.0, amount: payout)
+                    MongoClient.sharedInstance.savePayout(address: player.0, amount: payout)
                 }
             }
             ///pay myself fee
@@ -295,12 +301,12 @@ class Schedule {
             
             print("paid out correct amount: \(check), payouts:\(payouts),pool:\(pool)")
             
-            MongoClient(database: database).deleteDayBets()
+            MongoClient.sharedInstance.deleteDayBets()
         }
         
         let top10 = Ripple(drop: self.drop).top10()
         
-        MongoClient(database: database).saveDayRound(coins:top10)
+        MongoClient.sharedInstance.saveDayRound(coins:top10)
     }
     
     func weekRound() {
@@ -314,10 +320,10 @@ class Schedule {
         var currentRoundSecret:String = ""
         
         ///payouts
-        let round = MongoClient(database: database).lastWeekRound()
+        let round = MongoClient.sharedInstance.lastWeekRound()
         
-        let decryptAddress = MongoClient(database: database).decrypt(text: String(describing: round.2["address"]!))
-        let decryptSecert = MongoClient(database: database).decrypt(text: String(describing: round.2["secret"]!))
+        let decryptAddress = MongoClient.sharedInstance.decrypt(text: String(describing: round.2["address"]!))
+        let decryptSecert = MongoClient.sharedInstance.decrypt(text: String(describing: round.2["secret"]!))
         
         currentRoundAddress = decryptAddress
         currentRoundSecret = decryptSecert
@@ -386,7 +392,7 @@ class Schedule {
                 
                 if json["resultCode"]?.string == "tesSUCCESS" {
                     
-                    MongoClient(database: database).savePayout(address: player.0, amount: payout)
+                    MongoClient.sharedInstance.savePayout(address: player.0, amount: payout)
                 }
             }
             ///pay myself fee
@@ -437,12 +443,12 @@ class Schedule {
             
             print("paid out correct amount: \(check), payouts:\(payouts),pool:\(pool)")
             
-            MongoClient(database: database).deleteWeekBets()
+            MongoClient.sharedInstance.deleteWeekBets()
         }
         
         let top10 = Ripple(drop: self.drop).top10()
         
-        MongoClient(database: database).saveWeekRound(coins:top10)
+        MongoClient.sharedInstance.saveWeekRound(coins:top10)
     }
 }
 

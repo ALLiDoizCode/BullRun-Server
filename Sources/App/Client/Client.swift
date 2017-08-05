@@ -80,6 +80,7 @@ class Ripple {
         
         var json:JSON!
         
+        
         let params = [
          
          "address1":address1,
@@ -90,12 +91,18 @@ class Ripple {
          ]
         
         do {
+            print("Bar 1")
             let request = try Request(method: .post, uri: "https://ripple-server.herokuapp.com/send")
+            print("Bar 2")
             request.formURLEncoded = try Node(node: params)
+            print("Bar 3")
             //request.headers["Authorization"] = "Bearer \(SECERT)"
             let response = try drop.client.respond(to: request)
+            print("Bar 4")
             json = response.json
+            print("Bar 5")
             print(json)
+            print("Bar 6")
             
         } catch {
             

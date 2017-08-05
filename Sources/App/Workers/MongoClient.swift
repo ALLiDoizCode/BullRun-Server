@@ -94,56 +94,31 @@ class MongoClient {
     }
     
     func setHourStatus(status:Bool) {
-        
+        print("set hour status 1")
         if try! hourStatusCollection.findOne() == nil {
-            
+            print("set hour status 2")
             let document:Document = [
                 
                 "betweenRounds":status
             ]
-            
-            if parallel {
-                queue.async(group: dispatchGroup) {
-                    // Insert the document
-                    try! self.hourStatusCollection.insert(document)
-                    
-                }
-            } else {
-                // Insert the document
-                try! hourStatusCollection.insert(document)
-            }
-            
-            if parallel {
-                dispatchGroup.wait()
-            }
-            
+            print("set hour status 3")
+            try! hourStatusCollection.insert(document)
+            print("set hour status 4")
         }else {
-            
+            print("set hour status 5")
             var currentDocument = try! hourStatusCollection.findOne()
-            
+            print("set hour status 6")
             let id = try currentDocument!["_id"]
-            
+            print("set hour status 7")
             print("status id is \(String(id)!)")
-            
+            print("set hour status 8")
             let document:Document = [
                 
                 "betweenRounds":status
             ]
-            
-            if parallel {
-                queue.async(group: dispatchGroup) {
-                    // Insert the document
-                    try! self.hourStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
-                    
-                }
-            } else {
-                // Insert the document
-                try! hourStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
-            }
-            
-            if parallel {
-                dispatchGroup.wait()
-            }
+            print("set hour status 9")
+            try! hourStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
+            print("set hour status 10")
         }
         
     }
@@ -157,20 +132,7 @@ class MongoClient {
                 "betweenRounds":status
             ]
             
-            if parallel {
-                queue.async(group: dispatchGroup) {
-                    // Insert the document
-                    try! self.dayStatusCollection.insert(document)
-                    
-                }
-            } else {
-                // Insert the document
-                try! dayStatusCollection.insert(document)
-            }
-            
-            if parallel {
-                dispatchGroup.wait()
-            }
+            try! dayStatusCollection.insert(document)
             
         }else {
             
@@ -185,20 +147,7 @@ class MongoClient {
                 "betweenRounds":status
             ]
             
-            if parallel {
-                queue.async(group: dispatchGroup) {
-                    // Insert the document
-                    try! self.dayStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
-                    
-                }
-            } else {
-                // Insert the document
-                try! dayStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
-            }
-            
-            if parallel {
-                dispatchGroup.wait()
-            }
+            try! dayStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
         }
         
     }
@@ -212,22 +161,7 @@ class MongoClient {
                 "betweenRounds":status
             ]
             
-            if parallel {
-                queue.async(group: dispatchGroup) {
-                    // Insert the document
-                    try! self.weekStatusCollection.insert(document)
-                    
-                }
-            } else {
-                // Insert the document
-                try! weekStatusCollection.insert(document)
-            }
-            
-            if parallel {
-                dispatchGroup.wait()
-            }
-            
-            print("Finished deleting week bet documents from the database")
+            try! weekStatusCollection.insert(document)
             
         }else {
             
@@ -242,20 +176,7 @@ class MongoClient {
                 "betweenRounds":status
             ]
             
-            if parallel {
-                queue.async(group: dispatchGroup) {
-                    // Insert the document
-                    try! self.weekStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
-                    
-                }
-            } else {
-                // Insert the document
-                try! weekStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
-            }
-            
-            if parallel {
-                dispatchGroup.wait()
-            }
+            try! weekStatusCollection.update("_id" == ObjectId(String(id)!), to: document, upserting: true)
         }
         
     }
@@ -289,54 +210,21 @@ class MongoClient {
     
     func deleteHourBets() {
         
-        if parallel {
-            queue.async(group: dispatchGroup) {
-                try! self.hourBetColleciton.remove()
-                
-            }
-        } else {
-            try! hourBetColleciton.remove()
-        }
-        
-        if parallel {
-            dispatchGroup.wait()
-        }
+        try! hourBetColleciton.remove()
         
         print("Finished deleting hour bet documents from the database")
     }
     
     func deleteDayBets() {
         
-        if parallel {
-            queue.async(group: dispatchGroup) {
-                try! self.dayBetCollection.remove()
-                
-            }
-        } else {
-            try! dayBetCollection.remove()
-        }
-        
-        if parallel {
-            dispatchGroup.wait()
-        }
+        try! dayBetCollection.remove()
         
         print("Finished deleting day bet documents from the database")
     }
     
     func deleteWeekBets() {
         
-        if parallel {
-            queue.async(group: dispatchGroup) {
-                try! self.weekBetCollection.remove()
-                
-            }
-        } else {
-            try! weekBetCollection.remove()
-        }
-        
-        if parallel {
-            dispatchGroup.wait()
-        }
+        try! weekBetCollection.remove()
         
         print("Finished deleting week bet documents from the database")
     }
@@ -349,18 +237,7 @@ class MongoClient {
             "amount":amount
         ]
         
-        if parallel {
-            queue.async(group: dispatchGroup) {
-                try! self.payOutCollection.insert(document)
-                
-            }
-        } else {
-            try! payOutCollection.insert(document)
-        }
-        
-        if parallel {
-            dispatchGroup.wait()
-        }
+        try! payOutCollection.insert(document)
         
         print("Finished saving payout documents to the database")
     }
@@ -461,35 +338,14 @@ class MongoClient {
             return
         }
         
-        if parallel {
-            queue.async(group: dispatchGroup) {
-                // Insert the document
-                let savedDocuments = try! self.hourBetColleciton.insert(contentsOf: MongoClient.hourBetArray)
-                
-                print("docs insertd \(savedDocuments)")
-                print("docsArray \(MongoClient.hourBetArray.count)")
-                
-                for _ in 0 ..< savedDocuments.count {
-                    
-                    MongoClient.hourBetArray.remove(at: 0)
-                }
-                
-            }
-        } else {
-            // Insert the document
-            let savedDocuments = try! hourBetColleciton.insert(contentsOf: MongoClient.hourBetArray)
-            
-            print("docs insertd \(savedDocuments)")
-            print("docsArray \(MongoClient.hourBetArray.count)")
-            
-            for _ in 0 ..< savedDocuments.count {
-                
-                MongoClient.hourBetArray.remove(at: 0)
-            }
-        }
+        let savedDocuments = try! hourBetColleciton.insert(contentsOf: MongoClient.hourBetArray)
         
-        if parallel {
-            dispatchGroup.wait()
+        print("docs insertd \(savedDocuments)")
+        print("docsArray \(MongoClient.hourBetArray.count)")
+        
+        for _ in 0 ..< savedDocuments.count {
+            
+            MongoClient.hourBetArray.remove(at: 0)
         }
     }
     
@@ -500,35 +356,14 @@ class MongoClient {
             return
         }
         
-        if parallel {
-            queue.async(group: dispatchGroup) {
-                // Insert the document
-                let savedDocuments = try! self.dayBetCollection.insert(contentsOf: MongoClient.dayBetArray)
-                
-                print("docs insertd \(savedDocuments)")
-                print("docsArray \(MongoClient.dayBetArray.count)")
-                
-                for _ in 0 ..< savedDocuments.count {
-                    
-                    MongoClient.dayBetArray.remove(at: 0)
-                }
-                
-            }
-        } else {
-            // Insert the document
-            let savedDocuments = try! dayBetCollection.insert(contentsOf: MongoClient.dayBetArray)
-            
-            print("docs insertd \(savedDocuments)")
-            print("docsArray \(MongoClient.dayBetArray.count)")
-            
-            for _ in 0 ..< savedDocuments.count {
-                
-                MongoClient.dayBetArray.remove(at: 0)
-            }
-        }
+        let savedDocuments = try! dayBetCollection.insert(contentsOf: MongoClient.dayBetArray)
         
-        if parallel {
-            dispatchGroup.wait()
+        print("docs insertd \(savedDocuments)")
+        print("docsArray \(MongoClient.dayBetArray.count)")
+        
+        for _ in 0 ..< savedDocuments.count {
+            
+            MongoClient.dayBetArray.remove(at: 0)
         }
     }
     
@@ -539,35 +374,14 @@ class MongoClient {
             return 
         }
         
-        if parallel {
-            queue.async(group: dispatchGroup) {
-                // Insert the document
-                let savedDocuments = try! self.weekBetCollection.insert(contentsOf: MongoClient.weekBetArray)
-                
-                print("docs insertd \(savedDocuments)")
-                print("docsArray \(MongoClient.weekBetArray.count)")
-                
-                for _ in 0 ..< savedDocuments.count {
-                    
-                    MongoClient.weekBetArray.remove(at: 0)
-                }
-                
-            }
-        } else {
-            // Insert the document
-            let savedDocuments = try! weekBetCollection.insert(contentsOf: MongoClient.weekBetArray)
-            
-            print("docs insertd \(savedDocuments)")
-            print("docsArray \(MongoClient.weekBetArray.count)")
-            
-            for _ in 0 ..< savedDocuments.count {
-                
-                MongoClient.weekBetArray.remove(at: 0)
-            }
-        }
+        let savedDocuments = try! weekBetCollection.insert(contentsOf: MongoClient.weekBetArray)
         
-        if parallel {
-            dispatchGroup.wait()
+        print("docs insertd \(savedDocuments)")
+        print("docsArray \(MongoClient.weekBetArray.count)")
+        
+        for _ in 0 ..< savedDocuments.count {
+            
+            MongoClient.weekBetArray.remove(at: 0)
         }
     }
     
@@ -591,18 +405,7 @@ class MongoClient {
                 "BTC":coin.price_btc
             ]
             
-            if parallel {
-                queue.async(group: dispatchGroup) {
-                    try! self.hourColleciton.insert(document)
-                    
-                }
-            } else {
-                try! hourColleciton.insert(document)
-            }
-            
-            if parallel {
-                dispatchGroup.wait()
-            }
+            try! hourColleciton.insert(document)
             
             print("Finished adding HourRound documents to the database")
         }
@@ -629,18 +432,7 @@ class MongoClient {
                 "BTC":coin.price_btc
             ]
             
-            if parallel {
-                queue.async(group: dispatchGroup) {
-                    try! self.dayCollection.insert(document)
-                    
-                }
-            } else {
-                try! dayCollection.insert(document)
-            }
-            
-            if parallel {
-                dispatchGroup.wait()
-            }
+            try! dayCollection.insert(document)
             
             print("Finished adding DayRound documents to the database")
             
@@ -668,18 +460,7 @@ class MongoClient {
                 "BTC":coin.price_btc
             ]
             
-            if parallel {
-                queue.async(group: dispatchGroup) {
-                    try! self.weekCollection.insert(document)
-                    
-                }
-            } else {
-                try! weekCollection.insert(document)
-            }
-            
-            if parallel {
-                dispatchGroup.wait()
-            }
+            try! weekCollection.insert(document)
             
             print("Finished adding weekRound documents to the database")
             
