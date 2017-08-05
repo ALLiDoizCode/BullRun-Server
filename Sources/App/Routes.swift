@@ -107,7 +107,7 @@ extension Droplet {
             
             print(decrypted)
             
-            let json = Ripple(drop: self).send(address1: wallet.address, address2: decrypted, secret: secret, amount: String(amount))
+            /*let json = Ripple(drop: self).send(address1: wallet.address, address2: decrypted, secret: secret, amount: String(amount))
             
             let success = json["resultCode"]?.string
             
@@ -118,7 +118,11 @@ extension Droplet {
                 MongoClient.sharedInstance.saveHourBet(wallet: wallet)
             }
             
-            return json
+            return json*/
+            
+            MongoClient.sharedInstance.saveHourBet(wallet: wallet)
+            
+            return "saving bet"
         }
         
         post("betDay") { req in
