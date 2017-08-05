@@ -450,44 +450,82 @@ class MongoClient {
         MongoClient.weekBetArray.append(document)
     }
     
-    func insertHourBets() -> Int {
+    func insertHourBets() {
         
         guard MongoClient.hourBetArray.count != 0 else {
             
-            return 0
+            return
         }
         
-        let savedDocuments = try! hourBetColleciton.insert(contentsOf: MongoClient.hourBetArray)
-        
-        print("docs insertd \(savedDocuments)")
-        print("docsArray \(MongoClient.hourBetArray.count)")
-        
-        for _ in 0 ..< savedDocuments.count {
+        if parallel {
+            queue.async(group: dispatchGroup) {
+                // Insert the document
+                let savedDocuments = try! self.hourBetColleciton.insert(contentsOf: MongoClient.hourBetArray)
+                
+                print("docs insertd \(savedDocuments)")
+                print("docsArray \(MongoClient.hourBetArray.count)")
+                
+                for _ in 0 ..< savedDocuments.count {
+                    
+                    MongoClient.hourBetArray.remove(at: 0)
+                }
+                
+            }
+        } else {
+            // Insert the document
+            let savedDocuments = try! hourBetColleciton.insert(contentsOf: MongoClient.hourBetArray)
             
-            MongoClient.hourBetArray.remove(at: 0)
+            print("docs insertd \(savedDocuments)")
+            print("docsArray \(MongoClient.hourBetArray.count)")
+            
+            for _ in 0 ..< savedDocuments.count {
+                
+                MongoClient.hourBetArray.remove(at: 0)
+            }
         }
         
-        return savedDocuments.count
+        if parallel {
+            dispatchGroup.wait()
+        }
     }
     
-    func insertDayBets() -> Int {
+    func insertDayBets() {
         
         guard MongoClient.dayBetArray.count != 0 else {
             
-            return 0
+            return
         }
         
-        let savedDocuments = try! dayBetCollection.insert(contentsOf: MongoClient.dayBetArray)
-        
-        print("docs insertd \(savedDocuments)")
-        print("docsArray \(MongoClient.dayBetArray.count)")
-        
-        for _ in 0 ..< savedDocuments.count {
+        if parallel {
+            queue.async(group: dispatchGroup) {
+                // Insert the document
+                let savedDocuments = try! self.dayBetCollection.insert(contentsOf: MongoClient.dayBetArray)
+                
+                print("docs insertd \(savedDocuments)")
+                print("docsArray \(MongoClient.dayBetArray.count)")
+                
+                for _ in 0 ..< savedDocuments.count {
+                    
+                    MongoClient.dayBetArray.remove(at: 0)
+                }
+                
+            }
+        } else {
+            // Insert the document
+            let savedDocuments = try! dayBetCollection.insert(contentsOf: MongoClient.dayBetArray)
             
-            MongoClient.dayBetArray.remove(at: 0)
+            print("docs insertd \(savedDocuments)")
+            print("docsArray \(MongoClient.dayBetArray.count)")
+            
+            for _ in 0 ..< savedDocuments.count {
+                
+                MongoClient.dayBetArray.remove(at: 0)
+            }
         }
         
-        return savedDocuments.count
+        if parallel {
+            dispatchGroup.wait()
+        }
     }
     
     func insertweekBets() -> Int {
@@ -497,17 +535,36 @@ class MongoClient {
             return 0
         }
         
-        let savedDocuments = try! weekBetCollection.insert(contentsOf: MongoClient.weekBetArray)
-        
-        print("docs insertd \(savedDocuments)")
-        print("docsArray \(MongoClient.weekBetArray.count)")
-        
-        for _ in 0 ..< savedDocuments.count {
+        if parallel {
+            queue.async(group: dispatchGroup) {
+                // Insert the document
+                let savedDocuments = try! self.weekBetCollection.insert(contentsOf: MongoClient.weekBetArray)
+                
+                print("docs insertd \(savedDocuments)")
+                print("docsArray \(MongoClient.weekBetArray.count)")
+                
+                for _ in 0 ..< savedDocuments.count {
+                    
+                    MongoClient.weekBetArray.remove(at: 0)
+                }
+                
+            }
+        } else {
+            // Insert the document
+            let savedDocuments = try! weekBetCollection.insert(contentsOf: MongoClient.weekBetArray)
             
-            MongoClient.weekBetArray.remove(at: 0)
+            print("docs insertd \(savedDocuments)")
+            print("docsArray \(MongoClient.weekBetArray.count)")
+            
+            for _ in 0 ..< savedDocuments.count {
+                
+                MongoClient.weekBetArray.remove(at: 0)
+            }
         }
         
-        return savedDocuments.count
+        if parallel {
+            dispatchGroup.wait()
+        }
     }
     
     func saveHourRound(coins:[Coin]){
