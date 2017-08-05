@@ -75,16 +75,14 @@ class MongoClient {
         return decrypted.makeString()
     }
     
-    func loadTest() -> String {
+    func benchMark() -> String {
         
-        //let results = try! loadTestCollection.findOne()
+        let results = try! loadTestCollection.findOne()
         
-        //let key = results!["key"]
+        let key = results!["key"]
         
-        //return String(describing: key)
+        return String(describing: key!)
         
-        return ""
-    
     }
     
     func setHourStatus(status:Bool) {

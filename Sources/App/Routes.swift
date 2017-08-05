@@ -15,7 +15,7 @@ extension Droplet {
         
         get("loaderio-d58ed4d0fbe205d391f2c16dee45f3eb") { req in
             
-            return ""
+            return MongoClient(database: database).benchMark()
         }
         
         get("balance") { req in
