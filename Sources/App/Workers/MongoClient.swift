@@ -79,7 +79,7 @@ class MongoClient {
         
         let results = try! loadTestCollection.findOne()
         
-        let key = results!["key"]!
+        let key = results!["key"]
         
         return String(describing: key)
     }
