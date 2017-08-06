@@ -104,10 +104,14 @@ extension Droplet {
             let roundAddress = String(describing: MongoClient.sharedInstance.lastHourRound().2["address"]!)
             
             let decrypted = MongoClient.sharedInstance.decrypt(text: roundAddress)
+            let decryptedSender = MongoClient.sharedInstance.decrypt(text: address)
+            let decryptedSenderSecret = MongoClient.sharedInstance.decrypt(text: secret)
             
             print(decrypted)
+            print(decryptedSender)
+            print(decryptedSenderSecret)
             
-            let json = Ripple(drop: self).send(address1: wallet.address, address2: decrypted, secret: secret, amount: String(amount))
+            let json = Ripple(drop: self).send(address1: decryptedSender, address2: decrypted, secret: decryptedSenderSecret, amount: String(amount))
             
             let success = json["resultCode"]?.string
             
@@ -159,10 +163,14 @@ extension Droplet {
             let roundAddress = String(describing: MongoClient.sharedInstance.lastDayRound().2["address"]!)
             
             let decrypted = MongoClient.sharedInstance.decrypt(text: roundAddress)
+            let decryptedSender = MongoClient.sharedInstance.decrypt(text: address)
+            let decryptedSenderSecret = MongoClient.sharedInstance.decrypt(text: secret)
             
             print(decrypted)
+            print(decryptedSender)
+            print(decryptedSenderSecret)
             
-            let json = Ripple(drop: self).send(address1: wallet.address, address2: decrypted, secret: secret, amount: String(amount))
+            let json = Ripple(drop: self).send(address1: decryptedSender, address2: decrypted, secret: decryptedSenderSecret, amount: String(amount))
             
             let success = json["resultCode"]?.string
             
@@ -214,10 +222,14 @@ extension Droplet {
             let roundAddress = String(describing: MongoClient.sharedInstance.lastWeekRound().2["address"]!)
             
             let decrypted = MongoClient.sharedInstance.decrypt(text: roundAddress)
+            let decryptedSender = MongoClient.sharedInstance.decrypt(text: address)
+            let decryptedSenderSecret = MongoClient.sharedInstance.decrypt(text: secret)
             
             print(decrypted)
+            print(decryptedSender)
+            print(decryptedSenderSecret)
             
-            let json = Ripple(drop: self).send(address1: wallet.address, address2: decrypted, secret: secret, amount: String(amount))
+            let json = Ripple(drop: self).send(address1: decryptedSender, address2: decrypted, secret: decryptedSenderSecret, amount: String(amount))
             
             let success = json["resultCode"]?.string
             
