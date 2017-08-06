@@ -241,12 +241,6 @@ extension Droplet {
             
             let success = json["resultCode"]?.string
             
-            /*if success == "tesSUCCESS" {
-                
-                print("currency sent")
-                
-                MongoClient.sharedInstance.saveWeekBet(wallet: wallet)
-            }*/
             
             return json
         }
@@ -357,17 +351,17 @@ extension Droplet {
         }
         
         get("hourRound") { req in 
-            print("hourRound 1")
+            
             MongoClient.sharedInstance.setHourStatus(status: true)
-            print("hourRound 2")
-            let insertedDocuments = MongoClient.sharedInstance.insertHourBets()
-            print("hourRound 3")
+            
+            MongoClient.sharedInstance.insertHourBets()
+           
             MongoClient.hourBetArray = []
-            print("hourRound 4")
+            
             Schedule(drop: self,database: database).hourRound()
-            print("hourRound 5")
+            
             MongoClient.sharedInstance.setHourStatus(status: false)
-            print("hourRound 6")
+          
             return "Running Hour Round"
             
         }
