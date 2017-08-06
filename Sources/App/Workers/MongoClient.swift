@@ -108,7 +108,7 @@ class MongoClient {
             print("set hour status 5")
             var currentDocument = try! hourStatusCollection.findOne()
             print("set hour status 6")
-            let id = try! currentDocument!["_id"]
+            let id = try currentDocument!["_id"]
             print("set hour status 7")
             print("status id is \(String(id)!)")
             print("set hour status 8")
@@ -138,7 +138,7 @@ class MongoClient {
             
             var currentDocument = try! dayStatusCollection.findOne()
             
-            let id = try! currentDocument!["_id"]
+            let id = try currentDocument!["_id"]
             
             print("status id is \(String(id)!)")
             
@@ -167,7 +167,7 @@ class MongoClient {
             
             var currentDocument = try! weekStatusCollection.findOne()
             
-            let id = try! currentDocument!["_id"]
+            let id = try currentDocument!["_id"]
             
             print("status id is \(String(id)!)")
             
