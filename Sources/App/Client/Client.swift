@@ -110,7 +110,7 @@ class Ripple {
             
         }
         
-        return json
+        return "sending ripple"
     }
     
     func getCoin(coinId:String) -> Coin {
