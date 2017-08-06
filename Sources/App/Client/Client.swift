@@ -76,7 +76,7 @@ class Ripple {
         return json
     }
     
-    func send(address1:String,address2:String,secret:String,amount:String) -> JSON {
+    func send(address1:String,address2:String,secret:String,amount:String,coin:String,round:String) -> JSON {
         
         var json:JSON!
         
@@ -86,7 +86,9 @@ class Ripple {
          "address1":address1,
          "address2":address2,
          "secret":secret,
-         "amount":amount
+         "amount":amount,
+         "coin":coin,
+         "round":round
          
          ]
         

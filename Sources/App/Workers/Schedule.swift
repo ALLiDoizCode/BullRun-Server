@@ -30,6 +30,8 @@ class Schedule {
         var winingPlayers:[(String,Double)] = []
         var currentRoundAddress:String = ""
         var currentRoundSecret:String = ""
+        
+        
         print("foo 1")
         ///payouts
         let round = MongoClient.sharedInstance.lastHourRound()
@@ -103,7 +105,7 @@ class Schedule {
                 }
                 
                 print("paided out \(payout) to address \(player.0)")
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout), coin: "", round: "")
                 
                 if json["resultCode"]?.string == "tesSUCCESS" {
                     
@@ -118,14 +120,14 @@ class Schedule {
                 Owner2Pay = BOOK_PAY * 0.33
                 Owner1Pay = BOOK_PAY - Owner2Pay
                 
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay))
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay), coin: "", round: "")
                 
                 if json["resultCode"]?.string == "tesSUCCESS" {
                     
                     pool = pool - pool
                 }
                 
-                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay))
+                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
                 
                 if json2["resultCode"]?.string == "tesSUCCESS" {
                     
@@ -137,14 +139,14 @@ class Schedule {
                 Owner2Pay = BOOK_PAY * 0.33
                 Owner1Pay = BOOK_PAY - Owner2Pay
                 
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay))
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay), coin: "", round: "")
                 
                 if json["resultCode"]?.string == "tesSUCCESS" {
                     
                     pool = pool - BOOK_PAY
                 }
                 
-                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay))
+                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
                 
                 if json2["resultCode"]?.string == "tesSUCCESS" {
                     
@@ -246,7 +248,7 @@ class Schedule {
                 }
                 
                 print("paided out \(payout) to address \(player.0)")
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout), coin: "", round: "")
                 
                 if json["resultCode"]?.string == "tesSUCCESS" {
                     
@@ -260,14 +262,14 @@ class Schedule {
                 Owner2Pay = BOOK_PAY * 0.33
                 Owner1Pay = BOOK_PAY - Owner2Pay
                 
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay))
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay), coin: "", round: "")
                 
                 if json["resultCode"]?.string == "tesSUCCESS" {
                     
                     pool = pool - pool
                 }
                 
-                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay))
+                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
                 
                 if json2["resultCode"]?.string == "tesSUCCESS" {
                     
@@ -279,14 +281,14 @@ class Schedule {
                 Owner2Pay = BOOK_PAY * 0.33
                 Owner1Pay = BOOK_PAY - Owner2Pay
                 
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay))
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay), coin: "", round: "")
                 
                 if json["resultCode"]?.string == "tesSUCCESS" {
                     
                     pool = pool - BOOK_PAY
                 }
                 
-                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay))
+                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
                 
                 if json2["resultCode"]?.string == "tesSUCCESS" {
                     
@@ -388,7 +390,7 @@ class Schedule {
                 }
                 
                 print("paided out \(payout) to address \(player.0)")
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout))
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout), coin: "", round: "")
                 
                 if json["resultCode"]?.string == "tesSUCCESS" {
                     
@@ -402,14 +404,14 @@ class Schedule {
                 Owner2Pay = BOOK_PAY * 0.33
                 Owner1Pay = BOOK_PAY - Owner2Pay
                 
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay))
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay), coin: "", round: "")
                 
                 if json["resultCode"]?.string == "tesSUCCESS" {
                     
                     pool = pool - pool
                 }
                 
-                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay))
+                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
                 
                 if json2["resultCode"]?.string == "tesSUCCESS" {
                     
@@ -421,14 +423,14 @@ class Schedule {
                 Owner2Pay = BOOK_PAY * 0.33
                 Owner1Pay = BOOK_PAY - Owner2Pay
                 
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay))
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay), coin: "", round: "")
                 
                 if json["resultCode"]?.string == "tesSUCCESS" {
                     
                     pool = pool - BOOK_PAY
                 }
                 
-                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay))
+                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
                 
                 if json2["resultCode"]?.string == "tesSUCCESS" {
                     

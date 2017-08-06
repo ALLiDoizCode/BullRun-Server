@@ -61,7 +61,7 @@ extension Droplet {
             print(decryptedSender)
             print(decryptedSenderSecret)
             
-            let json = Ripple(drop: self).send(address1: decryptedSender, address2: decryptedReciever, secret: decryptedSenderSecret, amount: String(amount))
+            let json = Ripple(drop: self).send(address1: decryptedSender, address2: decryptedReciever, secret: decryptedSenderSecret, amount: String(amount), coin: "", round: "")
             
             print(json["resultCode"]?.string)
             return json
@@ -119,16 +119,16 @@ extension Droplet {
             print(decryptedSender)
             print(decryptedSenderSecret)
             
-            let json = Ripple(drop: self).send(address1: decryptedSender, address2: decrypted, secret: decryptedSenderSecret, amount: String(amount))
+            let json = Ripple(drop: self).send(address1: decryptedSender, address2: decrypted, secret: decryptedSenderSecret, amount: String(amount),coin:coin, round: "hour")
             
             let success = json["resultCode"]?.string
             
-            if success == "tesSUCCESS" {
+            /*if success == "tesSUCCESS" {
                 
                 print("currency sent")
                 
                 MongoClient.sharedInstance.saveHourBet(wallet: wallet)
-            }
+            }*/
             
             return json
         }
@@ -178,16 +178,16 @@ extension Droplet {
             print(decryptedSender)
             print(decryptedSenderSecret)
             
-            let json = Ripple(drop: self).send(address1: decryptedSender, address2: decrypted, secret: decryptedSenderSecret, amount: String(amount))
+            let json = Ripple(drop: self).send(address1: decryptedSender, address2: decrypted, secret: decryptedSenderSecret, amount: String(amount),coin:coin, round: "day")
             
             let success = json["resultCode"]?.string
             
-            if success == "tesSUCCESS" {
+            /*if success == "tesSUCCESS" {
                 
                 print("currency sent")
                 
                 MongoClient.sharedInstance.saveDayBet(wallet: wallet)
-            }
+            }*/
             
             return json
         }
@@ -237,16 +237,16 @@ extension Droplet {
             print(decryptedSender)
             print(decryptedSenderSecret)
             
-            let json = Ripple(drop: self).send(address1: decryptedSender, address2: decrypted, secret: decryptedSenderSecret, amount: String(amount))
+            let json = Ripple(drop: self).send(address1: decryptedSender, address2: decrypted, secret: decryptedSenderSecret, amount: String(amount),coin:coin, round: "week")
             
             let success = json["resultCode"]?.string
             
-            if success == "tesSUCCESS" {
+            /*if success == "tesSUCCESS" {
                 
                 print("currency sent")
                 
                 MongoClient.sharedInstance.saveWeekBet(wallet: wallet)
-            }
+            }*/
             
             return json
         }
@@ -258,6 +258,87 @@ extension Droplet {
             MongoClient.sharedInstance.insertweekBets()
             
             return "Inserted Bets to Database"
+        }
+        
+        post("saveHourBets") { req in
+            
+            guard let address = req.data["address"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
+            guard let amount = req.data["amount"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
+            guard let coin = req.data["coin"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
+            let wallet = Wallet()
+            wallet.address = address
+            wallet.weekBet.amount = Double(amount)!
+            wallet.weekBet.coinId = coin
+            
+            MongoClient.sharedInstance.saveHourBet(wallet: wallet)
+            
+            return "saved"
+        }
+        
+        post("saveDayBets") { req in
+            
+            guard let address = req.data["address"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
+            guard let amount = req.data["amount"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
+            guard let coin = req.data["coin"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
+            let wallet = Wallet()
+            wallet.address = address
+            wallet.weekBet.amount = Double(amount)!
+            wallet.weekBet.coinId = coin
+            
+            MongoClient.sharedInstance.saveDayBet(wallet: wallet)
+            
+            return "saved"
+        }
+        
+        post("saveWeekBets") { req in
+            
+            guard let address = req.data["address"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
+            guard let amount = req.data["amount"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
+            guard let coin = req.data["coin"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
+            let wallet = Wallet()
+            wallet.address = address
+            wallet.weekBet.amount = Double(amount)!
+            wallet.weekBet.coinId = coin
+            
+            MongoClient.sharedInstance.saveWeekBet(wallet: wallet)
+            
+            return "saved"
         }
         
         get("newAddress") { req in

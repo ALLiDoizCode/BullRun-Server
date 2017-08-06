@@ -402,7 +402,8 @@ class MongoClient {
                 "name":coin.name,
                 "percent":coin.percent_change_1h,
                 "usd":coin.price_usd,
-                "BTC":coin.price_btc
+                "BTC":coin.price_btc,
+                "created":Date().iso8601
             ]
             
             try! hourColleciton.insert(document)
@@ -429,7 +430,8 @@ class MongoClient {
                 "name":coin.name,
                 "percent":coin.percent_change_1h,
                 "usd":coin.price_usd,
-                "BTC":coin.price_btc
+                "BTC":coin.price_btc,
+                "created":Date().iso8601
             ]
             
             try! dayCollection.insert(document)
@@ -457,7 +459,8 @@ class MongoClient {
                 "name":coin.name,
                 "percent":coin.percent_change_1h,
                 "usd":coin.price_usd,
-                "BTC":coin.price_btc
+                "BTC":coin.price_btc,
+                "created":Date().iso8601
             ]
             
             try! weekCollection.insert(document)
