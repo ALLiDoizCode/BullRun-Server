@@ -267,7 +267,7 @@ extension Droplet {
                 throw Abort.badRequest
             }
             
-            guard let amount = req.data["amount"]?.string else {
+            guard let amount = req.data["amount"]?.double else {
                 
                 throw Abort.badRequest
             }
@@ -276,13 +276,17 @@ extension Droplet {
                 
                 throw Abort.badRequest
             }
-            
+            print(address)
+            print(amount)
+            print(coin)
             let wallet = Wallet()
             wallet.address = address
-            wallet.weekBet.amount = Double(amount)!
-            wallet.weekBet.coinId = coin
+            wallet.hourBet.amount = amount
+            wallet.hourBet.coinId = coin
             
             MongoClient.sharedInstance.saveHourBet(wallet: wallet)
+            
+            print("saved")
             
             return "saved"
         }
@@ -294,7 +298,7 @@ extension Droplet {
                 throw Abort.badRequest
             }
             
-            guard let amount = req.data["amount"]?.string else {
+            guard let amount = req.data["amount"]?.double else {
                 
                 throw Abort.badRequest
             }
@@ -306,10 +310,12 @@ extension Droplet {
             
             let wallet = Wallet()
             wallet.address = address
-            wallet.weekBet.amount = Double(amount)!
-            wallet.weekBet.coinId = coin
+            wallet.dayBet.amount = amount
+            wallet.dayBet.coinId = coin
             
             MongoClient.sharedInstance.saveDayBet(wallet: wallet)
+            
+            print("saved")
             
             return "saved"
         }
@@ -321,7 +327,7 @@ extension Droplet {
                 throw Abort.badRequest
             }
             
-            guard let amount = req.data["amount"]?.string else {
+            guard let amount = req.data["amount"]?.double else {
                 
                 throw Abort.badRequest
             }
@@ -333,10 +339,12 @@ extension Droplet {
             
             let wallet = Wallet()
             wallet.address = address
-            wallet.weekBet.amount = Double(amount)!
+            wallet.weekBet.amount = amount
             wallet.weekBet.coinId = coin
             
             MongoClient.sharedInstance.saveWeekBet(wallet: wallet)
+            
+            print("saved")
             
             return "saved"
         }
