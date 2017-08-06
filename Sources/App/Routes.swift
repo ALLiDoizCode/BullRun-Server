@@ -54,7 +54,15 @@ extension Droplet {
                 throw Abort.badRequest
             }
             
-            let json = Ripple(drop:self).send(address1: address1, address2: address2, secret: secret, amount: amount)
+            let decryptedSender = MongoClient.sharedInstance.decrypt(text: address1)
+            let decryptedReciever = MongoClient.sharedInstance.decrypt(text: address2)
+            let decryptedSenderSecret = MongoClient.sharedInstance.decrypt(text: secret)
+            
+            print(decryptedSender)
+            print(decryptedSenderSecret)
+            
+            let json = Ripple(drop: self).send(address1: decryptedSender, address2: decryptedReciever, secret: decryptedSenderSecret, amount: String(amount))
+            
             print(json["resultCode"]?.string)
             return json
             
