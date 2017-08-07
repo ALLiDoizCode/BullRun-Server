@@ -387,6 +387,8 @@ class MongoClient {
     
     func saveHourRound(coins:[Coin]){
         
+        let time = Date().iso8601
+        
         guard coins.count != 0  else {
             
             return
@@ -403,7 +405,7 @@ class MongoClient {
                 "percent":coin.percent_change_1h,
                 "usd":coin.price_usd,
                 "BTC":coin.price_btc,
-                "created":Date().iso8601
+                "created":time
             ]
             
             try! hourColleciton.insert(document)
@@ -414,7 +416,7 @@ class MongoClient {
     }
     
     func saveDayRound(coins:[Coin]){
-        
+        let time = Date().iso8601
         guard coins.count != 0  else {
             
             return
@@ -431,7 +433,7 @@ class MongoClient {
                 "percent":coin.percent_change_1h,
                 "usd":coin.price_usd,
                 "BTC":coin.price_btc,
-                "created":Date().iso8601
+                "created":time
             ]
             
             try! dayCollection.insert(document)
@@ -443,6 +445,8 @@ class MongoClient {
     }
     
     func saveWeekRound(coins:[Coin]){
+        
+        let time = Date().iso8601
         
         guard coins.count != 0  else {
             
@@ -460,7 +464,7 @@ class MongoClient {
                 "percent":coin.percent_change_1h,
                 "usd":coin.price_usd,
                 "BTC":coin.price_btc,
-                "created":Date().iso8601
+                "created":time
             ]
             
             try! weekCollection.insert(document)

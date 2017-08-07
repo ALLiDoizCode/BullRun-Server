@@ -21,6 +21,10 @@ class Schedule {
         self.drop = drop
     }
     
+    func getWinners(round:([Document],[Document],Document)) {
+        
+    }
+    
     func hourRound() {
         
         var oldCoins:[Coin] = []
@@ -32,30 +36,30 @@ class Schedule {
         var currentRoundSecret:String = ""
         
         
-        print("foo 1")
+       
         ///payouts
         let round = MongoClient.sharedInstance.lastHourRound()
-        print("foo 2")
+        
         let decryptAddress = MongoClient.sharedInstance.decrypt(text: String(describing: round.2["address"]!))
-        print("foo 3")
+        
         let decryptSecert = MongoClient.sharedInstance.decrypt(text: String(describing: round.2["secret"]!))
-        print("foo 4")
+        
         
         currentRoundAddress = decryptAddress
-        print("foo 5")
+       
         currentRoundSecret = decryptSecert
-        print("foo 6")
+       
         
         if round.1.count != 0 {
-            print("foo 6")
+            
             for coin in round.0 {
-                print("foo 6")
+                
                 let result = String(coin["coin"])
-                print("foo 6")
+                
                 let oldCoin = Ripple(drop: self.drop).getCoin(coinId: result!)
                 print(oldCoin.id)
                 oldCoins.append(oldCoin)
-                print("foo 6")
+                
             }
             
             let winners = Math().winners1hr(coins: oldCoins)
@@ -116,7 +120,7 @@ class Schedule {
             }
             print("Bar")
             ///pay myself fee
-            if winingPlayers.count == 0 {
+            /*if winingPlayers.count == 0 {
                 
                 BOOK_PAY = pool
                 Owner2Pay = BOOK_PAY * 0.33
@@ -156,7 +160,7 @@ class Schedule {
                 }
                 
                 
-            }
+            }*/
             //////////////////
             
             let check = Math().payoutAmountCheck(payouts: payouts, pool: pool)
