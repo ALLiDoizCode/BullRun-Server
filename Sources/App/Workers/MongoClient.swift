@@ -65,6 +65,14 @@ class MongoClient {
         
     }
     
+    static func dateToString(_ dateIn: Date?) -> String? {
+        guard let date = dateIn else { return nil }
+        let dateformatter = DateFormatter()
+        dateformatter.timeZone = TimeZone.current
+        dateformatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSSS"
+        let val = dateformatter.string(from: date)
+        return val
+    }
     
     func encrypt(text:String) -> String {
     
@@ -386,8 +394,8 @@ class MongoClient {
     }
     
     func saveHourRound(coins:[Coin]){
-        
-        let time = Date().iso8601
+        let date = Date()
+        let time = MongoClient.dateToString(date)
         
         guard coins.count != 0  else {
             
@@ -416,7 +424,8 @@ class MongoClient {
     }
     
     func saveDayRound(coins:[Coin]){
-        let time = Date().iso8601
+        let date = Date()
+        let time = MongoClient.dateToString(date)
         guard coins.count != 0  else {
             
             return
@@ -446,7 +455,8 @@ class MongoClient {
     
     func saveWeekRound(coins:[Coin]){
         
-        let time = Date().iso8601
+        let date = Date()
+        let time = MongoClient.dateToString(date)
         
         guard coins.count != 0  else {
             

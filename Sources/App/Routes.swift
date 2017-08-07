@@ -530,8 +530,6 @@ extension Droplet {
         
         get("check") { req in
             
-            //Schedule(drop: self, database: database).hourRound()
-            
             let round = MongoClient.sharedInstance.lastHourRound()
             
             let decryptAddress = MongoClient.sharedInstance.decrypt(text: String(describing: round.2["address"]!))
