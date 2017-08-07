@@ -433,8 +433,29 @@ extension Droplet {
             
             var coinObject:[JSON] = []
             var betObject:[JSON] = []
-            
+            var oddsObject:[JSON] = []
             for coin in coins {
+                
+                let currentCoin = String(coin["coin"]!)!
+                
+                var coinBets = 0
+                
+                for bet in bets {
+                    
+                    let coinId = String(bet["coin"]!)!
+                    
+                    if coinId == currentCoin {
+                        
+                        coinBets += 1
+                    }
+                }
+                
+                let odds = try! JSON(node: [
+                    
+                    "coin":coin["coin"],
+                    "bets":coinBets
+                    ])
+                oddsObject.append(odds)
                 
                 let object = try! JSON(node: [
                     
@@ -444,6 +465,7 @@ extension Droplet {
                         "usd":coin["usd"],
                         "BTC":coin["BTC"],
                         "created":coin["created"],
+                        "currentBets":coinBets,
                         
                     ])
                 
@@ -469,8 +491,8 @@ extension Droplet {
                 
                     "coin":coinObject,
                     "bets":betObject,
-                    "betCounts":betCounts
-                
+                    "betCounts":betCounts,
+                    "odds":oddsObject
                 ])
             
             
@@ -485,8 +507,30 @@ extension Droplet {
             
             var coinObject:[JSON] = []
             var betObject:[JSON] = []
+            var oddsObject:[JSON] = []
             
             for coin in coins {
+                
+                let currentCoin = String(coin["coin"]!)!
+                
+                var coinBets = 0
+                
+                for bet in bets {
+                    
+                    let coinId = String(bet["coin"]!)!
+                    
+                    if coinId == currentCoin {
+                        
+                        coinBets += 1
+                    }
+                }
+                
+                let odds = try! JSON(node: [
+                    
+                        "coin":coin["coin"],
+                        "bets":coinBets
+                    ])
+                oddsObject.append(odds)
                 
                 let object = try! JSON(node: [
                     
@@ -495,7 +539,7 @@ extension Droplet {
                     "percent":coin["percent"],
                     "usd":coin["usd"],
                     "BTC":coin["BTC"],
-                    
+                    "created":coin["created"]
                     ])
                 
                 
@@ -520,7 +564,8 @@ extension Droplet {
                 
                 "coin":coinObject,
                 "bets":betObject,
-                "betCounts":betCounts
+                "betCounts":betCounts,
+                "odds":oddsObject
                 
                 ])
             
@@ -562,6 +607,20 @@ extension Droplet {
             
             for coin in coins {
                 
+                let currentCoin = String(coin["coin"]!)!
+                
+                var coinBets = 0
+                
+                for bet in bets {
+                    
+                    let coinId = String(bet["coin"]!)!
+                    
+                    if coinId == currentCoin {
+                        
+                        coinBets += 1
+                    }
+                }
+                
                 let object = try! JSON(node: [
                     
                     "coin":coin["coin"],
@@ -569,6 +628,8 @@ extension Droplet {
                     "percent":coin["percent"],
                     "usd":coin["usd"],
                     "BTC":coin["BTC"],
+                    "created":coin["created"],
+                    "bets":coinBets
                     
                     ])
                 
