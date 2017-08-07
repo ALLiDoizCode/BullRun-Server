@@ -90,7 +90,7 @@ class Schedule {
             var Owner1Pay:Double = 0
             //////////////////
             
-            for player in winingPlayers {
+            /*for player in winingPlayers {
                 
                 let payout = Math().payout(winningBets: winningBets, currentBet: player.1, pool: pool, stake: stake)
                 
@@ -117,7 +117,7 @@ class Schedule {
                 }
                 
                 
-            }
+            }*/
             print("Bar")
             ///pay myself fee
             /*if winingPlayers.count == 0 {
