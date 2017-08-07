@@ -111,6 +111,8 @@ class Schedule {
                     
                     MongoClient.sharedInstance.savePayout(address: player.0, amount: payout)
                 }
+                
+                
             }
             print("Bar")
             ///pay myself fee

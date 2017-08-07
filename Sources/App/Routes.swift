@@ -358,7 +358,7 @@ extension Droplet {
            
             MongoClient.hourBetArray = []
             
-            Schedule(drop: self,database: database).hourRound()
+            //Schedule(drop: self,database: database).hourRound()
             
             MongoClient.sharedInstance.setHourStatus(status: false)
           
@@ -529,7 +529,7 @@ extension Droplet {
         
         get("check") { req in
             
-            Schedule(drop: self, database: database).hourRound()
+            //Schedule(drop: self, database: database).hourRound()
             
             let round = MongoClient.sharedInstance.lastHourRound()
             
