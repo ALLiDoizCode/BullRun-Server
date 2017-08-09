@@ -1,5 +1,6 @@
 import Vapor
 import MongoKitten
+import Jobs
 extension Droplet {
     func setupRoutes() throws {
         
@@ -14,6 +15,23 @@ extension Droplet {
         } else {
             print("Connection failed")
         }
+        
+        self.socket("transcation", handler: { (req, ws) in
+            
+            Jobs.add(interval: .seconds(4)) {
+                
+                try ws.ping()
+            }
+            
+            ws.onText = { ws, text in
+                
+                Ripple.jobIds[text] = ws
+            }
+            
+            ws.onClose = { ws, _, _, _ in
+                
+            }
+        })
         
         get("loaderio-d58ed4d0fbe205d391f2c16dee45f3eb") { req in
             
@@ -270,6 +288,13 @@ extension Droplet {
                 
                 throw Abort.badRequest
             }
+            
+            guard let jobId = req.data["jobId"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
+            
             print(address)
             print(amount)
             print(coin)
@@ -280,7 +305,11 @@ extension Droplet {
             
             MongoClient.sharedInstance.saveHourBet(wallet: wallet)
             
-            print("saved")
+            print("saved job \(jobId)")
+            
+            let ws = Ripple.jobIds[jobId]
+            
+            try! ws?.send("Bet Succesful")
             
             return "saved"
         }
@@ -302,6 +331,11 @@ extension Droplet {
                 throw Abort.badRequest
             }
             
+            guard let jobId = req.data["jobId"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
             let wallet = Wallet()
             wallet.address = address
             wallet.dayBet.amount = amount
@@ -309,7 +343,11 @@ extension Droplet {
             
             MongoClient.sharedInstance.saveDayBet(wallet: wallet)
             
-            print("saved")
+            print("saved job \(jobId)")
+            
+            let ws = Ripple.jobIds[jobId]
+            
+            try! ws?.send("Bet Succesful")
             
             return "saved"
         }
@@ -331,6 +369,11 @@ extension Droplet {
                 throw Abort.badRequest
             }
             
+            guard let jobId = req.data["jobId"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
             let wallet = Wallet()
             wallet.address = address
             wallet.weekBet.amount = amount
@@ -338,7 +381,11 @@ extension Droplet {
             
             MongoClient.sharedInstance.saveWeekBet(wallet: wallet)
             
-            print("saved")
+            print("saved job \(jobId)")
+            
+            let ws = Ripple.jobIds[jobId]
+            
+            try! ws?.send("Bet Succesful")
             
             return "saved"
         }

@@ -14,7 +14,7 @@ import MongoKitten
 class Ripple {
     
     var drop:Droplet!
-    
+    static var jobIds:[String:WebSocket] = [:]
     init(drop:Droplet){
         self.drop = drop
     }
