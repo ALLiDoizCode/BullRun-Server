@@ -76,6 +76,36 @@ class Ripple {
         return json
     }
     
+    func accountInfo(address:String) -> JSON {
+        
+        var json:JSON!
+        
+        let params = [
+            "address":address
+        ]
+        
+        print("address is \(address)")
+        
+        do {
+            let request = try Request(method: .post, uri: "https://ripple-server.herokuapp.com/accountInfo")
+            print("1")
+            request.formURLEncoded = try Node(node: params)
+            print("2")
+            //request.headers["Authorization"] = "Bearer \(SECERT)"
+            let response = try drop.client.respond(to: request)
+            print("3")
+            json = try JSON(bytes: response.body.bytes!)
+            print(json)
+            
+        } catch {
+            
+            print("request error was \(error)")
+            
+        }
+        
+        return json
+    }
+    
     func send(address1:String,address2:String,secret:String,amount:String,coin:String,round:String) -> JSON {
         
         var json:JSON!

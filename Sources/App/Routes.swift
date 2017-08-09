@@ -38,6 +38,18 @@ extension Droplet {
             return MongoClient.sharedInstance.benchMark()
         }
         
+        get("accountInfo") { req in
+            
+            guard let address = req.data["address"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            let json = Ripple(drop:self).accountInfo(address: address)
+            
+            return json
+            
+        }
+        
         get("balance") { req in
             
             guard let address = req.data["address"]?.string else {
