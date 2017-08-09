@@ -265,9 +265,9 @@ extension Droplet {
         
         get("insertBets") { req in
             
-            MongoClient.sharedInstance.insertHourBets()
-            MongoClient.sharedInstance.insertDayBets()
-            MongoClient.sharedInstance.insertweekBets()
+            //MongoClient.sharedInstance.insertHourBets()
+            //MongoClient.sharedInstance.insertDayBets()
+            //MongoClient.sharedInstance.insertweekBets()
             
             return "Inserted Bets to Database"
         }
@@ -304,14 +304,15 @@ extension Droplet {
             wallet.hourBet.coinId = coin
             
             MongoClient.sharedInstance.saveHourBet(wallet: wallet)
+            MongoClient.sharedInstance.insertHourBets()
             
             print("saved job \(jobId)")
             
-            let ws = Ripple.jobIds[jobId]
+            //let ws = Ripple.jobIds[jobId]
             
-            try! ws?.send("Bet Succesful")
+            //try! ws?.send("Bet Succesful")
             
-            return "saved"
+            return "saved job \(jobId)"
         }
         
         post("saveDayBets") { req in
@@ -342,14 +343,15 @@ extension Droplet {
             wallet.dayBet.coinId = coin
             
             MongoClient.sharedInstance.saveDayBet(wallet: wallet)
+            MongoClient.sharedInstance.insertDayBets()
             
             print("saved job \(jobId)")
             
-            let ws = Ripple.jobIds[jobId]
+            //let ws = Ripple.jobIds[jobId]
             
-            try! ws?.send("Bet Succesful")
+            //try! ws?.send("Bet Succesful")
             
-            return "saved"
+            return "saved job \(jobId)"
         }
         
         post("saveWeekBets") { req in
@@ -380,14 +382,14 @@ extension Droplet {
             wallet.weekBet.coinId = coin
             
             MongoClient.sharedInstance.saveWeekBet(wallet: wallet)
-            
+            MongoClient.sharedInstance.insertweekBets()
             print("saved job \(jobId)")
             
-            let ws = Ripple.jobIds[jobId]
+            //let ws = Ripple.jobIds[jobId]
             
-            try! ws?.send("Bet Succesful")
+            //try! ws?.send("Bet Succesful")
             
-            return "saved"
+            return "saved job \(jobId)"
         }
         
         get("newAddress") { req in
