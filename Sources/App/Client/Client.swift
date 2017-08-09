@@ -87,7 +87,7 @@ class Ripple {
         print("address is \(address)")
         
         do {
-            let request = try Request(method: .post, uri: "https://ripple-server.herokuapp.com/accountInfo")
+            let request = try Request(method: .get, uri: "https://ripple-server.herokuapp.com/accountInfo")
             print("1")
             request.formURLEncoded = try Node(node: params)
             print("2")
