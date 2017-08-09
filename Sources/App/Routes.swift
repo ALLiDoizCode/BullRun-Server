@@ -16,7 +16,7 @@ extension Droplet {
             print("Connection failed")
         }
         
-        self.socket("transcation", handler: { (req, ws) in
+        /*self.socket("transcation", handler: { (req, ws) in
             
             Jobs.add(interval: .seconds(4)) {
                 
@@ -31,7 +31,7 @@ extension Droplet {
             ws.onClose = { ws, _, _, _ in
                 
             }
-        })
+        })*/
         
         get("loaderio-d58ed4d0fbe205d391f2c16dee45f3eb") { req in
             
