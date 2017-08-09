@@ -35,8 +35,6 @@ class Schedule {
         var currentRoundAddress:String = ""
         var currentRoundSecret:String = ""
         
-        
-       
         ////payouts
         let round = MongoClient.sharedInstance.lastHourRound()
         
