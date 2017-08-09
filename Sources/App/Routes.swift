@@ -459,12 +459,14 @@ extension Droplet {
             
             //MongoClient.sharedInstance.insertHourBets()
            
-            MongoClient.hourBetArray = []
+            //MongoClient.hourBetArray = []
             
-            Schedule(drop: self,database: database).hourRound()
+            Jobs.oneoff {
+                
+                Schedule(drop: self,database: database).hourRound()
+                MongoClient.sharedInstance.setHourStatus(status: false)
+            }
             
-            MongoClient.sharedInstance.setHourStatus(status: false)
-          
             return "Running Hour Round"
             
         }
@@ -475,11 +477,15 @@ extension Droplet {
             
             //let insertedDocuments = MongoClient.sharedInstance.insertDayBets()
             
-            MongoClient.dayBetArray = []
+            //MongoClient.dayBetArray = []
             
-            Schedule(drop: self,database: database).dayRound()
             
-            MongoClient.sharedInstance.setDayStatus(status: false)
+            
+            Jobs.oneoff {
+                
+                Schedule(drop: self,database: database).dayRound()
+                MongoClient.sharedInstance.setDayStatus(status: false)
+            }
             
             return "Running Day Round"
             
@@ -491,11 +497,15 @@ extension Droplet {
             
             //let insertedDocuments = MongoClient.sharedInstance.insertweekBets()
             
-            MongoClient.weekBetArray = []
+            //MongoClient.weekBetArray = []
             
-            Schedule(drop: self,database: database).weekRound()
             
-            MongoClient.sharedInstance.setWeekStatus(status: false)
+            Jobs.oneoff {
+                
+                Schedule(drop: self,database: database).weekRound()
+                
+                MongoClient.sharedInstance.setWeekStatus(status: false)
+            }
             
             return "Running week Round"
             
