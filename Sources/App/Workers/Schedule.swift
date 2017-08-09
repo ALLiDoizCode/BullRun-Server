@@ -37,7 +37,7 @@ class Schedule {
         
         
        
-        ///payouts
+        ////payouts
         let round = MongoClient.sharedInstance.lastHourRound()
         
         let decryptAddress = MongoClient.sharedInstance.decrypt(text: String(describing: round.2["address"]!))
