@@ -394,7 +394,7 @@ class MongoClient {
     }
     
     func saveHourRound(coins:[Coin]){
-        let date = Date().timeIntervalSince1970 * 1000.00
+        let date = Date().addingTimeInterval(60 * 60).timeIntervalSince1970  * 1000.00
         //let time = MongoClient.dateToString(date)
         
         guard coins.count != 0  else {
@@ -424,7 +424,7 @@ class MongoClient {
     }
     
     func saveDayRound(coins:[Coin]){
-        let date = Date().timeIntervalSince1970 * 1000.00
+        let date = Date().addingTimeInterval(60 * 60).timeIntervalSince1970  * 1000.00
         //let time = MongoClient.dateToString(date.timeIntervalSince1970 * 1000.00)
         guard coins.count != 0  else {
             
@@ -455,7 +455,7 @@ class MongoClient {
     
     func saveWeekRound(coins:[Coin]){
         
-        let date = Date().timeIntervalSince1970 * 1000.00
+        let date = Date().addingTimeInterval(60 * 60).timeIntervalSince1970  * 1000.00
         //let time = MongoClient.dateToString(date)
         
         guard coins.count != 0  else {
