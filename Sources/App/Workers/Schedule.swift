@@ -109,9 +109,9 @@ class Schedule {
                 }
                 
                 print("paided out \(payout) to address \(player.0)")
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout), coin: "", round: "")
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout), coin: "", round: "payout")
                 
-                 MongoClient.sharedInstance.savePayout(address: player.0, amount: payout)
+                
                 
                 /*if json["resultCode"]?.string == "tesSUCCESS" {
                     
@@ -256,9 +256,8 @@ class Schedule {
                 }
                 
                 print("paided out \(payout) to address \(player.0)")
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout), coin: "", round: "")
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout), coin: "", round: "payout")
                 
-                 MongoClient.sharedInstance.savePayout(address: player.0, amount: payout)
                 
                 /*if json["resultCode"]?.string == "tesSUCCESS" {
                     
@@ -400,9 +399,8 @@ class Schedule {
                 }
                 
                 print("paided out \(payout) to address \(player.0)")
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout), coin: "", round: "")
+                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout), coin: "", round: "payout")
                 
-                 MongoClient.sharedInstance.savePayout(address: player.0, amount: payout)
                 
                 /*if json["resultCode"]?.string == "tesSUCCESS" {
                     

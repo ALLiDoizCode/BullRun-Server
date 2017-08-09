@@ -284,6 +284,48 @@ extension Droplet {
             return "Inserted Bets to Database"
         }
         
+        post("savePayout") { req in
+            
+            guard let address = req.data["address"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
+            guard let amount = req.data["amount"]?.double else {
+                
+                throw Abort.badRequest
+            }
+            
+            guard let coin = req.data["coin"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
+            guard let jobId = req.data["jobId"]?.string else {
+                
+                throw Abort.badRequest
+            }
+            
+            
+            print(address)
+            print(amount)
+            print(coin)
+            let wallet = Wallet()
+            wallet.address = address
+            wallet.hourBet.amount = amount
+            wallet.hourBet.coinId = coin
+            
+            MongoClient.sharedInstance.savePayout(address: address, amount: amount)
+            
+            print("saved job \(jobId)")
+            
+            //let ws = Ripple.jobIds[jobId]
+            
+            //try! ws?.send("Bet Succesful")
+            
+            return "saved payout"
+        }
+        
         post("saveHourBets") { req in
             
             guard let address = req.data["address"]?.string else {
@@ -357,13 +399,13 @@ extension Droplet {
             MongoClient.sharedInstance.saveDayBet(wallet: wallet)
             MongoClient.sharedInstance.insertDayBets()
             
-            print("saved job \(jobId)")
+            print("saved job")
             
             //let ws = Ripple.jobIds[jobId]
             
             //try! ws?.send("Bet Succesful")
             
-            return "saved job \(jobId)"
+            return "saved job "
         }
         
         post("saveWeekBets") { req in
@@ -401,7 +443,7 @@ extension Droplet {
             
             //try! ws?.send("Bet Succesful")
             
-            return "saved job \(jobId)"
+            return "saved job "
         }
         
         get("newAddress") { req in
@@ -415,7 +457,7 @@ extension Droplet {
             
             MongoClient.sharedInstance.setHourStatus(status: true)
             
-            MongoClient.sharedInstance.insertHourBets()
+            //MongoClient.sharedInstance.insertHourBets()
            
             MongoClient.hourBetArray = []
             
@@ -431,7 +473,7 @@ extension Droplet {
             
            MongoClient.sharedInstance.setDayStatus(status: true)
             
-            let insertedDocuments = MongoClient.sharedInstance.insertDayBets()
+            //let insertedDocuments = MongoClient.sharedInstance.insertDayBets()
             
             MongoClient.dayBetArray = []
             
@@ -447,7 +489,7 @@ extension Droplet {
             
             MongoClient.sharedInstance.setWeekStatus(status: true)
             
-            let insertedDocuments = MongoClient.sharedInstance.insertweekBets()
+            //let insertedDocuments = MongoClient.sharedInstance.insertweekBets()
             
             MongoClient.weekBetArray = []
             
