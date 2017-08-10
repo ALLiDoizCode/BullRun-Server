@@ -1,7 +1,9 @@
 import Vapor
 import MongoKitten
-import Jobs
+import Dispatch
 extension Droplet {
+    
+    
     func setupRoutes() throws {
         
         let server = try! Server("mongodb://heroku_h8lrwkbq:ntcqd6852m09ie14o2v6h4ktqv@ds129003.mlab.com:29003/heroku_h8lrwkbq")
@@ -461,8 +463,14 @@ extension Droplet {
            
             //MongoClient.hourBetArray = []
             
-            Schedule(drop: self,database: database).hourRound()
-            MongoClient.sharedInstance.setHourStatus(status: false)
+            Schedule.jobsQueue.async {
+                
+                DispatchQueue.global().async {
+                    
+                    Schedule(drop: self,database: database).hourRound()
+                    MongoClient.sharedInstance.setHourStatus(status: false)
+                }
+            }
             
             return "Running Hour Round"
             
@@ -476,10 +484,14 @@ extension Droplet {
             
             //MongoClient.dayBetArray = []
             
-            
-            
-            Schedule(drop: self,database: database).dayRound()
-            MongoClient.sharedInstance.setDayStatus(status: false)
+            Schedule.jobsQueue.async {
+                
+                DispatchQueue.global().async {
+                    
+                    Schedule(drop: self,database: database).dayRound()
+                    MongoClient.sharedInstance.setDayStatus(status: false)
+                }
+            }
             
             return "Running Day Round"
             
@@ -493,9 +505,14 @@ extension Droplet {
             
             //MongoClient.weekBetArray = []
             
-            
-            Schedule(drop: self,database: database).weekRound()
-            MongoClient.sharedInstance.setWeekStatus(status: false)
+            Schedule.jobsQueue.async {
+                
+                DispatchQueue.global().async {
+                    
+                    Schedule(drop: self,database: database).weekRound()
+                    MongoClient.sharedInstance.setWeekStatus(status: false)
+                }
+            }
             
             return "Running week Round"
             

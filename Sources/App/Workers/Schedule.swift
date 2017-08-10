@@ -14,6 +14,8 @@ class Schedule {
     let delay:Double = 600.0
     var drop:Droplet!
     var database:Database!
+    
+    static let jobsQueue = DispatchQueue(label: "Swift Metrics Jobs Queue")
 
     init(drop:Droplet,database:Database) {
         
@@ -107,7 +109,7 @@ class Schedule {
                 }
                 
                 print("paided out \(payout) to address \(player.0)")
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout), coin: "", round: "payout")
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout), coin: "", round: "payout")
                 
                 
                 
@@ -126,38 +128,42 @@ class Schedule {
                 Owner2Pay = BOOK_PAY * 0.33
                 Owner1Pay = BOOK_PAY - Owner2Pay
                 
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay), coin: "", round: "")
+                 Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay), coin: "", round: "")
                 
-                if json["resultCode"]?.string == "tesSUCCESS" {
-                    
-                    pool = pool - pool
-                }
-                
-                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
-                
-                if json2["resultCode"]?.string == "tesSUCCESS" {
+                /*if json["resultCode"]?.string == "tesSUCCESS" {
                     
                     
-                }
+                }*/
+                
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
+                
+                /*if json2["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    
+                }*/
+                
+                pool = pool - pool
                 
             }else {
                 
                 Owner2Pay = BOOK_PAY * 0.33
                 Owner1Pay = BOOK_PAY - Owner2Pay
                 
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay), coin: "", round: "")
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay), coin: "", round: "")
                 
-                if json["resultCode"]?.string == "tesSUCCESS" {
-                    
-                    pool = pool - BOOK_PAY
-                }
-                
-                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
-                
-                if json2["resultCode"]?.string == "tesSUCCESS" {
+                /*if json["resultCode"]?.string == "tesSUCCESS" {
                     
                     
-                }
+                }*/
+                
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
+                
+                /*if json2["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    
+                }*/
+                
+                pool = pool - BOOK_PAY
                 
                 
             }
@@ -167,7 +173,7 @@ class Schedule {
             
             print("paid out correct amount: \(check), payouts:\(payouts),pool:\(pool)")
             
-           MongoClient.sharedInstance.deleteHourBets()
+            MongoClient.sharedInstance.deleteHourBets()
         }
         
         let top10 = Ripple(drop: self.drop).top10()
@@ -254,7 +260,7 @@ class Schedule {
                 }
                 
                 print("paided out \(payout) to address \(player.0)")
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout), coin: "", round: "payout")
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: player.0, secret: currentRoundSecret, amount: String(payout), coin: "", round: "payout")
                 
                 
                 /*if json["resultCode"]?.string == "tesSUCCESS" {
@@ -269,19 +275,22 @@ class Schedule {
                 Owner2Pay = BOOK_PAY * 0.33
                 Owner1Pay = BOOK_PAY - Owner2Pay
                 
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay), coin: "", round: "")
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay), coin: "", round: "")
                 
-                if json["resultCode"]?.string == "tesSUCCESS" {
-                    
-                    pool = pool - pool
-                }
-                
-                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
-                
-                if json2["resultCode"]?.string == "tesSUCCESS" {
+                /*if json["resultCode"]?.string == "tesSUCCESS" {
                     
                     
-                }
+                }*/
+                
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
+                
+                
+                pool = pool - pool
+                
+                /*if json2["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    
+                }*/
                 
             }else {
                 
@@ -297,10 +306,10 @@ class Schedule {
                 
                 let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
                 
-                if json2["resultCode"]?.string == "tesSUCCESS" {
+                /*if json2["resultCode"]?.string == "tesSUCCESS" {
                     
                     
-                }
+                }*/
                 
                 
             }
@@ -412,19 +421,21 @@ class Schedule {
                 Owner2Pay = BOOK_PAY * 0.33
                 Owner1Pay = BOOK_PAY - Owner2Pay
                 
-                let json = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay), coin: "", round: "")
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET, secret: currentRoundSecret, amount: String(Owner1Pay), coin: "", round: "")
                 
-                if json["resultCode"]?.string == "tesSUCCESS" {
-                    
-                    pool = pool - pool
-                }
-                
-                let json2 = Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
-                
-                if json2["resultCode"]?.string == "tesSUCCESS" {
+                /*if json["resultCode"]?.string == "tesSUCCESS" {
                     
                     
-                }
+                }*/
+                
+                Ripple(drop: self.drop).send(address1: currentRoundAddress, address2: OWNER_WALLET2, secret: currentRoundSecret, amount: String(Owner2Pay), coin: "", round: "")
+                
+                /*if json2["resultCode"]?.string == "tesSUCCESS" {
+                    
+                    
+                }*/
+                
+                pool = pool - pool
                 
             }else {
                 
