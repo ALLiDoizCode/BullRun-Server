@@ -33,6 +33,7 @@ final class ScheduleCommand: Command, ConfigInitializable {
             Schedule(drop: Constant.drop!, database: Constant.database!).weekRound()
         }catch {
             
+            log.error(error)
         }
     }
 }

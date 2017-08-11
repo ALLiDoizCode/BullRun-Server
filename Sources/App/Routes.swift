@@ -1,6 +1,6 @@
 import Vapor
 import MongoKitten
-import Dispatch
+import Jobs
 extension Droplet {
     
     
@@ -464,15 +464,12 @@ extension Droplet {
            
             //MongoClient.hourBetArray = []
             
-            Schedule.jobsQueue.async {
-                
-                DispatchQueue.global().async {
-                    
-                    Schedule(drop: self,database: database).hourRound()
-                    MongoClient.sharedInstance.setHourStatus(status: false)
-                }
+            Jobs.oneoff {
+                Schedule(drop: self,database: database).hourRound()
+                MongoClient.sharedInstance.setHourStatus(status: false)
             }
             
+
             return "Running Hour Round"
             
         }
@@ -485,13 +482,9 @@ extension Droplet {
             
             //MongoClient.dayBetArray = []
             
-            Schedule.jobsQueue.async {
-                
-                DispatchQueue.global().async {
-                    
-                    Schedule(drop: self,database: database).dayRound()
-                    MongoClient.sharedInstance.setDayStatus(status: false)
-                }
+            Jobs.oneoff {
+                Schedule(drop: self,database: database).dayRound()
+                MongoClient.sharedInstance.setDayStatus(status: false)
             }
             
             return "Running Day Round"
@@ -506,13 +499,9 @@ extension Droplet {
             
             //MongoClient.weekBetArray = []
             
-            Schedule.jobsQueue.async {
-                
-                DispatchQueue.global().async {
-                    
-                    Schedule(drop: self,database: database).weekRound()
-                    MongoClient.sharedInstance.setWeekStatus(status: false)
-                }
+            Jobs.oneoff {
+                Schedule(drop: self,database: database).weekRound()
+                MongoClient.sharedInstance.setWeekStatus(status: false)
             }
             
             return "Running week Round"
