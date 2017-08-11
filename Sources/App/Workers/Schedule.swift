@@ -208,6 +208,7 @@ class Schedule {
         let top10 = Ripple(drop: self.drop).top10()
         
        MongoClient.sharedInstance.saveHourRound(coins:top10)
+       MongoClient.sharedInstance.setHourStatus(status: false)
         
     }
     
@@ -354,6 +355,7 @@ class Schedule {
         let top10 = Ripple(drop: self.drop).top10()
         
         MongoClient.sharedInstance.saveDayRound(coins:top10)
+        MongoClient.sharedInstance.setDayStatus(status: false)
     }
     
     func weekRound() {
@@ -499,6 +501,8 @@ class Schedule {
         let top10 = Ripple(drop: self.drop).top10()
         
         MongoClient.sharedInstance.saveWeekRound(coins:top10)
+        
+        MongoClient.sharedInstance.setWeekStatus(status: false)
     }
 }
 
