@@ -14,7 +14,7 @@ import FluentProvider
 
 final class ScheduleCommand: Command, ConfigInitializable {
     var console: ConsoleProtocol
-    let id = "schedule"
+    let id = "ScheduleCommand"
     let driver: Driver
     let log: LogProtocol
     
