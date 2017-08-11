@@ -7,6 +7,14 @@
 //
 
 import Foundation
+import Vapor
+import MongoKitten
+
+class Constant {
+    
+    static var database:Database? = nil
+    static var drop:Droplet? = nil
+}
 
 let stake:Double = 10.0
 let fee:Double = 0.042

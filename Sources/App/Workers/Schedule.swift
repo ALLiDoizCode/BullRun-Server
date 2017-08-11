@@ -9,15 +9,43 @@
 import Foundation
 import Vapor
 import MongoKitten
+import Console
+import FluentProvider
+
+final class ScheduleCommand: Command, ConfigInitializable {
+    var console: ConsoleProtocol
+    let id = "schedule"
+    let driver: Driver
+    let log: LogProtocol
+    
+    required init(config: Config) throws {
+        console = try config.resolveConsole()
+        driver = try config.resolveDriver()
+        log = try config.resolveLog()
+    }
+    
+    func run(arguments: [String]) throws {
+        log.info("doing some scheduled work")
+        
+        do {
+            Schedule(drop: Constant.drop!, database: Constant.database!).hourRound()
+            Schedule(drop: Constant.drop!, database: Constant.database!).dayRound()
+            Schedule(drop: Constant.drop!, database: Constant.database!).weekRound()
+        }catch {
+            
+        }
+    }
+}
+
 class Schedule {
     
     let delay:Double = 600.0
     var drop:Droplet!
-    var database:Database!
+    var database:MongoKitten.Database!
     
     static let jobsQueue = DispatchQueue(label: "Swift Metrics Jobs Queue")
 
-    init(drop:Droplet,database:Database) {
+    init(drop:Droplet,database:MongoKitten.Database) {
         
         self.database = database
         self.drop = drop

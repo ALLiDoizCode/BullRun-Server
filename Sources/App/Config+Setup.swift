@@ -8,6 +8,7 @@ extension Config {
 
         try setupProviders()
         try setupPreparations()
+        addConfigurable(command: ScheduleCommand.init, name: "schedule")
     }
     
     /// Configure providers
