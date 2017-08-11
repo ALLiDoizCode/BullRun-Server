@@ -12,8 +12,14 @@ import MongoKitten
 
 class Constant {
     
-    static var database:Database? = nil
-    static var drop:Droplet? = nil
+    static var database:Database!
+    static var drop:Droplet!
+    
+    init(database:Database,drop:Droplet) {
+        
+        Constant.database = database
+        Constant.drop =  drop
+    }
 }
 
 let stake:Double = 10.0

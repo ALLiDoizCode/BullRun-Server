@@ -9,8 +9,8 @@ extension Droplet {
         let server = try! Server("mongodb://heroku_h8lrwkbq:ntcqd6852m09ie14o2v6h4ktqv@ds129003.mlab.com:29003/heroku_h8lrwkbq")
         let database = server["heroku_h8lrwkbq"]
         if database.server.isConnected {
-            Constant.database = database
-            Constant.drop = self
+            Constant(database:database,drop:self)
+
             print("Successfully connected!")
             
             MongoClient.sharedInstance = MongoClient(database: database)

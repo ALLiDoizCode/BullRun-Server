@@ -43,8 +43,6 @@ class Schedule {
     let delay:Double = 600.0
     var drop:Droplet!
     var database:MongoKitten.Database!
-    
-    static let jobsQueue = DispatchQueue(label: "Swift Metrics Jobs Queue")
 
     init(drop:Droplet,database:MongoKitten.Database) {
         
