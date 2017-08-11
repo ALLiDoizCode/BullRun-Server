@@ -27,14 +27,9 @@ final class ScheduleCommand: Command, ConfigInitializable {
     func run(arguments: [String]) throws {
         log.info("doing some scheduled work")
         
-        do {
-            Schedule(drop: Constant.drop!, database: Constant.database!).hourRound()
-            Schedule(drop: Constant.drop!, database: Constant.database!).dayRound()
-            Schedule(drop: Constant.drop!, database: Constant.database!).weekRound()
-        }catch {
-            
-            log.error(error)
-        }
+        Schedule(drop: Constant.drop!, database: Constant.database!).hourRound()
+        Schedule(drop: Constant.drop!, database: Constant.database!).dayRound()
+        Schedule(drop: Constant.drop!, database: Constant.database!).weekRound()
     }
 }
 
